@@ -1,2 +1,147 @@
-.title
-    color: #999999
+.bg
+    // background-image: url('../../../docs/asset/img/')
+    // background-size: 100% 100%
+    +size(100%, 100%)
+    position: absolute
+    background-color: pink
+
+
+.MainContentOuter
+    +size(65%, 70%)
+    // +border(dotted, 0.2px, black)
+
+    position: absolute
+    top: 20%
+    left: 20%
+    +flexdisplay()
+
+    background-color: $CustomWhite
+    box-shadow: 5px 5px 10px grey
+
+    .MainContentInner
+        +size(99%, 99%)
+        background-color: $CustomBlue
+        +flexdisplay()
+
+        .TextArea
+            color: $CustomWhite
+            // +border(dotted, 0.2px, black)
+            +size(90%, 80%)
+
+            display: grid
+            grid-template-rows: 25% 75%
+
+            .TopArea
+                grid-row: 1 / 2
+
+                display: grid
+                grid-template-rows: 95% 5%
+                grid-template-columns: 50% 50%
+
+                .TitlePicture 
+                    grid-column: 1 / 2
+                    grid-row: 1 / 2
+                    // +border(dotted, 0.2px, black)
+                    top: -2%
+                    img
+                        +size(95%, 100%)
+                .TimeInfo
+                    grid-column: 2 / 3
+                    grid-row: 1 / 2
+
+                    display: grid
+                    grid-template-rows: 5% 30% 30% 30% 5%
+
+                    font-size: $InnerInnerFontSize
+                    letter-spacing: 2px
+                    .Info
+                        display: grid
+                        grid-template-columns: 25% 50% 25%
+                        .Topic
+                            grid-column: 1 / 2
+                            // +border(dotted, 0.2px, pink)
+                            display: grid
+                            grid-template-columns: 80% 20%
+                        .Time
+                            grid-column: 2 / 3
+                            // +border(dotted, 0.2px, pink)
+                            letter-spacing: 5px
+                        .Location
+                            grid-column: 3 / 4
+                            // +border(dotted, 0.2px, pink)
+
+                    .Campus
+                        grid-row: 2 / 3
+                        .Topic
+                            letter-spacing: 12px
+
+                    .OffCampus
+                        grid-row: 3 / 4
+                        .Topic
+                            letter-spacing: 12px
+                    .VisionAward
+                        grid-row: 4 / 5
+
+                .Divider
+                    grid-column: 1 / 3
+                    grid-row: 2 / 3
+                    +size(100%, 40%)
+                    top: 200%
+                    background-color: $CustomWhite
+
+            .BottomArea
+                grid-row: 2 / 3
+
+                display: grid
+                grid-template-columns: 40% 10% 50%
+                .ConnectionIcon
+                    grid-column: 1 / 2
+                    // +border(dotted, 2px, green)
+                    display: grid
+                    grid-template-rows: 15% 15% 70%  
+
+                    .Slogan
+                        grid-row: 2 / 3
+                        +border(solid, 1px, $CustomWhite)
+                        border-radius: 30px
+                        +flexdisplay()
+                        letter-spacing: 2px
+                        .text
+                            font-size: $InnerFontSize
+                    .IconArea
+                        grid-row: 3 / 4
+                        // +border(dotted, 2px, pink)
+                        display: grid
+                        grid-template-columns: 5% 42% 6% 42% 5%
+                        .Icon
+                            // +border(dotted, 2px, green)
+                            display: grid
+                            grid-template-rows: 5% 65% 20% 10% 
+                            .image
+                                // +border(dotted, 2px, purple)
+                                grid-row: 2 / 3
+                                img
+                                    +size(100%,auto)
+                            .text
+                                grid-row: 3 / 4
+                                font-size: $InnerFontSize
+                                justify-self: center
+
+                        .fbIcon
+                            grid-column: 2 / 3
+                        .emailIcon
+                            grid-column: 4 / 5
+
+                .ConnectionText
+                    grid-column: 3 / 4
+                    // +border(dotted, 2px, pink)
+                    display: grid
+                    grid-template-rows: 15% 28% 28% 28% 1%
+                    font-size: $InnerFontSize
+                    letter-spacing: 4px
+                    .department
+                        grid-row: 2 / 3
+                    .Address
+                        grid-row: 3 / 4
+                    .ConnectEmail
+                        grid-row: 4 / 5

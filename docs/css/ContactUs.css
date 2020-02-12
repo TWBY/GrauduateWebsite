@@ -1,2 +1,323 @@
-.title {
-  color: #999999; }
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 微軟正黑體; }
+
+html, body {
+  margin: 0;
+  width: 1920px;
+  height: 1009px; }
+
+.TourBarOuter {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .TourBarOuter .TourBarInner {
+    width: 72%;
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .TourBarOuter .TourBarInner .TourArea {
+      width: 100%;
+      height: 15%; }
+      .TourBarOuter .TourBarInner .TourArea img {
+        width: 100%;
+        height: 100%; }
+
+.LinkAreaOuter {
+  width: 18%;
+  height: 10%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .LinkAreaOuter .LinkAreaInner {
+    width: 60%;
+    height: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .LinkAreaOuter .LinkAreaInner img {
+      width: 100%;
+      height: 100%; }
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: pink; }
+
+.MainContentOuter {
+  width: 65%;
+  height: 70%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px grey; }
+  .MainContentOuter .MainContentInner {
+    width: 99%;
+    height: 99%;
+    background-color: #044EB7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .MainContentOuter .MainContentInner .TextArea {
+      color: white;
+      width: 90%;
+      height: 80%;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: 25% 75%;
+      grid-template-rows: 25% 75%; }
+      .MainContentOuter .MainContentInner .TextArea .TopArea {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        grid-row: 1 / 2;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 95% 5%;
+        grid-template-rows: 95% 5%;
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%; }
+        .MainContentOuter .MainContentInner .TextArea .TopArea .TitlePicture {
+          -ms-grid-column: 1;
+          -ms-grid-column-span: 1;
+          grid-column: 1 / 2;
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 1;
+          grid-row: 1 / 2;
+          top: -2%; }
+          .MainContentOuter .MainContentInner .TextArea .TopArea .TitlePicture img {
+            width: 95%;
+            height: 100%; }
+        .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo {
+          -ms-grid-column: 2;
+          -ms-grid-column-span: 1;
+          grid-column: 2 / 3;
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 1;
+          grid-row: 1 / 2;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-rows: 5% 30% 30% 30% 5%;
+          grid-template-rows: 5% 30% 30% 30% 5%;
+          font-size: 22px;
+          letter-spacing: 2px; }
+          .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .Info {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 25% 50% 25%;
+            grid-template-columns: 25% 50% 25%; }
+            .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .Info .Topic {
+              -ms-grid-column: 1;
+              -ms-grid-column-span: 1;
+              grid-column: 1 / 2;
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-columns: 80% 20%;
+              grid-template-columns: 80% 20%; }
+            .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .Info .Time {
+              -ms-grid-column: 2;
+              -ms-grid-column-span: 1;
+              grid-column: 2 / 3;
+              letter-spacing: 5px; }
+            .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .Info .Location {
+              -ms-grid-column: 3;
+              -ms-grid-column-span: 1;
+              grid-column: 3 / 4; }
+          .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .Campus {
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            grid-row: 2 / 3; }
+            .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .Campus .Topic {
+              letter-spacing: 12px; }
+          .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .OffCampus {
+            -ms-grid-row: 3;
+            -ms-grid-row-span: 1;
+            grid-row: 3 / 4; }
+            .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .OffCampus .Topic {
+              letter-spacing: 12px; }
+          .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .VisionAward {
+            -ms-grid-row: 4;
+            -ms-grid-row-span: 1;
+            grid-row: 4 / 5; }
+        .MainContentOuter .MainContentInner .TextArea .TopArea .Divider {
+          -ms-grid-column: 1;
+          -ms-grid-column-span: 2;
+          grid-column: 1 / 3;
+          -ms-grid-row: 2;
+          -ms-grid-row-span: 1;
+          grid-row: 2 / 3;
+          width: 100%;
+          height: 40%;
+          top: 200%;
+          background-color: white; }
+      .MainContentOuter .MainContentInner .TextArea .BottomArea {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        grid-row: 2 / 3;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 40% 10% 50%;
+        grid-template-columns: 40% 10% 50%; }
+        .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon {
+          -ms-grid-column: 1;
+          -ms-grid-column-span: 1;
+          grid-column: 1 / 2;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-rows: 15% 15% 70%;
+          grid-template-rows: 15% 15% 70%; }
+          .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .Slogan {
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            grid-row: 2 / 3;
+            border-style: solid;
+            border-width: 1px;
+            border-color: white;
+            border-radius: 30px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            letter-spacing: 2px; }
+            .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .Slogan .text {
+              font-size: 28px; }
+          .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .IconArea {
+            -ms-grid-row: 3;
+            -ms-grid-row-span: 1;
+            grid-row: 3 / 4;
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 5% 42% 6% 42% 5%;
+            grid-template-columns: 5% 42% 6% 42% 5%; }
+            .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .IconArea .Icon {
+              display: -ms-grid;
+              display: grid;
+              -ms-grid-rows: 5% 65% 20% 10%;
+              grid-template-rows: 5% 65% 20% 10%; }
+              .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .IconArea .Icon .image {
+                -ms-grid-row: 2;
+                -ms-grid-row-span: 1;
+                grid-row: 2 / 3; }
+                .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .IconArea .Icon .image img {
+                  width: 100%;
+                  height: auto; }
+              .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .IconArea .Icon .text {
+                -ms-grid-row: 3;
+                -ms-grid-row-span: 1;
+                grid-row: 3 / 4;
+                font-size: 28px;
+                -ms-grid-column-align: center;
+                justify-self: center; }
+            .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .IconArea .fbIcon {
+              -ms-grid-column: 2;
+              -ms-grid-column-span: 1;
+              grid-column: 2 / 3; }
+            .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .IconArea .emailIcon {
+              -ms-grid-column: 4;
+              -ms-grid-column-span: 1;
+              grid-column: 4 / 5; }
+        .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionText {
+          -ms-grid-column: 3;
+          -ms-grid-column-span: 1;
+          grid-column: 3 / 4;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-rows: 15% 28% 28% 28% 1%;
+          grid-template-rows: 15% 28% 28% 28% 1%;
+          font-size: 28px;
+          letter-spacing: 4px; }
+          .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionText .department {
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            grid-row: 2 / 3; }
+          .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionText .Address {
+            -ms-grid-row: 3;
+            -ms-grid-row-span: 1;
+            grid-row: 3 / 4; }
+          .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionText .ConnectEmail {
+            -ms-grid-row: 4;
+            -ms-grid-row-span: 1;
+            grid-row: 4 / 5; }

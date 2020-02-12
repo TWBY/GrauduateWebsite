@@ -5,19 +5,58 @@ html(lang="en")
         link(rel="stylesheet", href="../css/ContactUs.css")
         title Document
     body
-        h1.title 聯絡我們
-        hr
-        a.TourIcon.index(href="../../index.html") 首頁
-        br
-        a.TourIcon.Contact(href="ContactUs.html") 聯絡我們
-        br
-        a.TourIcon.Partner(href="Partner.html") 合作廠商
-        br
-        a.TourIcon.Works(href="Works.html") 展出作品
-        br
-        a.TourIcon.Rhapsody(href="Rhapsody.html") 狂想故事
-        br
-        a.TourIcon.Team(href="Team.html") 策展團隊
-        br
-        a.TourIcon.Information(href="Information.html") 展覽資訊
+        .bg
+        include Component/TourBar.pug
+        include Component/LinkArea.pug
+        
+        .MainContentOuter
+            .MainContentInner
+                .TextArea
+                    .TopArea
+                        .TitlePicture 
+                            img(src="../../docs/asset/img/MainTitle.png", alt="", sizes="", srcset="")
+                        .TimeInfo
+                            .Info.Campus
+                                .Topic 
+                                    .text 校內展
+                                    .bar | 
+                                .Time 2020/04/11-16
+                                .Location 元智大學
+                            .Info.OffCampus
+                                .Topic
+                                    .text  校外展 
+                                    .bar |
+                                .Time 2020/05/08-13
+                                .Location 台北松山
+                            .Info.VisionAward
+                                .Topic 
+                                    .text 放視大賞
+                                    .bar |
+                                .Time 2020/05/13-15
+                                .Location 高雄展覽館
+                        .Divider 
+                    .BottomArea
+                        .ConnectionIcon
+                            .Slogan
+                                .text 歡迎利用以下窗口與我們聯絡!
+                            .IconArea
+                                .fbIcon.Icon
+                                    a.image(href="http://")
+                                        img(src="../../docs/asset/img/Fb.png", alt="", sizes="", srcset="")
+                                    .text 臉書粉專
+                                .emailIcon.Icon
+                                    a.image(href="http://")
+                                        img(src="../../docs/asset/img/EmailConnection.png", alt="", sizes="", srcset="")
+                                    .text Email
+                        .ConnectionText
+                            .SubInfo.department
+                                .ConTile 元智大學資訊傳播學系
+                                .ConInfo 02-12345678 / 02-8765-4321
+                            .SubInfo.Address
+                                .ConTile 聯絡地址:
+                                .ConInfo 320桃園市中壢區遠東路135號
+                            .SubInfo.ConnectEmail
+                                .ConTile Email:
+                                .ConInfo barabaraboom@yzu.edu.tw
+                    
         script(src="../../docs/js/ContactUs.js")

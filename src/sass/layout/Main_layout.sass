@@ -1,2 +1,70 @@
-.title
-    color: silver 
+body
+    // background-color: $CustomBlue
+
+.bg
+    +size(100%, 100%)
+    position: absolute
+    background-color: $CustomBlue
+
+.Title
+    // +border(dotted, 2px, pink)
+    +size(50%, 32%)
+    position: absolute
+    top: 40%
+    right: 8%
+
+    .MainTitle
+        +size(100%, 80%)
+        // +border(dotted, 2px, green)
+        img
+            +size(100%, 80%)
+
+    .Subtitle
+        // +border(dotted, 2px, green)
+        color: $CustomWhite
+        font-size: $InnerFontSize
+
+        top: -3%
+        left: 8%
+
+.ExhibitionInfo
+    +size(80%, 15%)
+    // +border(dotted, 2px, pink)
+
+    position: absolute
+    bottom: 5% 
+    right: 0%
+
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-template-rows: 50% 50%
+
+    color: $CustomWhite
+    font-size: $InnerFontSize
+
+    .Info
+        display: grid
+        grid-template-columns: 22% 25% 53%
+
+        .Topic
+            +size(83%, 60%)
+            .text
+                border: solid 1px $CustomWhite
+                border-radius: 20px
+                padding: 2px 12px
+                top: -2px
+    .Campus
+        grid-column: 1 / 2
+        grid-row: 1 / 2
+
+    .OffCampus
+        grid-column: 2 / 3
+        grid-row: 1 / 2
+    
+    .FilmFestival
+        grid-column: 1 / 2
+        grid-row: 2 / 3
+
+    .VisionAward
+        grid-column: 2 / 3
+        grid-row: 2 / 3

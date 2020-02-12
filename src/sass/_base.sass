@@ -1,0 +1,50 @@
+*
+    box-sizing: border-box
+    position: relative
+    // +border(dotted, 0.2px, black)
+    font-family: $CHFont
+    // background-color: $dw
+    // overflow-x: hidden
+    //background-color: #f24
+
+html, body
+    margin: 0
+    +size(1920px, 1009px)
+    // overflow-x: hidden
+
+// Tour Side
+.TourBarOuter
+    // +border(dotted, 2px, pink)
+    +size(10%, 100%)
+    +flexdisplay()
+    
+    .TourBarInner
+        +size(72%, 90%)
+        +flexdisplay(flex, column, space-between, center)
+        // +border(dotted, 3px, green)
+
+        .TourArea    
+            +size(100%, 15%)
+            img
+                +size(100%, 100%)
+
+
+// Link Area
+.LinkAreaOuter
+    // +border(dotted, 2px, pink)
+    +size(18%, 10%)
+
+    position: absolute
+    top: 0%
+    right: 0%
+    +flexdisplay()
+    
+    .LinkAreaInner
+        +size(60%, 75%)
+        +flexdisplay(flex, row, space-between, center)
+        // +border(dotted, 1px, green)
+        img
+            // +border(dotted, 1px, purple)
+            +size(100%, 100%)
+
+

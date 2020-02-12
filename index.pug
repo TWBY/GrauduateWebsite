@@ -5,19 +5,78 @@ html(lang="en")
         link(rel="stylesheet", href="docs/css/Main.css")
         title Document
     body
-        h1.title 首頁
-        hr
-        a.TourIcon.index(href="index.html") 首頁
-        br
-        a.TourIcon.Contact(href="docs/html/ContactUs.html") 聯絡我們
-        br
-        a.TourIcon.Partner(href="docs/html/Partner.html") 合作廠商
-        br
-        a.TourIcon.Works(href="docs/html/Works.html") 展出作品
-        br
-        a.TourIcon.Rhapsody(href="docs/html/Rhapsody.html") 狂想故事
-        br
-        a.TourIcon.Team(href="docs/html/Team.html") 策展團隊
-        br
-        a.TourIcon.Information(href="docs/html/Information.html") 展覽資訊
+        .bg
+        .TourBarOuter
+            .TourBarInner
+                .TourArea
+                    a(href="docs/html/Information.html")
+                        img(src="docs/asset/img/ExhibitionInformation.png", alt="", sizes="", srcset="")
+                        .SlideBar
+                            .Rect
+                            //- .Word 展覽資訊
+                .TourArea
+                    a.TourLink(href="docs/html/Rhapsody.html")
+                        img(src="docs/asset/img/Rhapsody.png", alt="", sizes="", srcset="")
+                        .SlideBar
+                            .Rect
+                            //- .Word 狂想故事
+                .TourArea
+                    a.TourLink(href="docs/html/Works.html")
+                        img(src="docs/asset/img/ExhibitionWorks.png", alt="", sizes="", srcset="")
+                        .SlideBar
+                            .Rect
+                            //- .Word 展覽作品
+                .TourArea
+                    a.TourLink(href="docs/html/Team.html")
+                        img(src="docs/asset/img/CuratorialTeam.png", alt="", sizes="", srcset="")
+                        .SlideBar
+                            .Rect
+                            //- .Word 策展團隊
+                .TourArea
+                    a.TourLink(href="docs/html/Partner.html")
+                        img(src="docs/asset/img/Partner.png", alt="", sizes="", srcset="")
+                        .SlideBar
+                            .Rect
+                            //- .Word 合作廠商
+                .TourArea
+                    a.TourLink(href="docs/html/ContactUs.html")
+                        img(src="docs/asset/img/ContactUs.png", alt="", sizes="", srcset="")
+                        .SlideBar
+                            .Rect
+                            //- .Word 聯絡我們
+        .LinkAreaOuter
+            .LinkAreaInner
+                a(href="index.html")
+                    img(src="docs/asset/img/Home.png", alt="", sizes="", srcset="")
+                a(href="http://")
+                    img(src="docs/asset/img/Fb.png", alt="", sizes="", srcset="")
+                a(href="http://")
+                    img(src="docs/asset/img/EmailConnection.png", alt="", sizes="", srcset="")
+                    
+        .Title
+            .MainTitle
+                img(src="docs/asset/img/MainTitle.png", alt="", srcset="")
+            .Subtitle 萌芽˙碰撞˙成長˙茁壯 &nbsp;&nbsp;&nbsp; 屬於我們的狂想故事正在進化
+        .ExhibitionInfo
+            .Info.Campus
+                .Topic 
+                    .text 校內首展
+                .Time 04/11-16
+                .Location 元智大學五館、六館
+            .Info.FilmFestival
+                .Topic 
+                    .text 校內影展
+                .Time 04/15、18
+                .Location 元智大學六館有庠廳
+            .Info.OffCampus
+                .Topic
+                    .text  校外展出
+                .Time 05/08-13
+                .Location 台北松山文創園區
+            .Info.VisionAward
+                .Topic 
+                    .text 放視大賞
+                .Time 05/13-15
+                .Location 高雄展覽館
+
         script(src="docs/js/script.js")

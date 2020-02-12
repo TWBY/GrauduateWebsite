@@ -1,0 +1,31 @@
+
+//Language
+$CHFont: 微軟正黑體
+$ENFont: Gen Jyuu Gothic LP
+
+//Color
+$CustomBlue: #044EB7
+$CustomYellow: #FFE200
+$CustomRed: #FF506E
+$CustomWhite: white
+
+//FontSize
+$TitleFontSize: 55px
+$InnerFontSize: 28px
+$InnerInnerFontSize: 22px
+
+// mixin
+@mixin size($w,$h)
+    width: $w
+    height: $h
+    
+@mixin flexdisplay($display: flex ,$direction: row ,$justify-content: center, $align-items: center)
+    display: $display
+    flex-direction: $direction
+    justify-content: $justify-content
+    align-items: $align-items
+
+@mixin border($border-style: solid , $border-width: 2px , $border-color: #f24)
+    border-style: $border-style
+    border-width: $border-width
+    border-color: $border-color
