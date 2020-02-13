@@ -47,4 +47,31 @@ html, body
             // +border(dotted, 1px, purple)
             +size(100%, 100%)
 
+// PageTitle
+.PageTitle
+    +size(20%, 10%)
+    position: absolute
+    top: 20%
+    left: 20%
+    // +border(dotted, 1px, green)
+    color: $CustomBlue
+    letter-spacing: 3px
 
+    display: grid
+    grid-template-columns: 10% 90%
+    grid-template-rows: 70% 30%
+    .SideRect
+        +size(40%, 90%)
+        background-color: $CustomBlue
+        grid-column: 1 / 2
+        grid-row: 1 / 3
+
+        top: 12%
+    .ChTitle
+        font-size: $TitleFontSize
+        grid-column: 2 / 3
+        grid-row: 1 / 2
+    .EnTitle
+        font-size: $InnerFontSize
+        grid-column: 2 / 3
+        grid-row: 2 / 3

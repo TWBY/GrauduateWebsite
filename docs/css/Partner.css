@@ -88,6 +88,48 @@ html, body {
       width: 100%;
       height: 100%; }
 
+.PageTitle {
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: #044EB7;
+  letter-spacing: 3px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 90%;
+  grid-template-columns: 10% 90%;
+  -ms-grid-rows: 70% 30%;
+  grid-template-rows: 70% 30%; }
+  .PageTitle .SideRect {
+    width: 40%;
+    height: 90%;
+    background-color: #044EB7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+    top: 12%; }
+  .PageTitle .ChTitle {
+    font-size: 55px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2; }
+  .PageTitle .EnTitle {
+    font-size: 28px;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3; }
+
 .bg {
   background-image: url("../../../docs/asset/img/BGPartner.png");
   background-size: 100% 100%;

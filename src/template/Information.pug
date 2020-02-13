@@ -8,6 +8,36 @@ html(lang="en")
         .bg
         include Component/TourBar.pug
         include Component/LinkArea.pug
-                    
+        
+        .PageTitle
+            .SideRect
+            .ChTitle 展覽資訊
+            .EnTitle Information
+
+        #app.container
+            .BarArea
+                .navbarOuter.bar
+                    .activeBar
+                .navbar.bar
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(0)")
+                        .nav-link.initial(@click.prevent="ChangePeopleInfo(0)") 校內展
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(1)")
+                        .nav-link(@click.prevent="ChangePeopleInfo(1)") 校外展
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(2)")
+                        .nav-link(@click.prevent="ChangePeopleInfo(2)") 放視大賞
+
+            #myTabContent(:class='{ elementToFadeInAndOut:isTextActive }')
+                .BasicInfo
+                    .Info.time 活動時間 &nbsp;|&nbsp; {{ MapInfo.time }}
+                    .Info.location 活動地點 &nbsp;|&nbsp; {{ MapInfo.location }}
+                    .Info.cost 費用資訊 &nbsp;|&nbsp; {{ MapInfo.cost }}
+                    .Info.traffic 乘車資訊 &nbsp;|
+                        .trafficDital(v-html='MapInfo.traffic') 
+                .Map
+                    img(v-bind:src="MapInfo.map", alt="", srcset="")
+
+
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
         script(src="../../docs/js/Information.js")
         
