@@ -10,40 +10,104 @@
     <div class="bg"></div>
     <div class="TourBarOuter">
       <div class="TourBarInner">
-        <div class="TourArea"><a href="Information.html"><img src="../asset/img/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
+        <div class="TourArea"><a href="Information.html"><img src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
             <div class="SlideBar">
               <div class="Rect"></div>
             </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="Rhapsody.html"><img src="../asset/img/Rhapsody.png" alt="" sizes="" srcset=""/>
+        <div class="TourArea"><a class="TourLink" href="Rhapsody.html"><img src="../asset/img/Icon/Rhapsody.png" alt="" sizes="" srcset=""/>
             <div class="SlideBar">
               <div class="Rect"></div>
             </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="Works.html"><img src="../asset/img/ExhibitionWorks.png" alt="" sizes="" srcset=""/>
+        <div class="TourArea"><a class="TourLink" href="Works.html"><img src="../asset/img/Icon/ExhibitionWorks.png" alt="" sizes="" srcset=""/>
             <div class="SlideBar">
               <div class="Rect"></div>
             </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="Team.html"><img src="../asset/img/CuratorialTeam.png" alt="" sizes="" srcset=""/>
+        <div class="TourArea"><a class="TourLink" href="Team.html"><img src="../asset/img/Icon/CuratorialTeam.png" alt="" sizes="" srcset=""/>
             <div class="SlideBar">
               <div class="Rect"></div>
             </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="Partner.html"><img src="../asset/img/Partner.png" alt="" sizes="" srcset=""/>
+        <div class="TourArea"><a class="TourLink" href="Partner.html"><img src="../asset/img/Icon/Partner.png" alt="" sizes="" srcset=""/>
             <div class="SlideBar">
               <div class="Rect"></div>
             </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="ContactUs.html"><img src="../asset/img/ContactUs.png" alt="" sizes="" srcset=""/>
+        <div class="TourArea"><a class="TourLink" href="ContactUs.html"><img src="../asset/img/Icon/ContactUs.png" alt="" sizes="" srcset=""/>
             <div class="SlideBar">
               <div class="Rect"></div>
             </div></a></div>
       </div>
     </div>
     <div class="LinkAreaOuter">
-      <div class="LinkAreaInner"><a href="../../index.html"><img src="../asset/img/Home.png" alt="" sizes="" srcset=""/></a><a href="http://"><img src="../asset/img/Fb.png" alt="" sizes="" srcset=""/></a><a href="http://"><img src="../asset/img/EmailConnection.png" alt="" sizes="" srcset=""/></a></div>
+      <div class="LinkAreaInner"><a href="../../index.html"><img src="../asset/img/Icon/Home.png" alt="" sizes="" srcset=""/></a><a href="http://"><img src="../asset/img/Icon/Fb.png" alt="" sizes="" srcset=""/></a><a href="http://"><img src="../asset/img/Icon/EmailConnection.png" alt="" sizes="" srcset=""/></a></div>
     </div>
     <div class="PageTitle">
       <div class="SideRect"></div>
       <div class="ChTitle">狂想故事</div>
       <div class="EnTitle">Theme of Exhibition</div>
     </div>
+    <div class="container" id="app">
+      <div class="BarArea">
+        <div class="navbarOuter bar">
+          <div class="activeBar"></div>
+        </div>
+        <div class="navbar bar">
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
+            <div class="nav-link initial" @click.prevent="ChangePeopleInfo(0)">主題概念</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(1)">Rookie</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(2)">Chubby</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(3)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(3)">BoomBoom</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(4)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(4)">Fantasy</div>
+          </div>
+        </div>
+      </div>
+      <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
+        <div class="monster" v-if="isShowMonster">
+          <div class="BasicInfo">
+            <div class="MonsterTitle">
+              <div class="Info grade">{{ monster.grade }}</div>
+              <div class="Info name">{{ monster.EnName }} - {{ monster.ChName }}</div>
+              <div class="BottomLine"></div>
+            </div>
+            <div class="MonsterDetail">
+              <div class="Info">身高: &nbsp;{{ monster.Height }} &nbsp; 體重: {{ monster.Weight }}</div>
+              <div class="intro" v-html="monster.Intro"></div>
+            </div>
+          </div>
+          <div class="Look"><img class="MonsterBg" src="../asset/img/Monster/circle.png" alt="" srcset=""/><img class="MonsterSelf" v-bind:src="monster.Look" alt="" srcset=""/></div>
+        </div>
+        <div class="mainTopic" v-if="isShowTopic">
+          <div class="concept">
+            <div class="conceptSlogan">「萌芽、碰撞、成長、茁壯， 屬於我們的狂想正在進化。」</div>
+            <div class="conceptDetail">
+               <br>「狂想」是什麼呢&nbsp;‧‧‧‧‧‧？<br>它是自由不受限的想像、跳脫框架的夢想。
+<br>初步入大學的我們，默默地種下對未來的想像，
+<br>將資傳系四年探索，化為四隻小怪獸的進化旅程，
+<br>從渺小的大一&nbsp;—&nbsp;Rookie菜鳥獸，
+<br>最終進化成真正的資傳人，大四&nbsp;—&nbsp;Fantasy狂想獸，
+<br>強調四年的成長，亦結合對科幻未來人的想像：
+<br>「資傳人最後會進化成什麼模樣呢？」
+<br>
+<br>「狂想進化論」展現五顏六色的創意與想像，
+<br>一場屬於我們的狂想進化，未完待續&nbsp;‧‧‧‧‧‧！
+            </div>
+          </div>
+          <div class="conceptImgOuter"><img class="conceptImgInner" src="../asset/img/Monster/FantasyOpen.png" alt="" srcset=""/></div>
+        </div>
+        <div class="RadarChart" :class="{ isShowMonsterChart:isShowMonster }">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0">        </script>
     <script src="../../docs/js/Rhapsody.js"></script>
   </body>
 </html>

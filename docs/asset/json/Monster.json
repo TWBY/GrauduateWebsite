@@ -1,0 +1,45 @@
+[{
+        "grade": "大學一年級",
+        "EnName": "Rookie",
+        "ChName": "菜鳥獸",
+        "Height": "40cm",
+        "Weight": "87 kg",
+        "Intro": "小不點，紅奶嘴。<br>滿身香菜味，最菜的那種<br>技能:<br>想哭的時候,拔掉奶嘴使出<br>香菜臭屁術臭死敵人。",
+        "Look": "../asset/img/Monster/rookie.PNG",
+        "ChartText": ["準時", "熬夜", "想像力", "朋友數", "食量"],
+        "ChartNum": [5, 2, 3, 5, 3]
+    },
+    {
+        "grade": "大學二年級",
+        "EnName": "Chubby",
+        "ChName": "發胖獸",
+        "Height": "66 cm",
+        "Weight": "132 kg",
+        "Intro": "小胖子，紅帽子，游泳圈。<br>食量和肥肉等比例成長ing<br>技能:<br>壓力大的時候,會使出胃部<br>潛能解放,暴食宵夜後,打出<br>滿滿油脂味的惡臭飽隔。",
+        "Look": "../asset/img/Monster/chubby.PNG",
+        "ChartText": ["體重", "雙下巴", "社交", "睡過頭", "食量"],
+        "ChartNum": [5, 5, 4, 4, 5]
+    },
+    {
+        "grade": "大學三年級",
+        "EnName": "BoomBoom",
+        "ChName": "蹦爆獸",
+        "Height": "76 cm",
+        "Weight": "140 kg",
+        "Intro": "皮膚開始有一些白色花紋,<br>是轉成最終型態前的準備狀態。<br>小花花和樹葉必備時尚穿搭。<br>技能:<br>壓力大時會使出狂放歌喉，<br>聽到的人會開始精神渙散神智不清。",
+        "Look": "../asset/img/Monster/boom.PNG",
+        "ChartText": ["體重", "易怒", "壓力", "早八準時到", "Line 未讀"],
+        "ChartNum": [5, 4, 5, 2, 4]
+    },
+    {
+        "grade": "大學四年級",
+        "EnName": "Fantasy",
+        "ChName": "狂想獸",
+        "Height": "88 cm",
+        "Weight": "160 kg",
+        "Intro": "可以自由伸縮的手指、身上有<br>各式型號的電線插頭，望遠鏡<br>可以放大到微米!!<br>技能:<br>心情愉快時，會解放丹田魔音，<br> 開始一連串震耳欲聾的魔性笑聲。",
+        "Look": "../asset/img/Monster/Fantasy.PNG",
+        "ChartText": ["體脂肪", "佛系", "想像力", "12:00前睡", "朋友數"],
+        "ChartNum": [5, 5, 5, 2, 2]
+    }
+]

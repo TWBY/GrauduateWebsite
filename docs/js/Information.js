@@ -51,9 +51,7 @@ new Vue({
             transRange = index * (navbarOuterWidth / 3);
             activeBar.style.transform = 'translateX(' + transRange + 'px)';
 
-
             let navLink = document.querySelectorAll('.nav-link');
-            // console.log(navLink[index])
             for (let i = 0; i < navLink.length; i++) {
                 if (i == index) {
                     navLink[i].style.color = "white"

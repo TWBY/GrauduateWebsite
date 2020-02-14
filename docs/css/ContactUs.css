@@ -7,22 +7,22 @@
 
 html, body {
   margin: 0;
-  width: 1920px;
-  height: 1009px; }
+  width: 100%;
+  height: 100%; }
 
 .TourBarOuter {
-  width: 10%;
+  border-style: dotted;
+  border-width: 2px;
+  border-color: pink;
+  width: 20%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  -ms-grid-rows: 100%;
+  grid-template-rows: 100%;
+  justify-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -41,13 +41,28 @@ html, body {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #f24; }
     .TourBarOuter .TourBarInner .TourArea {
       width: 100%;
       height: 15%; }
-      .TourBarOuter .TourBarInner .TourArea img {
-        width: 100%;
-        height: 100%; }
+      .TourBarOuter .TourBarInner .TourArea .TourLink img {
+        width: 50%;
+        height: auto; }
+      .TourBarOuter .TourBarInner .TourArea .TourLink .SlideBar {
+        background-color: white;
+        top: -50%;
+        width: 50%;
+        height: 35%;
+        left: 0%;
+        z-index: 10;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s; }
+      .TourBarOuter .TourBarInner .TourArea .TourLink:hover .SlideBar {
+        left: 50%; }
 
 .LinkAreaOuter {
   width: 18%;
@@ -131,7 +146,7 @@ html, body {
     grid-row: 2 / 3; }
 
 .bg {
-  background-image: url("../../../docs/asset/img/BGContactUs.png");
+  background-image: url("../../../docs/asset/img/BG/BGContactUs.png");
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
@@ -221,8 +236,8 @@ html, body {
           .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .Info {
             display: -ms-grid;
             display: grid;
-            -ms-grid-columns: 25% 50% 25%;
-            grid-template-columns: 25% 50% 25%; }
+            -ms-grid-columns: 25% 45% 30%;
+            grid-template-columns: 25% 45% 30%; }
             .MainContentOuter .MainContentInner .TextArea .TopArea .TimeInfo .Info .Topic {
               -ms-grid-column: 1;
               -ms-grid-column-span: 1;
@@ -306,7 +321,7 @@ html, body {
             align-items: center;
             letter-spacing: 2px; }
             .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .Slogan .text {
-              font-size: 28px; }
+              font-size: 26px; }
           .MainContentOuter .MainContentInner .TextArea .BottomArea .ConnectionIcon .IconArea {
             -ms-grid-row: 3;
             -ms-grid-row-span: 1;

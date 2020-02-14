@@ -9,25 +9,61 @@
 
 html, body
     margin: 0
-    +size(1920px, 1009px)
+    // +size(1920px, 1009px)
+    +size(100%, 100%)
     // overflow-x: hidden
 
 // Tour Side
 .TourBarOuter
-    // +border(dotted, 2px, pink)
-    +size(10%, 100%)
-    +flexdisplay()
+    +border(dotted, 2px, pink)
+    +size(20%, 100%)
+    // +flexdisplay()
     
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 100%
+    justify-items: center
+    align-items: center
+
     .TourBarInner
         +size(72%, 90%)
+        // align-self: center
         +flexdisplay(flex, column, space-between, center)
-        // +border(dotted, 3px, green)
+        +border(dotted, 2px, #f24)
 
         .TourArea    
             +size(100%, 15%)
-            img
-                +size(100%, 100%)
+            // background-color: yellow
+            .TourLink
+                img
+                    +size(50%, auto)
+                .SlideBar
+                    background-color: $CustomWhite
+                    top: -50%
+                    +size(50%, 35%)
+                    left: 0%
+                    // top: -50px
+                    
+                    z-index: 10
+                    transition-duration: 0.5s
+                &:hover
+                    .SlideBar
+                        left: 50%
 
+
+
+// Tour Side Animate
+// .TourLink
+//     background-color: green
+//     +size(100%, 100%)
+//     .SlideBar
+//         +size(100%, 35%)
+//         background-color: pink
+//         color: $CustomBlue
+//         // top: -30px
+//     &:hover
+//         .SlideBar
+//             left: 200px
 
 // Link Area
 .LinkAreaOuter
