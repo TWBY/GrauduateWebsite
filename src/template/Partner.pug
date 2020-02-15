@@ -8,5 +8,22 @@ html(lang="en")
         .bg
         include Component/TourBar.pug
         include Component/LinkArea.pug
-        
+
+        .PageTitleStyleTwo
+            .SideLeftRect.SideRect
+            .Title
+                .ChTitle 合作廠商
+                .EnTitle Sponsor
+            .SideRightRect.SideRect
+
+        #app
+            .container
+                .Sponsors(v-for='(item, index) in SponsorsInfo')
+                    .SponsorPic
+                        img(v-bind:src="item.Look", alt="", srcset="")
+                    .Name  {{ item.Name }}
+
+            
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
         script(src="../../docs/js/Partner.js")

@@ -10,35 +10,71 @@
     <div class="bg"></div>
     <div class="TourBarOuter">
       <div class="TourBarInner">
-        <div class="TourArea"><a href="Information.html"><img src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBar">
-              <div class="Rect"></div>
+        <div class="TourArea"><a class="TourLink" href="Information.html"><img src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
+            <div class="SlideBarOuter">
+              <div class="SlideBarInner">
+                <div class="Rect"></div>
+                <div class="Word">展覽資訊</div>
+              </div>
             </div></a></div>
         <div class="TourArea"><a class="TourLink" href="Rhapsody.html"><img src="../asset/img/Icon/Rhapsody.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBar">
-              <div class="Rect"></div>
+            <div class="SlideBarOuter">
+              <div class="SlideBarInner">
+                <div class="Rect"></div>
+                <div class="Word">狂想故事</div>
+              </div>
             </div></a></div>
         <div class="TourArea"><a class="TourLink" href="Works.html"><img src="../asset/img/Icon/ExhibitionWorks.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBar">
-              <div class="Rect"></div>
+            <div class="SlideBarOuter">
+              <div class="SlideBarInner">
+                <div class="Rect"></div>
+                <div class="Word">展覽作品</div>
+              </div>
             </div></a></div>
         <div class="TourArea"><a class="TourLink" href="Team.html"><img src="../asset/img/Icon/CuratorialTeam.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBar">
-              <div class="Rect"></div>
+            <div class="SlideBarOuter">
+              <div class="SlideBarInner">
+                <div class="Rect"></div>
+                <div class="Word">策展團隊</div>
+              </div>
             </div></a></div>
         <div class="TourArea"><a class="TourLink" href="Partner.html"><img src="../asset/img/Icon/Partner.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBar">
-              <div class="Rect"></div>
+            <div class="SlideBarOuter">
+              <div class="SlideBarInner">
+                <div class="Rect"></div>
+                <div class="Word">合作廠商</div>
+              </div>
             </div></a></div>
         <div class="TourArea"><a class="TourLink" href="ContactUs.html"><img src="../asset/img/Icon/ContactUs.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBar">
-              <div class="Rect"></div>
+            <div class="SlideBarOuter">
+              <div class="SlideBarInner">
+                <div class="Rect"></div>
+                <div class="Word">聯絡我們</div>
+              </div>
             </div></a></div>
       </div>
     </div>
     <div class="LinkAreaOuter">
-      <div class="LinkAreaInner"><a href="../../index.html"><img src="../asset/img/Icon/Home.png" alt="" sizes="" srcset=""/></a><a href="http://"><img src="../asset/img/Icon/Fb.png" alt="" sizes="" srcset=""/></a><a href="http://"><img src="../asset/img/Icon/EmailConnection.png" alt="" sizes="" srcset=""/></a></div>
+      <div class="LinkAreaInner"><a class="Link" href="../../index.html"><img src="../asset/img/Icon/Home.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/Fb.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/EmailConnection.png" alt="" sizes="" srcset=""/></a></div>
     </div>
+    <div class="PageTitleStyleTwo">
+      <div class="SideLeftRect SideRect"></div>
+      <div class="Title">
+        <div class="ChTitle">合作廠商</div>
+        <div class="EnTitle">Sponsor</div>
+      </div>
+      <div class="SideRightRect SideRect"></div>
+    </div>
+    <div id="app">
+      <div class="container">
+        <div class="Sponsors" v-for="(item, index) in SponsorsInfo">
+          <div class="SponsorPic"><img v-bind:src="item.Look" alt="" srcset=""/></div>
+          <div class="Name"> {{ item.Name }}</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
     <script src="../../docs/js/Partner.js"></script>
   </body>
 </html>
