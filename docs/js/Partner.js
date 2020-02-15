@@ -15,8 +15,6 @@ new Vue({
         axios.get('../asset/json/Sponsor.json').then(val => {
             var vm = this;
             vm.SponsorsInfo = val.data;
-            // this.Sponsor.Name = this.SponsorsInfo[0].Name;
-            // this.Sponsor.Look = this.SponsorsInfo[0].Look;
         })
     },
     methods: {
