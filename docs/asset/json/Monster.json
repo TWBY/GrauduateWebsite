@@ -5,7 +5,7 @@
         "Height": "40cm",
         "Weight": "87 kg",
         "Intro": "小不點，紅奶嘴。<br>滿身香菜味，最菜的那種<br>技能:<br>想哭的時候,拔掉奶嘴使出<br>香菜臭屁術臭死敵人。",
-        "Look": "../asset/img/Monster/rookie.PNG",
+        "Look": "https://twby.github.io/GrauduateWebsite/ docs/asset/img/Monster/rookie.PNG",
         "ChartText": ["準時", "熬夜", "想像力", "朋友數", "食量"],
         "ChartNum": [5, 2, 3, 5, 3]
     },
