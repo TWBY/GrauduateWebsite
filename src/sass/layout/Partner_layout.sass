@@ -47,16 +47,18 @@
             align-self: center
             justify-self: center
             color: $CustomBlue
+            +size(100%, 40%)
+            text-align: center
             &::before, &::after
                 content: ""
                 display: inline-block
                 position: absolute
                 background-color: $CustomBlue
             &::before
-                +size(6%, 55%)
-                top: 25%
-                left: -11%
+                +size(3.5%, 35%)
+                top: 20%
+                left: 19%
             &::after
-                +size(100%, 5%)
-                top: 110%
-                left: 3%
+                +size(50%, 3%)
+                top: 80%
+                left: 25%

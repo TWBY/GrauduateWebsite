@@ -370,19 +370,22 @@ html, body {
       align-self: center;
       -ms-grid-column-align: center;
       justify-self: center;
-      color: #044EB7; }
+      color: #044EB7;
+      width: 100%;
+      height: 40%;
+      text-align: center; }
       .container .Sponsors .Name::before, .container .Sponsors .Name::after {
         content: "";
         display: inline-block;
         position: absolute;
         background-color: #044EB7; }
       .container .Sponsors .Name::before {
-        width: 6%;
-        height: 55%;
-        top: 25%;
-        left: -11%; }
+        width: 3.5%;
+        height: 35%;
+        top: 20%;
+        left: 19%; }
       .container .Sponsors .Name::after {
-        width: 100%;
-        height: 5%;
-        top: 110%;
-        left: 3%; }
+        width: 50%;
+        height: 3%;
+        top: 80%;
+        left: 25%; }
