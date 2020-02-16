@@ -27,16 +27,13 @@
 .navbar
     display: flex
     .nav-item
-        height: 100%
-        width: calc(100%/5)
-        height: 100% 
+        +size(calc(100%/5), 100%)
+        +flexdisplay()
         .nav-link
-            width: 100%
-            height: 100%
+            +size(60%, auto)
             font-size: $InnerInnerFontSize
             text-align: center
             transition-duration: 0.8s
-            top: 11%
             color: $CustomBlue
         .initial
             color: $CustomWhite
@@ -46,8 +43,7 @@
     top: 0px
     left: 0px
     .activeBar
-        height: 100%
-        width: calc(100%/5)
+        +size(calc(100%/5), 100%)
         border-radius: 30px
         background-color: $CustomBlue
         transition-duration: 1s

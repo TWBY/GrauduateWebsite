@@ -20,13 +20,14 @@
     display: flex
     .nav-item
         +size(calc(100%/3), 100%)
+        +flexdisplay()
         .nav-link
-            +size(100%, 100%)
+            // border: solid 1px black
+            +size(60%, auto)
             font-size: 30px
             text-align: center
             transition-duration: 0.8s
             color: $CustomBlue
-            top: 10%
         .initial
             color: $CustomWhite
 .navbarOuter
