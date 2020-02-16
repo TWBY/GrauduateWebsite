@@ -3,16 +3,47 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  font-family: 微軟正黑體; }
+  font-family: 微軟正黑體;
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 html, body {
+  padding: 0;
   margin: 0;
   width: 100%;
   height: 100%; }
 
-.TourBarOuter {
-  width: 20%;
+#app {
+  width: 100%;
   height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 10% 10%;
+  grid-template-columns: 20% 60% 10% 10%;
+  -ms-grid-rows: 20% 75% 5%;
+  grid-template-rows: 20% 75% 5%; }
+  #app .bg {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4;
+    z-index: -1; }
+
+.TourBarOuter {
+  width: 100%;
+  height: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,13 +78,13 @@ html, body {
       height: 15%;
       display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%; }
+      -ms-grid-columns: 100%;
+      grid-template-columns: 100%; }
       .TourBarOuter .TourBarInner .TourArea .TourLink {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
         -ms-grid-rows: 100%;
         grid-template-rows: 100%;
         text-decoration: none; }
@@ -96,7 +127,7 @@ html, body {
           -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           left: 5%;
-          top: 60%;
+          top: 50%;
           z-index: 3;
           -webkit-transition-duration: 0.8s;
           -o-transition-duration: 0.8s;
@@ -121,11 +152,13 @@ html, body {
           left: 98%; }
 
 .LinkAreaOuter {
-  width: 18%;
-  height: 10%;
-  position: absolute;
-  top: 0%;
-  right: 0%;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,7 +174,7 @@ html, body {
   align-items: center; }
   .LinkAreaOuter .LinkAreaInner {
     width: 60%;
-    height: 75%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -154,7 +187,12 @@ html, body {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    justify-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    top: -20%;
+    left: 10%; }
     .LinkAreaOuter .LinkAreaInner .Link {
       width: 33%;
       height: auto;
@@ -214,6 +252,12 @@ html, body {
 .PageTitleStyleTwo {
   color: #044EB7;
   letter-spacing: 3px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2% 96% 2%;
@@ -223,7 +267,7 @@ html, body {
   align-items: center; }
   .PageTitleStyleTwo .SideRect {
     width: 100%;
-    height: 55%;
+    height: 70%;
     background-color: #044EB7; }
   .PageTitleStyleTwo .Title {
     width: 100%;
@@ -250,18 +294,248 @@ html, body {
       justify-self: start; }
 
 .bg {
-  background-image: url("../asset/img/BG/BGCuratorialTeam.png");
-  background-size: 100% 100%;
   width: 100%;
-  height: 100%;
-  position: absolute; }
+  height: 100%; }
 
 .PageTitleStyleTwo {
-  width: 35%;
-  height: 10%;
-  position: absolute;
-  top: 10%;
-  left: 35%; }
+  width: 60%;
+  height: auto;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
   .PageTitleStyleTwo .Title {
     -ms-grid-columns: 48% 4% 48%;
     grid-template-columns: 48% 4% 48%; }
+
+.ButtonArea {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 15% 15% 30%;
+  grid-template-columns: 30% 15% 15% 30%;
+  -ms-grid-rows: (31%)[3];
+  grid-template-rows: repeat(3, 31%);
+  grid-column-gap: 3.3%;
+  grid-row-gap: 3.5%; }
+  .ButtonArea .DepartmentButton {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .ButtonArea .DepartmentButton:nth-child(1) {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+      grid-column: 1 / 5;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      grid-row: 1 / 2; }
+    .ButtonArea .DepartmentButton:nth-child(2) {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      grid-column: 1 / 3;
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2 / 3; }
+    .ButtonArea .DepartmentButton:nth-child(3) {
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 2;
+      grid-column: 3 / 5;
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2 / 3; }
+    .ButtonArea .DepartmentButton:nth-child(4) {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1 / 2;
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3 / 4; }
+    .ButtonArea .DepartmentButton:nth-child(5) {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 2;
+      grid-column: 2 / 4;
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3 / 4; }
+    .ButtonArea .DepartmentButton:nth-child(6) {
+      -ms-grid-column: 4;
+      -ms-grid-column-span: 1;
+      grid-column: 4 / 5;
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3 / 4; }
+
+.Content {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45% 5%;
+  grid-template-columns: 45% 45% 5%;
+  -ms-grid-rows: 15% 75% 10%;
+  grid-template-rows: 15% 75% 10%;
+  z-index: 10; }
+  .Content .CloseButton {
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .Content .CloseButton .CloseImg {
+      width: 70%;
+      height: auto; }
+  .Content .Picture {
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .Content .Picture .teamPic {
+      width: auto;
+      height: 90%; }
+  .Content .DetailInfo {
+    width: 100%;
+    height: 90%;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-grid-row-align: center;
+    align-self: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 15% 15% 15% 35% 10% 10%;
+    grid-template-rows: 15% 15% 15% 35% 10% 10%; }
+    .Content .DetailInfo .Info:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      grid-row: 1 / 2; }
+    .Content .DetailInfo .Info:nth-child(2) {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2 / 3; }
+    .Content .DetailInfo .Info:nth-child(3) {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3 / 4; }
+    .Content .DetailInfo .Info:nth-child(4) {
+      -ms-grid-row: 5;
+      -ms-grid-row-span: 1;
+      grid-row: 5 / 6; }
+    .Content .DetailInfo .Info:nth-child(5) {
+      -ms-grid-row: 6;
+      -ms-grid-row-span: 1;
+      grid-row: 6 / 7; }
+
+.elementShow {
+  z-index: 20; }
+
+#app .bg {
+  background-image: url("../asset/img/BG/BGCuratorialTeam.png");
+  background-size: 100% 100%; }
+
+#app .ButtonArea .DepartmentButton {
+  border: solid 1px black;
+  font-size: 55px;
+  font-weight: 400;
+  -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3); }
+
+#app .Content {
+  -webkit-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s; }
+  #app .Content .CloseButton .word {
+    color: white;
+    font-size: 28px; }
+  #app .Content .Picture .teamPic::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #044EB7;
+    width: 100%;
+    height: 120%;
+    top: 25%;
+    left: -11%; }
+  #app .Content .DetailInfo {
+    color: white; }
+    #app .Content .DetailInfo .Info {
+      font-size: 34px; }
+      #app .Content .DetailInfo .Info:nth-child(1) {
+        font-size: 61px; }
+
+#app .elementShow {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s; }

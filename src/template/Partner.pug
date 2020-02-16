@@ -5,18 +5,18 @@ html(lang="en")
         link(rel="stylesheet", href="../css/Partner.css")
         title Document
     body
-        .bg
-        include Component/TourBar.pug
-        include Component/LinkArea.pug
-
-        .PageTitleStyleTwo
-            .SideLeftRect.SideRect
-            .Title
-                .ChTitle 合作廠商
-                .EnTitle Sponsor
-            .SideRightRect.SideRect
-
         #app
+            .bg
+            include Component/TourBar.pug
+            include Component/LinkArea.pug
+
+            .PageTitleStyleTwo
+                .SideLeftRect.SideRect
+                .Title
+                    .ChTitle 合作廠商
+                    .EnTitle Sponsor
+                .SideRightRect.SideRect
+
             .container
                 .Sponsors(v-for='(item, index) in SponsorsInfo')
                     .SponsorPic

@@ -3,21 +3,41 @@
     position: relative
     // +border(dotted, 0.2px, black)
     font-family: $CHFont
-    // overflow-x: hidden
+    overflow-x: hidden
+    overflow-y: hidden
     //background-color: #f24
 
 html, body
+    padding: 0
     margin: 0
-    // +size(1920px, 1009px)
     +size(100%, 100%)
+    // +size(1920px, 1009px)
     // overflow-x: hidden
+    // scroll-behavior: smooth
+
+#app   
+    +size(100%, 100%)
+    display: grid
+    grid-template-columns: 20% 60% 10% 10%
+    grid-template-rows: 20% 75% 5%
+
+    .bg
+        background-size: 100% 100%
+        +size(100%, 100%)
+        grid-column: 1 / 5
+        grid-row: 1 / 4
+        z-index: -1
+
 
 // Tour Side
 .TourBarOuter
     // +border(dotted, 2px, pink)
-    +size(20%, 100%)
-    +flexdisplay()
+    +size(100%, 100%)  //Custom +size(20%, 100%)
+    grid-column: 1 / 2 //Custom
+    grid-row: 1 / 4 //Custom 
+    z-index: 12 //Custom 
 
+    +flexdisplay()
     .TourBarInner
         +size(72%, 90%)
         // align-self: center
@@ -26,19 +46,17 @@ html, body
         .TourArea    
             +size(100%, 15%)
             // background-color: green
-
             display: grid
-            grid-template-columns: 50% 50%
+            grid-template-columns: 100%
             .TourLink
                 display: grid
-                grid-template-columns: 100%
+                grid-template-columns: 50% 50%
                 grid-template-rows: 100%
                 text-decoration: none
                 img
                     +size(100%, auto)
                     grid-column: 1 / 2
                     grid-row: 1 / 2
-
                     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
                     z-index: 4
                 .SlideBarOuter
@@ -46,26 +64,20 @@ html, body
                     grid-row: 1 / 2
                     +flexdisplay()
                     +size(90%, 35%) 
-
                     background-color: $CustomWhite
                     // border: solid 1px black
                     font-size: $InnerInnerFontSize - 2px
-                    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
-                        
+                    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)                 
                     left: 5%
-                    top: 60%           
-                    z-index: 3
-                
-                    transition-duration: 0.8s
-                    
+                    top: 50%           
+                    z-index: 3        
+                    transition-duration: 0.8s          
                     .SlideBarInner
                         +size(90%, 70%)
-
                         display: grid
                         grid-template-columns: 20% 80%
                         justify-items: center 
                         align-items: center 
-
                         color: $CustomBlue
                         .Rect
                             background-color: $CustomBlue
@@ -79,18 +91,20 @@ html, body
 
 // Link Area
 .LinkAreaOuter
-    // +border(dotted, 2px, pink)
-    +size(18%, 10%)
-
-    position: absolute
-    top: 0%
-    right: 0%
-    +flexdisplay()
-    
+    grid-column: 3 / 5
+    grid-row: 1 / 2
+    // border: solid 1px black
+    z-index: 12
+    +flexdisplay()  
     .LinkAreaInner
-        +size(60%, 75%)
+        +size(60%, auto)
         +flexdisplay(flex, row, space-between, center)
-        // +border(dotted, 1px, green)
+
+        justify-self: center 
+        align-self: center 
+        top: -20%
+        left: 10%
+
         .Link
             +size(33%, auto)
             transition-duration: 0.2s
@@ -140,23 +154,22 @@ html, body
     color: $CustomBlue
     letter-spacing: 3px
 
+    // border: solid 2px blue
+    grid-column: 2 / 4
+    grid-row: 1 / 2
+    //Size Custom
+
     display: grid
     grid-template-columns: 2% 96% 2% 
     align-items: center
 
-    // +size(28%, 10%) //Custom
-    // position: absolute //Custom
-    // top: 10% //Custom
-    // left: 19% //Custom
-
     .SideRect
-        +size(100%, 55%)
+        +size(100%, 70%)
         // +border(dotted, 1px, #f24)
         background-color: $CustomBlue
     .Title
         +size(100%, 100%)
         // +border(dotted, 1px, green)
-
         display: grid
         // grid-template-columns: 58% 4% 38%  //Custom
         align-items: center

@@ -1,0 +1,61 @@
+[{
+        "GroupName": "行政組",
+        "WorkContent": "行政工作一、行政工作二、行政工作三",
+        "MemberOne": "行政一、行政二、行政三、行政四",
+        "MemberTwo": "行政五、行政六、行政七、行政八",
+        "MurMur": "行政組小murmur : ",
+        "MurMurSlogan": "「行政組MurMurSlogan。」",
+        "CoverImage": "../asset/img/Monster/chubby.png",
+        "ContentPicture": "../asset/img/Monster/boom.png"
+    },
+    {
+        "GroupName": "美術組",
+        "WorkContent": "主視覺設計、形象宣傳設計、視覺執行",
+        "MemberOne": "劉怡楨、劉芸汝、石偉晴、黃庭晧",
+        "MemberTwo": "陳律竹、李滇哲、余程漢、許湘鈞",
+        "MurMur": "美術組小murmur : ",
+        "MurMurSlogan": "「畫圖畫到肌腱炎，剪片剪到長針眼。」",
+        "CoverImage": "../asset/img/Monster/chubby.png",
+        "ContentPicture": "../asset/img/Monster/boom.png"
+    },
+    {
+        "GroupName": "場務組",
+        "WorkContent": "場務工作一、場務工作二、場務工作三",
+        "MemberOne": "場務一、場務二、場務三、場務四",
+        "MemberTwo": "場務五、場務六、場務七、場務八",
+        "MurMur": "場務組小murmur : ",
+        "MurMurSlogan": "「場務組MurMurSlogan。」",
+        "CoverImage": "../asset/img/Monster/chubby.png",
+        "ContentPicture": "../asset/img/Monster/boom.png"
+    },
+    {
+        "GroupName": "活動組",
+        "WorkContent": "活動工作一、活動工作二、活動工作三",
+        "MemberOne": "活動一、活動二、活動三、活動四",
+        "MemberTwo": "活動五、活動六、活動七、活動八",
+        "MurMur": "活動組小murmur : ",
+        "MurMurSlogan": "「活動組MurMurSlogan。」",
+        "CoverImage": "../asset/img/Monster/chubby.png",
+        "ContentPicture": "../asset/img/Monster/boom.png"
+    },
+    {
+        "GroupName": "總務組",
+        "WorkContent": "行政總務工作一、總務工作二、總務工作三",
+        "MemberOne": "總務一、總務二、總務三、總務四",
+        "MemberTwo": "總務五、總務六、總務七、總務八",
+        "MurMur": "總務組小murmur : ",
+        "MurMurSlogan": "「總務組MurMurSlogan。」",
+        "CoverImage": "../asset/img/Monster/chubby.png",
+        "ContentPicture": "../asset/img/Monster/boom.png"
+    },
+    {
+        "GroupName": "公關組",
+        "WorkContent": "公關工作一、公關工作二、公關工作三",
+        "MemberOne": "公關一、公關二、公關三、公關四",
+        "MemberTwo": "公關五、公關六、公關七、公關八",
+        "MurMur": "公關組小murmur : ",
+        "MurMurSlogan": "「公關組MurMurSlogan。」",
+        "CoverImage": "../asset/img/Monster/chubby.png",
+        "ContentPicture": "../asset/img/Monster/boom.png"
+    }
+]

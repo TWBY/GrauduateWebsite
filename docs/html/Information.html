@@ -7,88 +7,90 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="bg"></div>
-    <div class="TourBarOuter">
-      <div class="TourBarInner">
-        <div class="TourArea"><a class="TourLink" href="Information.html"><img src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBarOuter">
-              <div class="SlideBarInner">
-                <div class="Rect"></div>
-                <div class="Word">展覽資訊</div>
-              </div>
-            </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="Rhapsody.html"><img src="../asset/img/Icon/Rhapsody.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBarOuter">
-              <div class="SlideBarInner">
-                <div class="Rect"></div>
-                <div class="Word">狂想故事</div>
-              </div>
-            </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="Works.html"><img src="../asset/img/Icon/ExhibitionWorks.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBarOuter">
-              <div class="SlideBarInner">
-                <div class="Rect"></div>
-                <div class="Word">展覽作品</div>
-              </div>
-            </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="Team.html"><img src="../asset/img/Icon/CuratorialTeam.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBarOuter">
-              <div class="SlideBarInner">
-                <div class="Rect"></div>
-                <div class="Word">策展團隊</div>
-              </div>
-            </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="Partner.html"><img src="../asset/img/Icon/Partner.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBarOuter">
-              <div class="SlideBarInner">
-                <div class="Rect"></div>
-                <div class="Word">合作廠商</div>
-              </div>
-            </div></a></div>
-        <div class="TourArea"><a class="TourLink" href="ContactUs.html"><img src="../asset/img/Icon/ContactUs.png" alt="" sizes="" srcset=""/>
-            <div class="SlideBarOuter">
-              <div class="SlideBarInner">
-                <div class="Rect"></div>
-                <div class="Word">聯絡我們</div>
-              </div>
-            </div></a></div>
-      </div>
-    </div>
-    <div class="LinkAreaOuter">
-      <div class="LinkAreaInner"><a class="Link" href="../../index.html"><img src="../asset/img/Icon/Home.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/Fb.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/EmailConnection.png" alt="" sizes="" srcset=""/></a></div>
-    </div>
-    <div class="PageTitleStyleOne">
-      <div class="SideRect"></div>
-      <div class="ChTitle">展覽資訊</div>
-      <div class="EnTitle">Information</div>
-    </div>
-    <div class="container" id="app">
-      <div class="BarArea">
-        <div class="navbarOuter bar">
-          <div class="activeBar"></div>
-        </div>
-        <div class="navbar bar">
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
-            <div class="nav-link initial" @click.prevent="ChangePeopleInfo(0)">校內展</div>
-          </div>
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
-            <div class="nav-link" @click.prevent="ChangePeopleInfo(1)">校外展</div>
-          </div>
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
-            <div class="nav-link" @click.prevent="ChangePeopleInfo(2)">放視大賞</div>
-          </div>
+    <div id="app">
+      <div class="bg"></div>
+      <div class="TourBarOuter">
+        <div class="TourBarInner">
+          <div class="TourArea"><a class="TourLink" href="Information.html"><img src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
+              <div class="SlideBarOuter">
+                <div class="SlideBarInner">
+                  <div class="Rect"></div>
+                  <div class="Word">展覽資訊</div>
+                </div>
+              </div></a></div>
+          <div class="TourArea"><a class="TourLink" href="Rhapsody.html"><img src="../asset/img/Icon/Rhapsody.png" alt="" sizes="" srcset=""/>
+              <div class="SlideBarOuter">
+                <div class="SlideBarInner">
+                  <div class="Rect"></div>
+                  <div class="Word">狂想故事</div>
+                </div>
+              </div></a></div>
+          <div class="TourArea"><a class="TourLink" href="Works.html"><img src="../asset/img/Icon/ExhibitionWorks.png" alt="" sizes="" srcset=""/>
+              <div class="SlideBarOuter">
+                <div class="SlideBarInner">
+                  <div class="Rect"></div>
+                  <div class="Word">展覽作品</div>
+                </div>
+              </div></a></div>
+          <div class="TourArea"><a class="TourLink" href="Team.html"><img src="../asset/img/Icon/CuratorialTeam.png" alt="" sizes="" srcset=""/>
+              <div class="SlideBarOuter">
+                <div class="SlideBarInner">
+                  <div class="Rect"></div>
+                  <div class="Word">策展團隊</div>
+                </div>
+              </div></a></div>
+          <div class="TourArea"><a class="TourLink" href="Partner.html"><img src="../asset/img/Icon/Partner.png" alt="" sizes="" srcset=""/>
+              <div class="SlideBarOuter">
+                <div class="SlideBarInner">
+                  <div class="Rect"></div>
+                  <div class="Word">合作廠商</div>
+                </div>
+              </div></a></div>
+          <div class="TourArea"><a class="TourLink" href="ContactUs.html"><img src="../asset/img/Icon/ContactUs.png" alt="" sizes="" srcset=""/>
+              <div class="SlideBarOuter">
+                <div class="SlideBarInner">
+                  <div class="Rect"></div>
+                  <div class="Word">聯絡我們</div>
+                </div>
+              </div></a></div>
         </div>
       </div>
-      <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
-        <div class="BasicInfo">
-          <div class="Info time">活動時間 &nbsp;|&nbsp; {{ MapInfo.time }}</div>
-          <div class="Info location">活動地點 &nbsp;|&nbsp; {{ MapInfo.location }}</div>
-          <div class="Info cost">費用資訊 &nbsp;|&nbsp; {{ MapInfo.cost }}</div>
-          <div class="Info traffic">乘車資訊 &nbsp;|
-            <div class="trafficDital" v-html="MapInfo.traffic"> </div>
+      <div class="LinkAreaOuter">
+        <div class="LinkAreaInner"><a class="Link" href="../../index.html"><img src="../asset/img/Icon/Home.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/Fb.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/EmailConnection.png" alt="" sizes="" srcset=""/></a></div>
+      </div>
+      <div class="PageTitleStyleOne">
+        <div class="SideRect"></div>
+        <div class="ChTitle">展覽資訊</div>
+        <div class="EnTitle">Information</div>
+      </div>
+      <div class="container">
+        <div class="BarArea">
+          <div class="navbarOuter bar">
+            <div class="activeBar"></div>
+          </div>
+          <div class="navbar bar">
+            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
+              <div class="nav-link initial" @click.prevent="ChangePeopleInfo(0)">校內展</div>
+            </div>
+            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
+              <div class="nav-link" @click.prevent="ChangePeopleInfo(1)">校外展</div>
+            </div>
+            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
+              <div class="nav-link" @click.prevent="ChangePeopleInfo(2)">放視大賞</div>
+            </div>
           </div>
         </div>
-        <div class="Map"><img v-bind:src="MapInfo.map" alt="" srcset=""/></div>
+        <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
+          <div class="BasicInfo">
+            <div class="Info time">活動時間 &nbsp;|&nbsp; {{ MapInfo.time }}</div>
+            <div class="Info location">活動地點 &nbsp;|&nbsp; {{ MapInfo.location }}</div>
+            <div class="Info cost">費用資訊 &nbsp;|&nbsp; {{ MapInfo.cost }}</div>
+            <div class="Info traffic">乘車資訊 &nbsp;|
+              <div class="trafficDital" v-html="MapInfo.traffic"> </div>
+            </div>
+          </div>
+          <div class="Map"><img v-bind:src="MapInfo.map" alt="" srcset=""/></div>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

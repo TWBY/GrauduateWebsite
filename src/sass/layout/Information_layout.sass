@@ -1,8 +1,11 @@
+
+.TourBarOuter
+    +size(100%, 100%)  //Custom +size(20%, 100%)
+    grid-column: 1 / 2 //Custom
+    grid-row: 1 / 4 //Custom 
+    z-index: 12 //Custom 
 .bg
     background-image: url('../asset/img/BG/BGExhibitionInformation_.png')
-    background-size: 100% 100%
-    +size(100%, 100%)
-    position: absolute
 
 //Bar
 .BarArea
@@ -49,21 +52,22 @@
 //Main content
 .container
     // border: solid 2px black
-    +size(70%, 65%)
+    +size(100%, 100%)
 
-    position: absolute
-    top: 28%
-    left: 20%
+    grid-column: 2 / 4
+    grid-row: 2 / 3
 
     display: grid
     grid-template-columns: 50% 50%
-    grid-template-rows: 9% 91%
-    grid-row-gap: 40px
-
+    grid-template-rows: 20% 80%
+    // grid-row-gap: 40px
 
     .BarArea
         grid-column: 2 / 3
         grid-row: 1 / 2
+        align-self: center
+        +size(auto, 40%) 
+        // border: solid 2px pink
     #myTabContent
         grid-column: 1 / 3
         grid-row: 2 / 3

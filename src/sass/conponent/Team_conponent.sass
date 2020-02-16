@@ -1,0 +1,55 @@
+#app   
+
+
+    .TourBarOuter
+
+    .bg
+        background-image: url('../asset/img/BG/BGCuratorialTeam.png')
+        background-size: 100% 100%
+
+
+    //PageTitleStyleTwo
+    .PageTitleStyleTwo
+        .Title
+
+    .ButtonArea
+        .DepartmentButton
+            border: solid 1px black
+            font-size: $TitleFontSize
+            font-weight: 400
+            box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.3)
+
+    .Content            
+        transform: translateY(10%)
+        opacity: 0
+        background-color: rgba(0,0,0,0.3)
+        transition-duration: 1s
+
+        .CloseButton
+            .CloseImg
+            .word
+                color: $CustomWhite
+                font-size: $InnerFontSize
+        .Picture
+            .teamPic
+                &::before
+                    content: ""
+                    display: inline-block
+                    position: absolute
+                    background-color: $CustomBlue
+                    +size(100%, 120%)
+                    top: 25%
+                    left: -11%
+
+        .DetailInfo
+            color: $CustomWhite
+            .Info
+                font-size: $InnerFontSize + 6px
+                &:nth-child(1)
+                    font-size: $TitleFontSize + 6px
+
+    .elementShow
+        transform: translateY(0%)
+        opacity:  1
+        background-color: rgba(0,0,0,0.8)
+        transition-duration: 0.8s

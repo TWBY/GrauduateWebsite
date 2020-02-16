@@ -1,17 +1,14 @@
+
 .bg
     background-image: url('../asset/img/BG/BGRhapsody.png')
-    background-size: 100% 100%
-    +size(100%, 100%)
-    position: absolute
 
 //Container
 .container
     // border: solid 1px black
-    +size(75%, 68%)
-
-    position: absolute
-    top: 23%
-    left: 20%
+    grid-column: 2 / 4
+    grid-row: 2 / 4
+    +size(110%, 90%)
+    left: -0%
 
 //BarArea
 .BarArea
@@ -21,7 +18,7 @@
     border-radius: 50px
     position: absolute
     right: 0%
-
+    z-index: 100
 
 .bar
     width: 100%
@@ -66,27 +63,39 @@
 
 //myTabContent
 #myTabContent
-    +size(100%, 80%)
-    // border: solid 1px green
-    top: 20%
+    +size(100%, 100%)
+    // border: solid 2px green
+
+    display: grid
+    grid-template-columns: 30% 20% 20% 30%
+    grid-template-rows: 10% 10% 80%
 
     //Chart show and hidden
     .RadarChart
-        display: none
-        
+        position: absolute
+        right: -10%
+        top: 30%
+
+        opacity: 0
+        +size(50%, auto)
+        // border: solid 3px green
     .isShowMonsterChart
-        display: block
+        opacity: 1
 
     //Monster and Chart
     .monster
-        // border: solid 1px pink
-        +size(70%, 90%)
+        // border: solid 1px red
+        grid-column: 1 / 4
+        grid-row: 2 / 4
+        +size(100%, 100%)
 
         display: grid
         grid-template-columns: 38% 62%
+        grid-template-rows: 100%
         .BasicInfo
-            // border: solid 2px green
+            // border: solid 3px green
             grid-column: 1 / 2
+
             color: $CustomBlue
             font-size: $InnerInnerFontSize
             letter-spacing: 2px
@@ -102,7 +111,6 @@
                 .BottomLine
                     +size(105%, 35%)
                     background-color: $CustomYellow
-
                     top: -25%
                     left: -3%
                     z-index: 0
@@ -114,48 +122,48 @@
         .Look   
             // border: solid 2px blue
             grid-column: 2 / 3
-            left: -5%
 
             display: grid
             grid-template-columns: 100%
             grid-template-rows: 100%
             justify-items: center
             align-items: center
-            img
+            .MonsterBg, 
                 grid-row: 1 / 2
                 grid-column: 1 / 2
-
-
-    .RadarChart
-        // border: solid 1px red
-        +size(60%, auto)
-
-        position: absolute
-        top: 10%
-        right: -15%
+                +size(90%, auto)
+            .MonsterSelf
+                grid-row: 1 / 2
+                grid-column: 1 / 2
 
     //Topic
     .mainTopic
         // border: solid 1px pink
         +size(100%, 100%)
+        grid-column: 1 / 5
+        grid-row: 2 / 4
+
         display: grid
         grid-template-columns: 50% 50%
+
         .concept
             // border: solid 1px green
             font-size: $InnerInnerFontSize
             letter-spacing: 3px
             line-height: 35px
+            grid-column: 1 / 2
+            align-self: center
             .conceptSlogan
                 color: $CustomBlue
         .conceptImgOuter
             // border: solid 2px blue
+            grid-column: 2 / 3
 
             display: grid
             grid-template-columns: 100%
             grid-template-rows: 100%
-            justify-items: center
-            align-items: center
             .conceptImgInner
                 // border: solid 2px pink
-                +size(auto, 125%)
-                // +flexdisplay()
+                +size(auto, 100%)
+                align-self: center
+                justify-self: center

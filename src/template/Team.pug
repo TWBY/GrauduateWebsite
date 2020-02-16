@@ -5,15 +5,46 @@ html(lang="en")
         link(rel="stylesheet", href="../css/Team.css")
         title Document
     body
-        .bg
-        include Component/TourBar.pug
-        include Component/LinkArea.pug
+        #app
+            .bg
+            include Component/TourBar.pug
+            include Component/LinkArea.pug
 
-        .PageTitleStyleTwo
-            .SideLeftRect.SideRect
-            .Title
-                .ChTitle 策展團隊
-                .EnTitle Curatorial  Team
-            .SideRightRect.SideRect
+            .PageTitleStyleTwo
+                .SideLeftRect.SideRect
+                .Title
+                    .ChTitle 策展團隊
+                    .EnTitle Curatorial  Team
+                .SideRightRect.SideRect
         
+            .ButtonArea
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(0)") 
+                    .Department 行政組
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(1)") 
+                    .Department 美術組
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(2)") 
+                    .Department 場務組
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(3)") 
+                    .Department 活動組
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(4)") 
+                    .Department 總務組
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(5)") 
+                    .Department 公關組
+            .Content(:class='{ elementShow:isContentActive }')
+                .CloseButton(@click.prevent="CloseContent()") 
+                    img.CloseImg(src="../asset/img/Cancel.png", alt="", srcset="")
+                    .word Close
+                .Picture
+                    img.teamPic(v-bind:src="TeamInfo.ContentPicture", alt="", srcset="")
+                .DetailInfo
+                    .Info.Title {{ TeamInfo.GroupName }}
+                    .Info.Work {{ TeamInfo.WorkContent }}
+                    .Info.Member 
+                        .One {{ TeamInfo.MemberOne }}
+                        .Two {{ TeamInfo.MemberTwo }}
+                    .Info.MurMur {{ TeamInfo.MurMur }}
+                    .Info.MurMurTalk {{ TeamInfo.MurMurSlogan }}
+
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
         script(src="../../docs/js/Team.js")

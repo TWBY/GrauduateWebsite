@@ -1,17 +1,12 @@
+
 .bg
     background-image: url('../asset/img/BG/BGContactUs.png')
-    background-size: 100% 100%
-    +size(100%, 100%)
-    position: absolute
-
 
 .MainContentOuter
-    +size(65%, 70%)
+    +size(auto, 95%)
     // +border(dotted, 0.2px, black)
-
-    position: absolute
-    top: 20%
-    left: 20%
+    grid-column: 2 / 4
+    grid-row: 2 / 3
     +flexdisplay()
 
     background-color: $CustomWhite
