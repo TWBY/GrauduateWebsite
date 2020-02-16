@@ -3,7 +3,7 @@
 let dataDetail = {
     labels: ['體重', '易怒', '壓力', '早八準時到', 'Line 未讀'], //change
     datasets: [{
-        label: 'Numbers per Month',
+        label: 'Monster Data',
         backgroundColor: 'rgba(255, 226, 0, 0.5)',
         borderColor: 'rgba(255, 226, 0, 0.5)',
         borderWidth: 1,
@@ -12,6 +12,10 @@ let dataDetail = {
 }
 
 let optionsDetail = {
+    tooltips: {
+        enabled: false
+    },
+    events: [],
     scale: {
         gridLines: {
             color: '#044EB7'
