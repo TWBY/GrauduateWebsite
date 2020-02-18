@@ -33,7 +33,7 @@ html, body
 
 // Tour Side
 .TourBarOuter
-    // +border(dotted, 2px, pink)
+    +border(dotted, 2px, pink)
     +size(100%, 100%)  //Custom +size(20%, 100%)
     grid-column: 1 / 2 //Custom
     grid-row: 1 / 4 //Custom 
@@ -44,39 +44,50 @@ html, body
         +size(72%, 90%)
         // align-self: center
         +flexdisplay(flex, column, space-between, center)
-        // +border(dotted, 2px, #f24)
+        +border(dotted, 2px, #f24)
         .TourArea    
-            +size(100%, 15%)
-            // background-color: green
+            +size(100%, 16.5%)
+            background-color: green
             display: grid
             grid-template-columns: 100%
             .TourLink
                 display: grid
+                +size(100%, 100%)
                 grid-template-columns: 50% 50%
                 grid-template-rows: 100%
                 text-decoration: none
+                align-self: center
+                border: solid 3px purple
                 img
-                    +size(90%, auto)
+                    +size(auto, 80%)
                     grid-column: 1 / 2
                     grid-row: 1 / 2
                     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
                     z-index: 4
-                    align-self: end
+                    align-self: center
+
+                    &:hover 
+                        animation-name: wobble-vertical
+                        animation-duration: 1s
+                        animation-timing-function: ease-in-out
+                        animation-iteration-count: 1
                 .SlideBarOuter
                     grid-column: 1 / 2
                     grid-row: 1 / 2
                     +flexdisplay()
-                    +size(85%, 30%) 
+                    +size(78%, 25%) 
                     background-color: $CustomWhite
                     border: solid 1px black
-                    font-size: $InnerInnerFontSize - 5px
+                    font-size: $InnerInnerFontSize - 6px
                     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)                 
                     left: 5%
-                    align-self: end
+                    top: 20%
+                    align-self: center
                     z-index: 3        
                     transition-duration: 0.8s          
                     .SlideBarInner
                         +size(90%, 100%)
+                        // background-color: pink
                         display: grid
                         grid-template-columns: 20% 80%
                         justify-items: center 
@@ -87,7 +98,7 @@ html, body
                             +size(68%, 40%)
                 &:hover
                     .SlideBarOuter
-                        left: 95%
+                        left: 105%
 
 
 
@@ -191,3 +202,10 @@ html, body
 
             // +border(dotted, 1px, #f24)
             
+// Nav Link
+.nav-link
+    &:hover 
+        animation-name: wobble-horizontal
+        animation-duration: 1s
+        animation-timing-function: ease-in-out
+        animation-iteration-count: 1

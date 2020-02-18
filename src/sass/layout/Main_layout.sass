@@ -29,17 +29,18 @@
     // +border(dotted, 2px, pink)
     align-self: end
 
-
     display: grid
     grid-template-columns: 50% 50%
     grid-template-rows: 50% 50%
-
+    
     color: $CustomWhite
     font-size: $InnerFontSize
 
     .Info
+        // border: solid 2px purple
         display: grid
         grid-template-columns: 22% 25% 53%
+        +size(100%, 100%)
 
         .Topic
             +size(83%, 60%)
@@ -47,7 +48,6 @@
                 border: solid 1px $CustomWhite
                 border-radius: 20px
                 padding: 2px 12px
-                top: -2px
     .Campus
         grid-column: 1 / 2
         grid-row: 1 / 2

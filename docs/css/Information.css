@@ -1,4 +1,140 @@
 @charset "UTF-8";
+/*fade */
+@-webkit-keyframes fade {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+@keyframes fade {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+/* Wobble Vertical */
+@-webkit-keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+/* Wobble Horizontal */
+@-webkit-keyframes wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px); }
+  33.3% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px); }
+  49.95% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  66.6% {
+    -webkit-transform: translateX(-1px);
+    transform: translateX(-1px); }
+  83.25% {
+    -webkit-transform: translateX(0.5px);
+    transform: translateX(0.5px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px); }
+  33.3% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px); }
+  49.95% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  66.6% {
+    -webkit-transform: translateX(-1px);
+    transform: translateX(-1px); }
+  83.25% {
+    -webkit-transform: translateX(0.5px);
+    transform: translateX(0.5px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+/* Rotate Circle */
+@-webkit-keyframes rotate-circle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes rotate-circle {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/* Monster Vertial  */
+@-webkit-keyframes monster-vertial {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  25% {
+    -webkit-transform: translateY(2%);
+    transform: translateY(2%); }
+  50% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  75% {
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+@keyframes monster-vertial {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  25% {
+    -webkit-transform: translateY(2%);
+    transform: translateY(2%); }
+  50% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  75% {
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%); }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); } }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -35,6 +171,9 @@ html, body {
     z-index: -1; }
 
 .TourBarOuter {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: pink;
   width: 100%;
   height: 100%;
   -ms-grid-column: 1;
@@ -72,10 +211,14 @@ html, body {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #f24; }
     .TourBarOuter .TourBarInner .TourArea {
       width: 100%;
-      height: 15%;
+      height: 16.5%;
+      background-color: green;
       display: -ms-grid;
       display: grid;
       -ms-grid-columns: 100%;
@@ -83,14 +226,19 @@ html, body {
       .TourBarOuter .TourBarInner .TourArea .TourLink {
         display: -ms-grid;
         display: grid;
+        width: 100%;
+        height: 100%;
         -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
         -ms-grid-rows: 100%;
         grid-template-rows: 100%;
-        text-decoration: none; }
+        text-decoration: none;
+        -ms-grid-row-align: center;
+        align-self: center;
+        border: solid 3px purple; }
         .TourBarOuter .TourBarInner .TourArea .TourLink img {
-          width: 90%;
-          height: auto;
+          width: auto;
+          height: 80%;
           -ms-grid-column: 1;
           -ms-grid-column-span: 1;
           grid-column: 1 / 2;
@@ -100,8 +248,17 @@ html, body {
           -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           z-index: 4;
-          -ms-grid-row-align: end;
-          align-self: end; }
+          -ms-grid-row-align: center;
+          align-self: center; }
+          .TourBarOuter .TourBarInner .TourArea .TourLink img:hover {
+            -webkit-animation-name: wobble-vertical;
+            animation-name: wobble-vertical;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1; }
         .TourBarOuter .TourBarInner .TourArea .TourLink .SlideBarOuter {
           -ms-grid-column: 1;
           -ms-grid-column-span: 1;
@@ -122,15 +279,16 @@ html, body {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          width: 85%;
-          height: 30%;
+          width: 78%;
+          height: 25%;
           background-color: white;
           border: solid 1px black;
-          font-size: 17px;
+          font-size: 16px;
           -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           left: 5%;
-          align-self: end;
+          top: 20%;
+          align-self: center;
           z-index: 3;
           -webkit-transition-duration: 0.8s;
           -o-transition-duration: 0.8s;
@@ -152,7 +310,7 @@ html, body {
               width: 68%;
               height: 40%; }
         .TourBarOuter .TourBarInner .TourArea .TourLink:hover .SlideBarOuter {
-          left: 95%; }
+          left: 105%; }
 
 .LinkAreaOuter {
   -ms-grid-column: 3;
@@ -296,6 +454,16 @@ html, body {
       -ms-grid-column-align: start;
       justify-self: start; }
 
+.nav-link:hover {
+  -webkit-animation-name: wobble-horizontal;
+  animation-name: wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
 .TourBarOuter {
   width: 100%;
   height: 100%;
@@ -368,18 +536,6 @@ html, body {
 .elementToFadeInAndOut {
   -webkit-animation: fade 1s linear;
   animation: fade 1s linear; }
-
-@-webkit-keyframes fade {
-  0%, 100% {
-    opacity: 1; }
-  50% {
-    opacity: 0; } }
-
-@keyframes fade {
-  0%, 100% {
-    opacity: 1; }
-  50% {
-    opacity: 0; } }
 
 .container {
   width: 100%;
