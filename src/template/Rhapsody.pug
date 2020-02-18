@@ -41,7 +41,9 @@ html(lang="en")
                                 .Info 身高: &nbsp;{{ monster.Height }} &nbsp; 體重: {{ monster.Weight }}
                                 .intro(v-html='monster.Intro')
                         .Look
-                            img.MonsterBg(src="../asset/img/Monster/circle.png", alt="", srcset="")
+                            .MonsterBg
+                                img.MonsterBgOuter(src="../asset/img/Monster/circleOuter.png", alt="", srcset="")
+                                img.MonsterBgInner(src="../asset/img/Monster/circleInner.png", alt="", srcset="")
                             img.MonsterSelf(v-bind:src="monster.Look", alt="", srcset="")
 
                     .mainTopic(v-if="isShowTopic")
