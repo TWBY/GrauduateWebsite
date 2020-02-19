@@ -10,12 +10,10 @@ html(lang="en")
             include Component/TourBar.pug
             include Component/LinkArea.pug
 
-            .PageTitleStyleTwo
-                .SideLeftRect.SideRect
-                .Title
-                    .ChTitle 合作廠商
-                    .EnTitle Sponsor
-                .SideRightRect.SideRect
+            .PageTitleStyleOne
+                .SideRect
+                .ChTitle 合作廠商
+                .EnTitle Sponsor
 
             .container
                 .Sponsors(v-for='(item, index) in SponsorsInfo')

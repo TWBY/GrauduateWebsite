@@ -63,51 +63,50 @@
         <div class="ChTitle">狂想故事</div>
         <div class="EnTitle">Theme of Exhibition</div>
       </div>
-      <div class="container">
-        <div class="BarArea">
-          <div class="navbarOuter bar">
-            <div class="activeBar"></div>
+      <div class="BarArea">
+        <div class="navbarOuter bar">
+          <div class="activeBar"></div>
+        </div>
+        <div class="navbar bar">
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
+            <div class="nav-link initial" @click.prevent="ChangePeopleInfo(0)">主題概念</div>
           </div>
-          <div class="navbar bar">
-            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
-              <div class="nav-link initial" @click.prevent="ChangePeopleInfo(0)">主題概念</div>
-            </div>
-            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
-              <div class="nav-link" @click.prevent="ChangePeopleInfo(1)">Rookie</div>
-            </div>
-            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
-              <div class="nav-link" @click.prevent="ChangePeopleInfo(2)">Chubby</div>
-            </div>
-            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(3)">
-              <div class="nav-link" @click.prevent="ChangePeopleInfo(3)">BoomBoom</div>
-            </div>
-            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(4)">
-              <div class="nav-link" @click.prevent="ChangePeopleInfo(4)">Fantasy</div>
-            </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(1)">Rookie</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(2)">Chubby</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(3)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(3)">BoomBoom</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(4)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(4)">Fantasy</div>
           </div>
         </div>
-        <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
-          <div class="monster" v-if="isShowMonster">
-            <div class="BasicInfo">
-              <div class="MonsterTitle">
-                <div class="Info grade">{{ monster.grade }}</div>
-                <div class="Info name">{{ monster.EnName }} - {{ monster.ChName }}</div>
-                <div class="BottomLine"></div>
-              </div>
-              <div class="MonsterDetail">
-                <div class="Info">身高: &nbsp;{{ monster.Height }} &nbsp; 體重: {{ monster.Weight }}</div>
-                <div class="intro" v-html="monster.Intro"></div>
-              </div>
+      </div>
+      <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
+        <div class="monster" v-if="isShowMonster">
+          <div class="BasicInfo">
+            <div class="MonsterTitle">
+              <div class="Info grade">{{ monster.grade }}</div>
+              <div class="Info name">{{ monster.EnName }} - {{ monster.ChName }}</div>
+              <div class="BottomLine"></div>
             </div>
-            <div class="Look">
-              <div class="MonsterBg"><img class="MonsterBgOuter" src="../asset/img/Monster/circleOuter.png" alt="" srcset=""/><img class="MonsterBgInner" src="../asset/img/Monster/circleInner.png" alt="" srcset=""/></div><img class="MonsterSelf" v-bind:src="monster.Look" alt="" srcset=""/>
+            <div class="MonsterDetail">
+              <div class="Info">身高: &nbsp;{{ monster.Height }} &nbsp; 體重: {{ monster.Weight }}</div>
+              <div class="intro" v-html="monster.Intro"></div>
             </div>
           </div>
-          <div class="mainTopic" v-if="isShowTopic">
-            <div class="concept">
-              <div class="conceptSlogan">「萌芽、碰撞、成長、茁壯， 屬於我們的狂想正在進化。」</div>
-              <div class="conceptDetail">
-                 <br>「狂想」是什麼呢&nbsp;‧‧‧‧‧‧？<br>它是自由不受限的想像、跳脫框架的夢想。
+          <div class="Look">
+            <div class="MonsterBg"><img class="MonsterBgOuter" src="../asset/img/Monster/circleOuter.png" alt="" srcset=""/><img class="MonsterBgInner" src="../asset/img/Monster/circleInner.png" alt="" srcset=""/></div><img class="MonsterSelf" v-bind:src="monster.Look" alt="" srcset=""/>
+          </div>
+        </div>
+        <div class="mainTopic" v-if="isShowTopic">
+          <div class="concept">
+            <div class="conceptSlogan">「萌芽、碰撞、成長、茁壯， 屬於我們的狂想正在進化。」</div>
+            <div class="conceptDetail">
+               <br>「狂想」是什麼呢&nbsp;‧‧‧‧‧‧？<br>它是自由不受限的想像、跳脫框架的夢想。
 <br>初步入大學的我們，默默地種下對未來的想像，
 <br>將資傳系四年探索，化為四隻小怪獸的進化旅程，
 <br>從渺小的大一&nbsp;—&nbsp;Rookie菜鳥獸，
@@ -117,13 +116,12 @@
 <br>
 <br>「狂想進化論」展現五顏六色的創意與想像，
 <br>一場屬於我們的狂想進化，未完待續&nbsp;‧‧‧‧‧‧！
-              </div>
             </div>
-            <div class="conceptImgOuter"><img class="conceptImgInner" src="../asset/img/Monster/FantasyOpen.png" alt="" srcset=""/></div>
           </div>
-          <div class="RadarChart" :class="{ isShowMonsterChart:isShowMonster }">
-            <canvas id="myChart"></canvas>
-          </div>
+          <div class="conceptImgOuter"><img class="conceptImgInner" src="../asset/img/Monster/FantasyOpen.png" alt="" srcset=""/></div>
+        </div>
+        <div class="RadarChart" :class="{ isShowMonsterChart:isShowMonster }">
+          <canvas id="myChart"></canvas>
         </div>
       </div>
     </div>

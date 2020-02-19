@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css"/>
     <link rel="stylesheet" href="../css/Works.css"/>
     <title>Document</title>
   </head>
@@ -11,7 +12,7 @@
       <div class="bg"></div>
       <div class="TourBarOuter">
         <div class="TourBarInner">
-          <div class="TourArea"><a class="TourLink" href="Information.html"><img src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
+          <div class="TourArea"><a class="TourLink" href="Information.html"><img class="TourImg" src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
               <div class="SlideBarOuter">
                 <div class="SlideBarInner">
                   <div class="Rect"></div>
@@ -63,7 +64,49 @@
         <div class="ChTitle">展出作品</div>
         <div class="EnTitle">Works of Display</div>
       </div>
+      <div class="BarArea">
+        <div class="navbarOuter bar">
+          <div class="activeBar"></div>
+        </div>
+        <div class="navbar bar">
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
+            <div class="nav-link" @click.prevent="ChangeGender('All')">All</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
+            <div class="nav-link" @click.prevent="ChangeGender('Boy')">Boy</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
+            <div class="nav-link" @click.prevent="ChangeGender('Girl')">Girl</div>
+          </div>
+        </div>
+      </div>
+      <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
+        <div class="ContentButton" v-for="(Button, index) in SelectedButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(Button.Index-1)"> 
+          <h4>index: {{ Button.Index }} &nbsp;&nbsp;</h4>
+          <h4>name: {{ Button.name }} &nbsp;&nbsp;</h4>
+          <h4>Gender: {{ Button.Gender }} &nbsp;&nbsp;</h4>
+        </div>
+      </div>
+      <div class="Content" :class="{ elementShow:isContentActive }">
+        <div class="CloseButton" @click.prevent="CloseContent()"> Close</div>
+        <div class="ChangeArea">
+          <full-page :options="FullPageOptions">
+            <div class="section s1">
+              <h1>section.s1</h1>
+            </div>
+            <div class="section s2">
+              <h1>section.s2</h1>
+            </div>
+            <div class="section s3">
+              <h1>section.s3</h1>
+            </div>
+          </full-page>
+        </div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.min.js">         </script>
     <script src="../../docs/js/Works.js"></script>
   </body>
 </html>

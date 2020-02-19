@@ -2,6 +2,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://unpkg.com/fullpage.js/dist/fullpage.min.css")
         link(rel="stylesheet", href="../css/Works.css")
         title Document
     body
@@ -9,10 +10,51 @@ html(lang="en")
             .bg
             include Component/TourBar.pug
             include Component/LinkArea.pug
-
+            
             .PageTitleStyleOne
                 .SideRect
                 .ChTitle 展出作品
                 .EnTitle Works of Display
-                    
+
+            .BarArea
+                .navbarOuter.bar
+                    .activeBar
+                .navbar.bar
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(0)")
+                        .nav-link(@click.prevent="ChangeGender('All')") All
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(1)")
+                        .nav-link(@click.prevent="ChangeGender('Boy')") Boy
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(2)")
+                        .nav-link(@click.prevent="ChangeGender('Girl')") Girl
+
+            #myTabContent(:class='{ elementToFadeInAndOut:isTextActive }')
+                .ContentButton(v-for='(Button, index) in SelectedButton' 
+                                @click.prevent="ButtonBeClick && ShowContent(Button.Index-1)") 
+                                h4 index: {{ Button.Index }} &nbsp;&nbsp;
+                                h4 name: {{ Button.name }} &nbsp;&nbsp;
+                                h4 Gender: {{ Button.Gender }} &nbsp;&nbsp;
+
+            .Content(:class='{ elementShow:isContentActive }')
+                .CloseButton(@click.prevent="CloseContent()")  Close
+                .ChangeArea
+                    full-page(:options='FullPageOptions')
+                        .section.s1
+                            h1 section.s1
+                            //- .EachArea
+                            //-     .Title  s1 {{ Content.Title }}
+                            //-     .Detail s1 {{  Content.Detail }}
+                        .section.s2
+                            h1 section.s2
+                            //- .EachArea
+                            //-     .Title  aaaaaa
+                            //-     .Detail s2 {{  Content.Detail }}
+                        .section.s3
+                            h1 section.s3
+                            //- .EachArea
+                            //-     .Title  s3 {{ Content.Title }}
+                            //-     .Detail s3 {{  Content.Detail }}
+
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
+        script(src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.min.js")          
         script(src="../../docs/js/Works.js")

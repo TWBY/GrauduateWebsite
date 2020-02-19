@@ -10,12 +10,10 @@ html(lang="en")
             include Component/TourBar.pug
             include Component/LinkArea.pug
 
-            .PageTitleStyleTwo
-                .SideLeftRect.SideRect
-                .Title
-                    .ChTitle 策展團隊
-                    .EnTitle Curatorial  Team
-                .SideRightRect.SideRect
+            .PageTitleStyleOne
+                .SideRect
+                .ChTitle 策展團隊
+                .EnTitle Curatorial  Team
         
             .ButtonArea
                 .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(0)") 

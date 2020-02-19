@@ -11,7 +11,7 @@
       <div class="bg"></div>
       <div class="TourBarOuter">
         <div class="TourBarInner">
-          <div class="TourArea"><a class="TourLink" href="Information.html"><img src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
+          <div class="TourArea"><a class="TourLink" href="Information.html"><img class="TourImg" src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/>
               <div class="SlideBarOuter">
                 <div class="SlideBarInner">
                   <div class="Rect"></div>
@@ -63,34 +63,32 @@
         <div class="ChTitle">展覽資訊</div>
         <div class="EnTitle">Information</div>
       </div>
-      <div class="container">
-        <div class="BarArea">
-          <div class="navbarOuter bar">
-            <div class="activeBar"></div>
+      <div class="BarArea">
+        <div class="navbarOuter bar">
+          <div class="activeBar"></div>
+        </div>
+        <div class="navbar bar">
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
+            <div class="nav-link initial" @click.prevent="ChangePeopleInfo(0)">校內展</div>
           </div>
-          <div class="navbar bar">
-            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
-              <div class="nav-link initial" @click.prevent="ChangePeopleInfo(0)">校內展</div>
-            </div>
-            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
-              <div class="nav-link" @click.prevent="ChangePeopleInfo(1)">校外展</div>
-            </div>
-            <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
-              <div class="nav-link" @click.prevent="ChangePeopleInfo(2)">放視大賞</div>
-            </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(1)">校外展</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
+            <div class="nav-link" @click.prevent="ChangePeopleInfo(2)">放視大賞</div>
           </div>
         </div>
-        <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
-          <div class="BasicInfo">
-            <div class="Info time">活動時間 &nbsp;|&nbsp; {{ MapInfo.time }}</div>
-            <div class="Info location">活動地點 &nbsp;|&nbsp; {{ MapInfo.location }}</div>
-            <div class="Info cost">費用資訊 &nbsp;|&nbsp; {{ MapInfo.cost }}</div>
-            <div class="Info traffic">乘車資訊 &nbsp;|
-              <div class="trafficDital" v-html="MapInfo.traffic"> </div>
-            </div>
+      </div>
+      <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
+        <div class="BasicInfo">
+          <div class="Info time">活動時間 &nbsp;|&nbsp; {{ MapInfo.time }}</div>
+          <div class="Info location">活動地點 &nbsp;|&nbsp; {{ MapInfo.location }}</div>
+          <div class="Info cost">費用資訊 &nbsp;|&nbsp; {{ MapInfo.cost }}</div>
+          <div class="Info traffic">乘車資訊 &nbsp;|
+            <div class="trafficDital" v-html="MapInfo.traffic"> </div>
           </div>
-          <div class="Map"><img v-bind:src="MapInfo.map" alt="" srcset=""/></div>
         </div>
+        <div class="Map"><img v-bind:src="MapInfo.map" alt="" srcset=""/></div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
