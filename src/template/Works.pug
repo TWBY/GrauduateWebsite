@@ -11,7 +11,7 @@ html(lang="en")
             include Component/TourBar.pug
             include Component/LinkArea.pug
             
-            .PageTitleStyleOne
+            .PageTitleStyle.PageTitlePoaOne
                 .SideRect
                 .ChTitle 展出作品
                 .EnTitle Works of Display
@@ -21,38 +21,45 @@ html(lang="en")
                     .activeBar
                 .navbar.bar
                     .nav-item(@click.prevent="ChangeActiveBarPoa(0)")
-                        .nav-link(@click.prevent="ChangeGender('All')") All
+                        .nav-link.initial(@click.prevent="ChangeTag('All')") 全部作品
                     .nav-item(@click.prevent="ChangeActiveBarPoa(1)")
-                        .nav-link(@click.prevent="ChangeGender('Boy')") Boy
+                        .nav-link(@click.prevent="ChangeTag('互動裝置類')") 互動裝置類
                     .nav-item(@click.prevent="ChangeActiveBarPoa(2)")
-                        .nav-link(@click.prevent="ChangeGender('Girl')") Girl
+                        .nav-link(@click.prevent="ChangeTag('遊戲類')") 遊戲類
 
             #myTabContent(:class='{ elementToFadeInAndOut:isTextActive }')
                 .ContentButton(v-for='(Button, index) in SelectedButton' 
                                 @click.prevent="ButtonBeClick && ShowContent(Button.Index-1)") 
-                                h4 index: {{ Button.Index }} &nbsp;&nbsp;
-                                h4 name: {{ Button.name }} &nbsp;&nbsp;
-                                h4 Gender: {{ Button.Gender }} &nbsp;&nbsp;
+                                .buttonInfo
+                                    .name {{ Button.name }} 
+                                    .Category  
+                                        .word {{ Button.Category }}
 
             .Content(:class='{ elementShow:isContentActive }')
-                .CloseButton(@click.prevent="CloseContent()")  Close
+                .TeamInfo.TeamCategory 
+                    .word {{ Content.Category }}
+                .TeamInfo.TeamName {{ Content.Title }}
+                .TeamInfo.TeamTag {{  Content.Tag }}
+                .TeamInfo.ButtonLine
+                .CloseButton(@click.prevent="CloseContent()")
+                    .cross
+                        .line1
+                        .line2
                 .ChangeArea
                     full-page(:options='FullPageOptions')
                         .section.s1
-                            h1 section.s1
-                            //- .EachArea
-                            //-     .Title  s1 {{ Content.Title }}
-                            //-     .Detail s1 {{  Content.Detail }}
+                            .EachArea
+                                img.logo(v-bind:src="Content.Logo", alt="", srcset="")
+                                .intro(v-html='Content.Intro') 
                         .section.s2
-                            h1 section.s2
-                            //- .EachArea
-                            //-     .Title  aaaaaa
-                            //-     .Detail s2 {{  Content.Detail }}
-                        .section.s3
-                            h1 section.s3
-                            //- .EachArea
-                            //-     .Title  s3 {{ Content.Title }}
-                            //-     .Detail s3 {{  Content.Detail }}
+                            .EachArea
+                                .Member(v-for='(Member, index) in Content.Member')
+                                    img.Picture(v-bind:src="Member.Picture", alt="", srcset="")
+                                    .MemberInfo
+                                        .Name {{  Member.Name }}
+                                        .JobTitle  {{ Member.JobTitle }}
+                                        
+
 
         script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")

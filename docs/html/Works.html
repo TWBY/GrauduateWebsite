@@ -59,7 +59,7 @@
       <div class="LinkAreaOuter">
         <div class="LinkAreaInner"><a class="Link" href="../../index.html"><img src="../asset/img/Icon/Home.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/Fb.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/EmailConnection.png" alt="" sizes="" srcset=""/></a></div>
       </div>
-      <div class="PageTitleStyleOne">
+      <div class="PageTitleStyle PageTitlePoaOne">
         <div class="SideRect"></div>
         <div class="ChTitle">展出作品</div>
         <div class="EnTitle">Works of Display</div>
@@ -70,35 +70,55 @@
         </div>
         <div class="navbar bar">
           <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
-            <div class="nav-link" @click.prevent="ChangeGender('All')">All</div>
+            <div class="nav-link initial" @click.prevent="ChangeTag('All')">全部作品</div>
           </div>
           <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
-            <div class="nav-link" @click.prevent="ChangeGender('Boy')">Boy</div>
+            <div class="nav-link" @click.prevent="ChangeTag('互動裝置類')">互動裝置類</div>
           </div>
           <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
-            <div class="nav-link" @click.prevent="ChangeGender('Girl')">Girl</div>
+            <div class="nav-link" @click.prevent="ChangeTag('遊戲類')">遊戲類</div>
           </div>
         </div>
       </div>
       <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
         <div class="ContentButton" v-for="(Button, index) in SelectedButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(Button.Index-1)"> 
-          <h4>index: {{ Button.Index }} &nbsp;&nbsp;</h4>
-          <h4>name: {{ Button.name }} &nbsp;&nbsp;</h4>
-          <h4>Gender: {{ Button.Gender }} &nbsp;&nbsp;</h4>
+          <div class="buttonInfo">
+            <div class="name">{{ Button.name }} </div>
+            <div class="Category"> 
+              <div class="word">{{ Button.Category }}</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="Content" :class="{ elementShow:isContentActive }">
-        <div class="CloseButton" @click.prevent="CloseContent()"> Close</div>
+        <div class="TeamInfo TeamCategory"> 
+          <div class="word">{{ Content.Category }}</div>
+        </div>
+        <div class="TeamInfo TeamName">{{ Content.Title }}</div>
+        <div class="TeamInfo TeamTag">{{  Content.Tag }}</div>
+        <div class="TeamInfo ButtonLine"></div>
+        <div class="CloseButton" @click.prevent="CloseContent()">
+          <div class="cross">
+            <div class="line1"></div>
+            <div class="line2"></div>
+          </div>
+        </div>
         <div class="ChangeArea">
           <full-page :options="FullPageOptions">
             <div class="section s1">
-              <h1>section.s1</h1>
+              <div class="EachArea"><img class="logo" v-bind:src="Content.Logo" alt="" srcset=""/>
+                <div class="intro" v-html="Content.Intro"> </div>
+              </div>
             </div>
             <div class="section s2">
-              <h1>section.s2</h1>
-            </div>
-            <div class="section s3">
-              <h1>section.s3</h1>
+              <div class="EachArea">
+                <div class="Member" v-for="(Member, index) in Content.Member"><img class="Picture" v-bind:src="Member.Picture" alt="" srcset=""/>
+                  <div class="MemberInfo">
+                    <div class="Name">{{  Member.Name }}</div>
+                    <div class="JobTitle"> {{ Member.JobTitle }}</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </full-page>
         </div>

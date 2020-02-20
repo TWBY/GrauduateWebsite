@@ -1,0 +1,98 @@
+[{
+    "Index": 1,
+    "Title": "深夜眼科-Cの大冒險",
+    "Tag": " #動畫 #投影 #實體場景",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png",
+    "Intro": "搭建與現實等比例之真實場景，結合生動活潑<br>的動畫劇情，利用投影技術，直接將劇情與實<br>景做結合，為觀眾帶來全新觀賞體驗。<br>故事發生在一間打烊的眼科診間...<br>視力檢查表上C居然從視力檢查表上摔下來了!?<br>眼看檢查表高掛上方，小C要怎麼回家呢?<br>一場深夜的返家大冒險即將展開...！",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member1.jpg",
+        "Name": "陳律竹",
+        "JobTitle": "動畫、美術"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member2.jpg",
+        "Name": "劉怡楨",
+        "JobTitle": "動畫、企劃"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member3.jpg",
+        "Name": "梁瀚文",
+        "JobTitle": "動畫、美術"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member4.jpg",
+        "Name": "李滇哲",
+        "JobTitle": "場景、投影"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member5.jpg",
+        "Name": "沈書慧",
+        "JobTitle": "企劃、投影"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member6.jpg",
+        "Name": "王睿鴻",
+        "JobTitle": "投影、程式"
+    }]
+}, {
+    "Index": 2,
+    "Title": "無距的夢",
+    "Tag": " #遊戲 #動畫",
+    "Category": "遊戲類",
+    "Logo": "../asset/img/WorkIntro/Team2/Logo/TeamLogo.png",
+    "Intro": "「無距的夢」是一款結合空間迷宮及橫向卷軸玩法的益智冒險手機遊戲<br>遊戲講述小男孩伊凡及鬼男孩盧恩從無法相互理解到共同合作的友誼故事<br>夢境是人鬼交會的關鍵場所<br>遊戲運用空間迷宮翻轉破關的特性呈現夢境的不真實性<br>並透過橫向卷軸推動劇情與強調人物的情感轉變<br>也以角色勇於相互探索不了解事物的性格<br>鼓勵玩家對未知事物保有開放態度。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member1.jpg",
+        "Name": "顏薏馨",
+        "JobTitle": "美術"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member2.jpg",
+        "Name": "張瀚文",
+        "JobTitle": "程式"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member3.jpg",
+        "Name": "施孟萱",
+        "JobTitle": "美術"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member4.jpg",
+        "Name": "阮柏燁",
+        "JobTitle": "程式"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member5.jpg",
+        "Name": "吳致萱",
+        "JobTitle": "美術"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member6.jpg",
+        "Name": "曾思瑜",
+        "JobTitle": "美術"
+    }]
+
+}, {
+    "Index": 3,
+    "Title": "初 | 生",
+    "Tag": "#遊戲",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team3/Logo/TeamLogo.png",
+    "Intro": "搭建與現實等比例之真實場景，結合生動活潑<br>的動畫劇情，利用投影技術，直接將劇情與實<br>景做結合，為觀眾帶來全新觀賞體驗。<br>故事發生在一間打烊的眼科診間...<br>視力檢查表上C居然從視力檢查表上摔下來了!?<br>眼看檢查表高掛上方，小C要怎麼回家呢?<br>一場深夜的返家大冒險即將展開...！",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member1.jpg",
+        "Name": "Member1",
+        "JobTitle": "JobTitle1"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member2.jpg",
+        "Name": "Member2",
+        "JobTitle": "JobTitle1"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member3.jpg",
+        "Name": "Member3",
+        "JobTitle": "JobTitle1"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member4.jpg",
+        "Name": "Member4",
+        "JobTitle": "JobTitle1"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member5.jpg",
+        "Name": "Member5",
+        "JobTitle": "JobTitle1"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member6.jpg",
+        "Name": "Member6",
+        "JobTitle": "JobTitle1"
+    }]
+}]

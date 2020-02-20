@@ -3,11 +3,9 @@
     background-color: $CustomBlue
 
 .Title
-    +size(80%, 40%)
-    grid-column: 2 / 4
-    grid-row: 2 / 3
-    align-self: center
-    justify-self: end
+    grid-column: 5 / 12
+    grid-row: 6 / 10
+    +size(100%, 100%)
 
     .MainTitle
         +size(auto, 80%)
@@ -19,15 +17,14 @@
         +size(auto, 20%)
         color: $CustomWhite
         font-size: $InnerFontSize
-
         left: 5%
 
 .ExhibitionInfo
-    +size(120%, 20%)
-    grid-column: 2 / 4
-    grid-row: 2 / 3
+    +size(100%, 100%)
+    grid-column: 3 / 13
+    grid-row: 10 / 12
     // +border(dotted, 2px, pink)
-    align-self: end
+    // align-self: end
 
     display: grid
     grid-template-columns: 50% 50%

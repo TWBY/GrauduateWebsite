@@ -1,15 +1,11 @@
 
-.TourBarOuter
-    +size(100%, 100%)  //Custom +size(20%, 100%)
-    grid-column: 1 / 2 //Custom
-    grid-row: 1 / 4 //Custom 
-    z-index: 12 //Custom 
+
 .bg
     background-image: url('../asset/img/BG/BGExhibitionInformation_.png')
 
 //Bar
 .BarArea
-    +size(50%, 7%)  //custom
+    // +size(50%, 7%)  //custom
     .navbar
         .nav-item
             +size(calc(100%/3), 100%) //custom
@@ -19,11 +15,11 @@
 
 //#myTabContent
 #myTabContent
-    grid-column: 2 / 4
-    grid-row: 2 / 3
-    align-self: end
+    grid-column: 3 / 12
+    grid-row: 4 / 12
+    // align-self: end
     // border: solid 2px pink
-    +size(100%, 80%) 
+    +size(100%, 100%) 
 
     display: grid
     grid-template-columns: 50% 50%

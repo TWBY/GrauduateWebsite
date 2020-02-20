@@ -10,28 +10,36 @@ html(lang="en")
             include Component/TourBar.pug
             include Component/LinkArea.pug
 
-            .PageTitleStyleOne
+            .PageTitleStyle.PageTitlePoaTwo
                 .SideRect
                 .ChTitle 策展團隊
                 .EnTitle Curatorial  Team
         
             .ButtonArea
                 .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(0)") 
+                    img.doll(src="../asset/img/Team/doll_01.png", alt="", sizes="", srcset="")
                     .Department 行政組
-                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(1)") 
-                    .Department 美術組
-                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(2)") 
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(2)")
+                    img.doll(src="../asset/img/Team/doll_03.png", alt="", sizes="", srcset="") 
                     .Department 場務組
-                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(3)") 
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(1)") 
+                    img.doll(src="../asset/img/Team/doll_02.png", alt="", sizes="", srcset="")
+                    .Department 美術組
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(3)")
+                    img.doll(src="../asset/img/Team/doll_04.png", alt="", sizes="", srcset="")
                     .Department 活動組
-                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(4)") 
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(4)")
+                    img.doll(src="../asset/img/Team/doll_05.png", alt="", sizes="", srcset="")
                     .Department 總務組
-                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(5)") 
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(5)")
+                    img.doll(src="../asset/img/Team/doll_06.png", alt="", sizes="", srcset="") 
                     .Department 公關組
+
             .Content(:class='{ elementShow:isContentActive }')
                 .CloseButton(@click.prevent="CloseContent()") 
-                    img.CloseImg(src="../asset/img/Cancel.png", alt="", srcset="")
-                    .word Close
+                    .cross
+                        .line1
+                        .line2
                 .Picture
                     img.teamPic(v-bind:src="TeamInfo.ContentPicture", alt="", srcset="")
                 .DetailInfo

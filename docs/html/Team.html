@@ -58,34 +58,37 @@
       <div class="LinkAreaOuter">
         <div class="LinkAreaInner"><a class="Link" href="../../index.html"><img src="../asset/img/Icon/Home.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/Fb.png" alt="" sizes="" srcset=""/></a><a class="Link" href="http://"><img src="../asset/img/Icon/EmailConnection.png" alt="" sizes="" srcset=""/></a></div>
       </div>
-      <div class="PageTitleStyleOne">
+      <div class="PageTitleStyle PageTitlePoaTwo">
         <div class="SideRect"></div>
         <div class="ChTitle">策展團隊</div>
         <div class="EnTitle">Curatorial  Team</div>
       </div>
       <div class="ButtonArea">
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(0)"> 
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(0)"> <img class="doll" src="../asset/img/Team/doll_01.png" alt="" sizes="" srcset=""/>
           <div class="Department">行政組</div>
         </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(1)"> 
-          <div class="Department">美術組</div>
-        </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(2)"> 
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(2)"><img class="doll" src="../asset/img/Team/doll_03.png" alt="" sizes="" srcset=""/>
           <div class="Department">場務組</div>
         </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(3)"> 
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(1)"> <img class="doll" src="../asset/img/Team/doll_02.png" alt="" sizes="" srcset=""/>
+          <div class="Department">美術組</div>
+        </div>
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(3)"><img class="doll" src="../asset/img/Team/doll_04.png" alt="" sizes="" srcset=""/>
           <div class="Department">活動組</div>
         </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(4)"> 
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(4)"><img class="doll" src="../asset/img/Team/doll_05.png" alt="" sizes="" srcset=""/>
           <div class="Department">總務組</div>
         </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(5)"> 
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(5)"><img class="doll" src="../asset/img/Team/doll_06.png" alt="" sizes="" srcset=""/>
           <div class="Department">公關組</div>
         </div>
       </div>
       <div class="Content" :class="{ elementShow:isContentActive }">
-        <div class="CloseButton" @click.prevent="CloseContent()"> <img class="CloseImg" src="../asset/img/Cancel.png" alt="" srcset=""/>
-          <div class="word">Close</div>
+        <div class="CloseButton" @click.prevent="CloseContent()"> 
+          <div class="cross">
+            <div class="line1"></div>
+            <div class="line2"></div>
+          </div>
         </div>
         <div class="Picture"><img class="teamPic" v-bind:src="TeamInfo.ContentPicture" alt="" srcset=""/></div>
         <div class="DetailInfo">

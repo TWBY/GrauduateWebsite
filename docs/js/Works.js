@@ -27,45 +27,45 @@ new Vue({
             ContentsInfo: "",
             Content: {
                 Title: "",
-                Detail: "",
+                Tag: "",
+                Category: "",
+                Logo: "",
+                Intro: "",
+                Member: []
             },
             isContentActive: false,
             ButtonBeClick: true,
 
             //filter data and show the showWorkButton
             Buttons: [],
-            SelectedButton: {},
+            SelectedButton: [],
             isTextActive: false,
             selectedCategory: "All",
         }
     },
     created() {
-        //Type One (single)
-        axios.get('../asset/json/WorkData.json').then(val => {
-            console.log("Button.data(single) = ", val.data)
-            var vm = this;
-            vm.Buttons = val.data.Button;
-            vm.SelectedButton = vm.Buttons
-            vm.ContentsInfo = val.data.Work;
-        })
+        // multiple
+        axios.all([
+                axios.get('../asset/json/ProjectButton.json'),
+                axios.get('../asset/json/Project.json')
+            ])
+            .then(axios.spread((buttons, work) => {
+                this.Buttons = buttons.data;
+                this.SelectedButton = this.Buttons;
 
-        //Type One (multiple)
-        // axios.all([
-        //         axios.get('ButtonData.json'),
-        //         axios.get('WorkData.json')
-        //     ])
-        //     .then(axios.spread(function (Button, Work) {
-        //         console.log("Button.data(multiple) = ", Button.data);
-        //         var vm = this;
-        //         vm.Buttons = Button.data;
-        //         vm.SelectedButton = vm.Buttons
-        //     }));
+                this.ContentsInfo = work.data;
+            }))
     },
     methods: {
         //Each team content show and close
         ShowContent(Index) {
             this.Content.Title = this.ContentsInfo[Index].Title
-            this.Content.Detail = this.ContentsInfo[Index].Detail
+            this.Content.Tag = this.ContentsInfo[Index].Tag
+            this.Content.Category = this.ContentsInfo[Index].Category
+            this.Content.Logo = this.ContentsInfo[Index].Logo
+            this.Content.Intro = this.ContentsInfo[Index].Intro
+            this.Content.Member = this.ContentsInfo[Index].Member
+
 
             this.isContentActive = true
             this.ButtonBeClick = false
@@ -82,7 +82,7 @@ new Vue({
             fullpage_api.moveTo(1, 1)
         },
         //filter the show work button
-        ChangeGender(Gender) {
+        ChangeTag(Category) {
             let vm = this;
 
             this.isTextActive = true
@@ -91,11 +91,12 @@ new Vue({
             }, 1100)
 
             setTimeout(() => {
-                if (Gender == "All") {
+
+                if (Category == "All") {
                     vm.SelectedButton = vm.Buttons
                 } else {
-                    vm.SelectedButton = vm.Buttons.filter(function (person) {
-                        return person.Gender === Gender;
+                    vm.SelectedButton = vm.Buttons.filter(function (project) {
+                        return project.Category === Category;
                     });
                 }
                 shuffle(vm.SelectedButton)
