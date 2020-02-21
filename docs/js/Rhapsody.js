@@ -23,7 +23,7 @@ let optionsDetail = {
         pointLabels: {
             display: true,
             fontColor: '#044EB7',
-            fontSize: 20
+            fontSize: 16
         },
         ticks: {
             display: false,
@@ -88,9 +88,10 @@ new Vue({
 
             setTimeout(() => {
                 this.isTextActive = false
-            }, 1100)
+            }, 1005)
 
             if (Index >= 1) {
+                console.log("Index =" + Index)
                 setTimeout(() => {
                     this.isShowMonster = true;
                     this.isShowTopic = false;

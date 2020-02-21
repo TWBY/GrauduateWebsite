@@ -79,8 +79,8 @@
           </div>
         </div>
       </div>
-      <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">
-        <div class="BasicInfo">
+      <div class="BasicInfo" :class="{ elementToFadeInAndOut:isTextActive }">
+        <div class="BasicInfoInner">
           <div class="Info time">活動時間 &nbsp;|&nbsp; {{ MapInfo.time }}</div>
           <div class="Info location">活動地點 &nbsp;|&nbsp; {{ MapInfo.location }}</div>
           <div class="Info cost">費用資訊 &nbsp;|&nbsp; {{ MapInfo.cost }}</div>
@@ -88,8 +88,8 @@
             <div class="trafficDital" v-html="MapInfo.traffic"> </div>
           </div>
         </div>
-        <div class="Map"><img v-bind:src="MapInfo.map" alt="" srcset=""/></div>
       </div>
+      <div class="Map" :class="{ elementToFadeInAndOut:isTextActive }"><img v-bind:src="MapInfo.map" alt="" srcset=""/></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>

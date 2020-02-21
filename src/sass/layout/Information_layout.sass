@@ -5,7 +5,9 @@
 
 //Bar
 .BarArea
-    // +size(50%, 7%)  //custom
+    // grid-column: 6 / 12 default
+    // grid-row: 3 / 4 default
+    grid-column: 8 / 12
     .navbar
         .nav-item
             +size(calc(100%/3), 100%) //custom
@@ -13,37 +15,34 @@
         .activeBar
             +size(calc(100%/3), 100%) //custom   
 
-//#myTabContent
-#myTabContent
-    grid-column: 3 / 12
+
+.BasicInfo
+    grid-column: 8 / 12
     grid-row: 4 / 12
-    // align-self: end
-    // border: solid 2px pink
-    +size(100%, 100%) 
+    // border: solid 2px black
 
-    display: grid
-    grid-template-columns: 50% 50%
-    grid-column-gap: 40px
-    .BasicInfo
-        display: grid
-        grid-template-rows: 10% 10% 10% 70%
+    letter-spacing: 1.5px
+    line-height: $InnerInnerFontSize*2
+    font-size: $InnerInnerFontSize
+    
 
-        height: 85%
-        border: solid 2px black
-        letter-spacing: 1.5px
-        font-size: $InnerInnerFontSize
-        background-color: rgba(255, 255, 255, 0.3)
-        padding: 30px
+    .BasicInfoInner
+        +size(fit-content, fit-content)
+        // border: solid 2px pink
+        background-color: rgba(255, 255, 255, 0.8)
+        padding: 5%
         .trafficDital
-            font-size: $InnerInnerFontSize - 3px
+            font-size: $InnerInnerFontSize - 2px
             // color: rgba(0, 0, 0, 0.8)
             font-weight: 200
             letter-spacing: 0px
-    .Map
-        border: solid 2px pink
-        img
-            +size(90%, auto)
-            padding: 30px
+.Map
+    // border: solid 2px black
+    grid-column: 3 / 8
+    grid-row: 4 / 12
+    img
+        +size(90%, auto)
+        // padding: 30px
             
 
                 
