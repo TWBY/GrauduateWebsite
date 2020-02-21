@@ -582,7 +582,7 @@ html, body {
 @media only screen and (max-width: 450pt) {
   #app {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -612,7 +612,7 @@ html, body {
       opacity: 0; }
     #app .BarArea {
       width: 100vw;
-      height: 5vh; }
+      height: auto; }
     #app .PageTitlePoaOne {
       width: 80vw;
       height: 8vh;

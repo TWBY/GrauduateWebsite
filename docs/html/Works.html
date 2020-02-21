@@ -67,12 +67,11 @@
         </div>
       </div>
       <div class="Content" :class="{ elementShow:isContentActive }">
-        <div class="TeamInfo TeamCategory"> 
-          <div class="word">{{ Content.Category }}</div>
-        </div>
+        <div class="TeamInfo TeamCategory">{{ Content.Category }}</div>
         <div class="TeamInfo TeamName">{{ Content.Title }}</div>
         <div class="TeamInfo TeamTag">{{  Content.Tag }}</div>
         <div class="TeamInfo ButtonLine"></div>
+        <div class="CoverArea"></div>
         <div class="CloseButton" @click.prevent="CloseContent()">
           <div class="cross">
             <div class="line1"></div>

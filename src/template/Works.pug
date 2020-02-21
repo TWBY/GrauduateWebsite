@@ -36,11 +36,11 @@ html(lang="en")
                                         .word {{ Button.Category }}
 
             .Content(:class='{ elementShow:isContentActive }')
-                .TeamInfo.TeamCategory 
-                    .word {{ Content.Category }}
+                .TeamInfo.TeamCategory {{ Content.Category }}
                 .TeamInfo.TeamName {{ Content.Title }}
                 .TeamInfo.TeamTag {{  Content.Tag }}
                 .TeamInfo.ButtonLine
+                .CoverArea
                 .CloseButton(@click.prevent="CloseContent()")
                     .cross
                         .line1
