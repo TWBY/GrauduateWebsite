@@ -579,7 +579,7 @@ html, body {
     width: 85%;
     height: auto; }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450pt) {
   #app {
     width: 100vw;
     height: 100vh;
