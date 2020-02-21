@@ -217,91 +217,77 @@ html, body {
     border-color: #f24; }
     .TourBarOuter .TourBarInner .TourArea {
       width: 100%;
-      height: 16.5%;
+      height: 15%;
       background-color: green;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 100%;
-      grid-template-columns: 100%; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+      .TourBarOuter .TourBarInner .TourArea:hover .SlideBar {
+        -webkit-transform: translateX(10%);
+        -ms-transform: translateX(10%);
+        transform: translateX(10%); }
       .TourBarOuter .TourBarInner .TourArea .TourLink {
         display: -ms-grid;
         display: grid;
-        width: 100%;
+        width: 50%;
         height: 100%;
-        -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-        -ms-grid-rows: 100%;
-        grid-template-rows: 100%;
         text-decoration: none;
-        -ms-grid-row-align: center;
-        align-self: center;
-        border: solid 3px purple; }
+        border: solid 1px purple; }
         .TourBarOuter .TourBarInner .TourArea .TourLink img {
           width: auto;
-          height: 80%;
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 1;
-          grid-column: 1 / 2;
-          -ms-grid-row: 1;
-          -ms-grid-row-span: 1;
-          grid-row: 1 / 2;
+          height: 100%;
           -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           z-index: 4;
+          -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
-        .TourBarOuter .TourBarInner .TourArea .TourLink .SlideBarOuter {
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 1;
-          grid-column: 1 / 2;
-          -ms-grid-row: 1;
-          -ms-grid-row-span: 1;
-          grid-row: 1 / 2;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-          flex-direction: row;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          width: 78%;
-          height: 25%;
-          background-color: white;
-          border: solid 1px black;
-          font-size: 10px;
-          -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
-          left: 5%;
-          top: 20%;
-          align-self: center;
-          z-index: 3;
-          -webkit-transition-duration: 0.8s;
-          -o-transition-duration: 0.8s;
-          transition-duration: 0.8s; }
-          .TourBarOuter .TourBarInner .TourArea .TourLink .SlideBarOuter .SlideBarInner {
-            width: 90%;
-            height: 100%;
-            display: -ms-grid;
-            display: grid;
-            -ms-grid-columns: 20% 80%;
-            grid-template-columns: 20% 80%;
-            justify-items: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            color: #044EB7; }
-            .TourBarOuter .TourBarInner .TourArea .TourLink .SlideBarOuter .SlideBarInner .Rect {
-              background-color: #044EB7;
-              width: 68%;
-              height: 40%; }
-        .TourBarOuter .TourBarInner .TourArea .TourLink:hover .SlideBarOuter {
-          left: 105%; }
+      .TourBarOuter .TourBarInner .TourArea .SlideBar {
+        width: 48%;
+        height: 30%;
+        max-height: 30px;
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        background-color: white;
+        border: solid 1px black;
+        font-size: 10px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        padding: 2%;
+        z-index: 3;
+        -webkit-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-style: dotted;
+        border-width: 1px;
+        border-color: #f24;
+        color: #044EB7; }
+        .TourBarOuter .TourBarInner .TourArea .SlideBar .Rect {
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          background-color: #044EB7;
+          width: 80%;
+          height: 60%; }
+        .TourBarOuter .TourBarInner .TourArea .SlideBar .Word {
+          -webkit-box-flex: 6;
+          -ms-flex: 6;
+          flex: 6;
+          border-style: dotted;
+          border-width: 1px;
+          border-color: green;
+          text-align: center; }
 
 .LinkAreaOuter {
   -ms-grid-column: 11;
@@ -361,9 +347,9 @@ html, body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3 / 6;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 2 / 3; }
+  grid-row: 3 / 4; }
 
 .PageTitlePoaTwo {
   -ms-grid-column: 3;
@@ -435,9 +421,9 @@ html, body {
   -ms-grid-column: 6;
   -ms-grid-column-span: 6;
   grid-column: 6 / 12;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   width: 100%;
   height: 50%;
   -ms-grid-row-align: end;
@@ -568,8 +554,9 @@ html, body {
   grid-row: 3 / 13;
   width: 100%;
   height: 100%;
-  -ms-grid-row-align: end;
-  align-self: end;
+  max-width: 1100px;
+  -ms-grid-column-align: center;
+  justify-self: center;
   border: solid 2px #044EB7;
   border-radius: 1%;
   -webkit-box-shadow: 2px -2px 8px 2px rgba(0, 0, 0, 0.6);
@@ -579,41 +566,39 @@ html, body {
   display: grid;
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
-  -ms-grid-rows: (65%)[10];
-  grid-template-rows: repeat(10, 65%);
+  -ms-grid-rows: (40%)[10];
+  grid-template-rows: repeat(10, 40%);
   grid-row-gap: 5%;
   overflow: scroll; }
   .container::-webkit-scrollbar {
     width: 0px; }
   .container .Sponsors {
+    border: solid 1px blue;
     width: 100%;
     height: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 70% 30%;
-    grid-template-rows: 70% 30%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     .container .Sponsors .SponsorPic {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+      border: solid 2px green;
+      width: 100%;
+      height: 90%;
       -webkit-transition-duration: 0.3s;
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
-      .container .Sponsors .SponsorPic:hover {
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05); }
+      .container .Sponsors .SponsorPic img {
+        width: auto;
+        height: 100%; }
+        .container .Sponsors .SponsorPic img:hover {
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05); }
     .container .Sponsors .Name {
+      border: solid 1px red;
       font-size: 20px;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -622,7 +607,7 @@ html, body {
       justify-self: center;
       color: #044EB7;
       width: 100%;
-      height: 40%;
+      height: 10%;
       text-align: center; }
       .container .Sponsors .Name::before, .container .Sponsors .Name::after {
         content: "";

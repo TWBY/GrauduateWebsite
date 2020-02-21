@@ -1,0 +1,44 @@
+@media only screen and (max-width: 450px)
+    *
+        // border: solid 1px black
+    #app
+        +size(100vw, 100vh)
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .LinkAreaOuter
+            position: fixed
+
+            +size(100vw, 8vh)
+            z-index: 1000
+            background-color: $CustomBlue
+            
+            .LinkAreaInner
+                +size(50%, 100%)
+                // border: solid 1px black
+                img
+                    +size(80%, 80%)
+        
+        .TourBarOuter
+            position: absolute
+            +size(100vw, 100vh)
+            opacity: 0
+            // .TourBarInner
+            //     +size(100vw, 100vh)
+        .BarArea
+            +size(100vw, 5vh)
+            // margin-: 5vh
+
+        .PageTitlePoaOne
+            +size(80vw, 8vh)
+            margin-top: 10vh
+            margin-bottom: 5vh
+
+        .BasicInfo
+            +size(80vw, 60vh)
+            margin: 5vh
+
+        .Map
+            +size(80vw, 30vh)
+            margin: 5vh

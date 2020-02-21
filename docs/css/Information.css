@@ -217,91 +217,77 @@ html, body {
     border-color: #f24; }
     .TourBarOuter .TourBarInner .TourArea {
       width: 100%;
-      height: 16.5%;
+      height: 15%;
       background-color: green;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 100%;
-      grid-template-columns: 100%; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end; }
+      .TourBarOuter .TourBarInner .TourArea:hover .SlideBar {
+        -webkit-transform: translateX(10%);
+        -ms-transform: translateX(10%);
+        transform: translateX(10%); }
       .TourBarOuter .TourBarInner .TourArea .TourLink {
         display: -ms-grid;
         display: grid;
-        width: 100%;
+        width: 50%;
         height: 100%;
-        -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-        -ms-grid-rows: 100%;
-        grid-template-rows: 100%;
         text-decoration: none;
-        -ms-grid-row-align: center;
-        align-self: center;
-        border: solid 3px purple; }
+        border: solid 1px purple; }
         .TourBarOuter .TourBarInner .TourArea .TourLink img {
           width: auto;
-          height: 80%;
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 1;
-          grid-column: 1 / 2;
-          -ms-grid-row: 1;
-          -ms-grid-row-span: 1;
-          grid-row: 1 / 2;
+          height: 100%;
           -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
           z-index: 4;
+          -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
-        .TourBarOuter .TourBarInner .TourArea .TourLink .SlideBarOuter {
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 1;
-          grid-column: 1 / 2;
-          -ms-grid-row: 1;
-          -ms-grid-row-span: 1;
-          grid-row: 1 / 2;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-          flex-direction: row;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          width: 78%;
-          height: 25%;
-          background-color: white;
-          border: solid 1px black;
-          font-size: 10px;
-          -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
-          left: 5%;
-          top: 20%;
-          align-self: center;
-          z-index: 3;
-          -webkit-transition-duration: 0.8s;
-          -o-transition-duration: 0.8s;
-          transition-duration: 0.8s; }
-          .TourBarOuter .TourBarInner .TourArea .TourLink .SlideBarOuter .SlideBarInner {
-            width: 90%;
-            height: 100%;
-            display: -ms-grid;
-            display: grid;
-            -ms-grid-columns: 20% 80%;
-            grid-template-columns: 20% 80%;
-            justify-items: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            color: #044EB7; }
-            .TourBarOuter .TourBarInner .TourArea .TourLink .SlideBarOuter .SlideBarInner .Rect {
-              background-color: #044EB7;
-              width: 68%;
-              height: 40%; }
-        .TourBarOuter .TourBarInner .TourArea .TourLink:hover .SlideBarOuter {
-          left: 105%; }
+      .TourBarOuter .TourBarInner .TourArea .SlideBar {
+        width: 48%;
+        height: 30%;
+        max-height: 30px;
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        background-color: white;
+        border: solid 1px black;
+        font-size: 10px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        padding: 2%;
+        z-index: 3;
+        -webkit-transition-duration: 0.8s;
+        -o-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-style: dotted;
+        border-width: 1px;
+        border-color: #f24;
+        color: #044EB7; }
+        .TourBarOuter .TourBarInner .TourArea .SlideBar .Rect {
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          background-color: #044EB7;
+          width: 80%;
+          height: 60%; }
+        .TourBarOuter .TourBarInner .TourArea .SlideBar .Word {
+          -webkit-box-flex: 6;
+          -ms-flex: 6;
+          flex: 6;
+          border-style: dotted;
+          border-width: 1px;
+          border-color: green;
+          text-align: center; }
 
 .LinkAreaOuter {
   -ms-grid-column: 11;
@@ -361,9 +347,9 @@ html, body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 3;
   grid-column: 3 / 6;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 2 / 3; }
+  grid-row: 3 / 4; }
 
 .PageTitlePoaTwo {
   -ms-grid-column: 3;
@@ -435,9 +421,9 @@ html, body {
   -ms-grid-column: 6;
   -ms-grid-column-span: 6;
   grid-column: 6 / 12;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   width: 100%;
   height: 50%;
   -ms-grid-row-align: end;
@@ -548,9 +534,9 @@ html, body {
   background-image: url("../asset/img/BG/BGExhibitionInformation_.png"); }
 
 .BarArea {
-  -ms-grid-column: 8;
+  -ms-grid-column: 7;
   -ms-grid-column-span: 4;
-  grid-column: 8 / 12; }
+  grid-column: 7 / 11; }
   .BarArea .navbar .nav-item {
     width: calc(100%/3);
     height: 100%; }
@@ -560,11 +546,11 @@ html, body {
 
 .BasicInfo {
   -ms-grid-column: 8;
-  -ms-grid-column-span: 4;
-  grid-column: 8 / 12;
-  -ms-grid-row: 4;
+  -ms-grid-column-span: 5;
+  grid-column: 8 / 13;
+  -ms-grid-row: 5;
   -ms-grid-row-span: 8;
-  grid-row: 4 / 12;
+  grid-row: 5 / 13;
   letter-spacing: 1.5px;
   line-height: 32px;
   font-size: 16px; }
@@ -576,19 +562,67 @@ html, body {
     height: -moz-fit-content;
     height: fit-content;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 5%; }
+    padding: 0%; }
     .BasicInfo .BasicInfoInner .trafficDital {
       font-size: 14px;
       font-weight: 200;
       letter-spacing: 0px; }
 
 .Map {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 5;
-  grid-column: 3 / 8;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 8;
-  grid-row: 4 / 12; }
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4 / 8;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 6;
+  grid-row: 5 / 11; }
   .Map img {
-    width: 90%;
+    width: 85%;
     height: auto; }
+
+@media only screen and (max-width: 450px) {
+  #app {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #app .LinkAreaOuter {
+      position: fixed;
+      width: 100vw;
+      height: 8vh;
+      z-index: 1000;
+      background-color: #044EB7; }
+      #app .LinkAreaOuter .LinkAreaInner {
+        width: 50%;
+        height: 100%; }
+        #app .LinkAreaOuter .LinkAreaInner img {
+          width: 80%;
+          height: 80%; }
+    #app .TourBarOuter {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0; }
+    #app .BarArea {
+      width: 100vw;
+      height: 5vh; }
+    #app .PageTitlePoaOne {
+      width: 80vw;
+      height: 8vh;
+      margin-top: 10vh;
+      margin-bottom: 5vh; }
+    #app .BasicInfo {
+      width: 80vw;
+      height: 60vh;
+      margin: 5vh; }
+    #app .Map {
+      width: 80vw;
+      height: 30vh;
+      margin: 5vh; } }

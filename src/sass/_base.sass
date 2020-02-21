@@ -44,55 +44,57 @@ html, body
         +size(90%, 90%)
         +flexdisplay(flex, column, space-between, center)
         +border(dotted, 2px, #f24)
+
         .TourArea    
-            +size(100%, 16.5%)
+            +size(100%, 15%)
             background-color: green
-            display: grid
-            grid-template-columns: 100%
+            display: flex
+            align-items: flex-end
+            &:hover
+                .SlideBar
+                    transform: translateX(10%)
+
             .TourLink
                 display: grid
-                +size(100%, 100%)
-                grid-template-columns: 50% 50%
-                grid-template-rows: 100%
+                +size(50%, 100%)
                 text-decoration: none
-                align-self: center
-                border: solid 3px purple
+
+                border: solid 1px purple
                 img
-                    +size(auto, 80%)
-                    grid-column: 1 / 2
-                    grid-row: 1 / 2
+                    +size(auto, 100%)
                     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)
                     z-index: 4
                     align-self: center
 
-                .SlideBarOuter
-                    grid-column: 1 / 2
-                    grid-row: 1 / 2
-                    +flexdisplay()
-                    +size(78%, 25%) 
-                    background-color: $CustomWhite
-                    border: solid 1px black
-                    font-size: $InnerInnerFontSize - 6px
-                    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2)                 
-                    left: 5%
-                    top: 20%
-                    align-self: center
-                    z-index: 3        
-                    transition-duration: 0.8s          
-                    .SlideBarInner
-                        +size(90%, 100%)
-                        // background-color: pink
-                        display: grid
-                        grid-template-columns: 20% 80%
-                        justify-items: center 
-                        align-items: center 
-                        color: $CustomBlue
-                        .Rect
-                            background-color: $CustomBlue
-                            +size(68%, 40%)
-                &:hover
-                    .SlideBarOuter
-                        left: 105%
+            .SlideBar
+                +size(48%, 30%)
+                max-height: 30px
+                transform: translateX(-100%)
+
+                background-color: $CustomWhite
+                border: solid 1px black
+                font-size: $InnerInnerFontSize - 6px
+                box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2) 
+                text-decoration: none 
+                padding: 2%
+                        
+                z-index: 3        
+                transition-duration: 0.8s
+
+                display: flex
+                align-items: center
+                +border(dotted, 1px, #f24)
+                color: $CustomBlue          
+
+                .Rect
+                    flex: 1
+                    background-color: $CustomBlue
+                    +size(80%, 60%)
+                    
+                .Word
+                    flex: 6
+                    +border(dotted, 1px, green)
+                    text-align: center
 
 
 
@@ -122,7 +124,7 @@ html, body
 // PageTitle
 .PageTitlePoaOne
     grid-column: 3 / 6
-    grid-row: 2 / 3
+    grid-row: 3 / 4
     // +border(dotted, 3px, green)
 .PageTitlePoaTwo
     grid-column: 3 / 6
@@ -193,7 +195,6 @@ html, body
 //             font-size: $InnerFontSize
 //             grid-column: 3 / 4
 //             justify-self: start
-
 //             // +border(dotted, 1px, #f24)
             
 // Nav Link
@@ -211,7 +212,7 @@ html, body
     border-radius: 50px
     z-index: 100
     grid-column: 6 / 12
-    grid-row: 2 / 3
+    grid-row: 3 / 4
     +size(100%, 50%)  //custom
     align-self: end
 

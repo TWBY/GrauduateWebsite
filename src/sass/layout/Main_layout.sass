@@ -23,8 +23,10 @@
     +size(100%, 100%)
     grid-column: 3 / 13
     grid-row: 10 / 12
+    justify-self: center
+    max-width: 1200px
+
     // +border(dotted, 2px, pink)
-    // align-self: end
 
     display: grid
     grid-template-columns: 50% 50%
@@ -35,16 +37,21 @@
 
     .Info
         // border: solid 2px purple
-        display: grid
-        grid-template-columns: 22% 25% 53%
-        +size(100%, 100%)
-
+        +size(90%, 100%)
+        display: flex
         .Topic
-            +size(83%, 60%)
-            .text
-                border: solid 1px $CustomWhite
-                border-radius: 20px
-                padding: 2px 12px
+            flex: 3
+            +border(solid, 1px, $CustomWhite)
+            border-radius: 20px
+            +size(fit-content, fit-content)
+            text-align: center
+        .Space
+            flex: 1
+        .Time
+            flex: 4
+        .Location
+            flex: 5
+
     .Campus
         grid-column: 1 / 2
         grid-row: 1 / 2

@@ -4,9 +4,11 @@
 
 .MainContentOuter
     // +border(dotted, 0.2px, black)
-    grid-column: 3 / 12
-    grid-row: 3 / 12
-    +size(auto, 100%)
+    grid-column: 4 / 12
+    grid-row: 4 / 12
+    +size(100%, 100%)
+    max-width: 1100px
+
     // align-self: end
     +flexdisplay()
 
@@ -32,11 +34,13 @@
             .TitlePicture 
                 grid-column: 1 / 7
                 grid-row:  1 / 5
+                +flexdisplay()
                 img
-                    +size(100%, 100%)
+                    +size(80%, 70%)
             .TimeInfo
-                grid-column: 8 / 13
+                grid-column: 7 / 12
                 grid-row: 2 / 4
+                // +size(95%, 100%)
 
                 display: flex
                 flex-direction: column
@@ -48,22 +52,11 @@
                 letter-spacing: 2px
                 .Info
                     display: grid
-                    grid-template-columns: 27% 48% 25%
+                    grid-template-columns: 27% 30% 43%
                     // border: solid 0.5px yellow
-
                     .Topic
                         display: grid
                         grid-template-columns: 80% 20%
-                    .Time
-                        letter-spacing: 5px
-                .Campus
-                    .Topic
-                        letter-spacing: 12px
-
-                .OffCampus
-    
-                    .Topic
-                        letter-spacing: 12px
 
             .Divider
                 grid-column: 1 / 13
@@ -93,7 +86,7 @@
 
                     +flexdisplay()
                     .text
-                        font-size: $InnerFontSize - 2px
+                        font-size: $InnerInnerFontSize
                 .IconArea
                     grid-row: 2 / 3
                     +size(60%, auto)
@@ -120,7 +113,7 @@
                         .text
                             // +border(dotted, 2px, purple)
                             grid-row: 3 / 4
-                            font-size: $InnerFontSize
+                            font-size: $InnerInnerFontSize
                             justify-self: center
                             +size(fit-content, fit-content)
 
@@ -132,7 +125,9 @@
             .ConnectionText
                 grid-column: 7 / 13
                 grid-row: 6 / 11
-                +border(dotted, 2px, pink)
+                // +border(dotted, 2px, pink)
 
-                font-size: $InnerFontSize
+                font-size: $InnerInnerFontSize
+                line-height: $InnerInnerFontSize*1.5
                 letter-spacing: 4px
+                align-self: end

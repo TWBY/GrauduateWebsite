@@ -20,7 +20,11 @@
             +size(calc(100%/3), 100%) //custom
     .navbarOuter
         .activeBar
-            border: solid 6px $CustomWhite
+            // border: solid 6px $CustomWhite
+            border-bottom: solid 2px $CustomWhite
+            border-top: solid 2px $CustomWhite
+            border-right: solid 6px $CustomWhite
+            border-left: solid 6px $CustomWhite
             +size(calc(100%/3), 100%) //custom
 
 
@@ -28,14 +32,16 @@
     grid-column: 3 / 12
     grid-row: 4 / 13
     +size(100%, 100%)
-    align-self: center
+    // align-self: center
+    justify-self: center
     border: solid 2px #f24
+    max-width: 1100px
 
     z-index: 100
 
     display: grid
     grid-template-columns: repeat(3, 31%)
-    grid-template-rows: repeat(10, 65%)
+    grid-template-rows: repeat(10, 40%)
     grid-row-gap: 5%
     grid-column-gap: 2%
 
@@ -77,9 +83,6 @@
 
 
 .Content
-    // +size(100%, 100%)
-    // grid-column: 1 / 13
-    // grid-row: 1 / 13
     position: absolute
     top: 0%
     left: 0%

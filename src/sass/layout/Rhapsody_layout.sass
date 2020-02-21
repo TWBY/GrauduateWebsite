@@ -14,7 +14,7 @@
 
 //Monster and Chart
 .BasicInfo
-    // border: solid 2px red
+    border: solid 2px red
     grid-column: 3 / 6
     grid-row: 4 / 12
 
@@ -25,27 +25,29 @@
     +flexdisplay()
     .BasicInfoInner
         +size(fit-content, fit-content)
-        // border: solid 2px green
+        border: solid 2px green
         .MonsterTitle
-            // grid-row: 2 / 3
+            +size(100%, 100%)
+            border: solid 2px purple
             .name
                 font-size: $InnerFontSize + 8px
                 font-weight: 500
-                z-index: 1
-            .BottomLine
-                // +size(105%, 35%)
-                background-color: $CustomYellow
-                top: -25%
-                left: -3%
-                z-index: 0
-                
+                &::after
+                    content: ""
+                    display: inline-block
+                    position: absolute
+                    background-color: $CustomYellow
+                    +size(110%, 50%)
+                    top: 60%
+                    left: -5%
+                    z-index: -1
+
         .MonsterDetail
-            // grid-row: 4 / 5
-            line-height: 35px
+            line-height: $InnerFontSize*1.5
             left: 5%
 
 .Look   
-    // border: solid 1px blue
+    border: solid 1px blue
     grid-column: 6 / 9
     grid-row: 4 / 12
 
@@ -95,8 +97,8 @@
 
 
 .RadarChart
-    // border: solid 2px red
-    grid-column: 8 / 13
+    border: solid 2px red
+    grid-column: 9 / 13
     grid-row: 4 / 12
 
     opacity: 0
@@ -121,8 +123,8 @@
 //Topic
 .concept
     // border: solid 1px yellow
-    grid-column: 8 / 13
-    grid-row: 4 / 9
+    grid-column: 7 / 12
+    grid-row: 5 / 10
 
     font-size: $InnerInnerFontSize
     letter-spacing: 3px
@@ -140,13 +142,13 @@
 .conceptImgOuter
     // border: solid 1px blue
     grid-column: 3 / 8
-    grid-row: 3 / 13
+    grid-row: 4 / 13
 
     display: grid
     grid-template-columns: 100%
     grid-template-rows: 100%
     .conceptImgInner
         // border: solid 2px pink
-        +size(auto, 100%)
+        +size(auto, 90%)
         align-self: center
         justify-self: center
