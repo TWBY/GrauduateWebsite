@@ -33,7 +33,6 @@ new Vue({
             this.TeamInfo.MemberTwo = this.TeamsInfo[Index].MemberTwo;
             this.TeamInfo.MurMur = this.TeamsInfo[Index].MurMur;
             this.TeamInfo.MurMurSlogan = this.TeamsInfo[Index].MurMurSlogan;
-            this.TeamInfo.CoverImage = this.TeamsInfo[Index].CoverImage;
             this.TeamInfo.ContentPicture = this.TeamsInfo[Index].ContentPicture;
 
             this.isContentActive = true

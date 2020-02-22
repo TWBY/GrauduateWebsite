@@ -16,24 +16,30 @@ html(lang="en")
                 .EnTitle Curatorial  Team
         
             .ButtonArea
-                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(0)") 
-                    img.doll(src="../asset/img/Team/doll_01.png", alt="", sizes="", srcset="")
-                    .Department 行政組
-                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(2)")
-                    img.doll(src="../asset/img/Team/doll_03.png", alt="", sizes="", srcset="") 
-                    .Department 場務組
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(0)")
+                    .ButtonInner 
+                        img.doll(src="../asset/img/Team/doll_01.png", alt="", sizes="", srcset="")
+                        img.Department(src="../asset/img/Team/department_01.png", alt="", sizes="", srcset="")
                 .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(1)") 
-                    img.doll(src="../asset/img/Team/doll_02.png", alt="", sizes="", srcset="")
-                    .Department 美術組
+                    .ButtonInner
+                        img.doll(src="../asset/img/Team/doll_02.png", alt="", sizes="", srcset="")
+                        img.Department(src="../asset/img/Team/department_02.png", alt="", sizes="", srcset="")
+                .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(2)")
+                    .ButtonInner
+                        img.doll(src="../asset/img/Team/doll_03.png", alt="", sizes="", srcset="") 
+                        img.Department(src="../asset/img/Team/department_03.png", alt="", sizes="", srcset="") 
                 .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(3)")
-                    img.doll(src="../asset/img/Team/doll_04.png", alt="", sizes="", srcset="")
-                    .Department 活動組
+                    .ButtonInner
+                        img.doll(src="../asset/img/Team/doll_04.png", alt="", sizes="", srcset="")
+                        img.Department(src="../asset/img/Team/department_04.png", alt="", sizes="", srcset="") 
                 .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(4)")
-                    img.doll(src="../asset/img/Team/doll_05.png", alt="", sizes="", srcset="")
-                    .Department 總務組
+                    .ButtonInner
+                        img.doll(src="../asset/img/Team/doll_05.png", alt="", sizes="", srcset="")
+                        img.Department(src="../asset/img/Team/department_05.png", alt="", sizes="", srcset="") 
                 .DepartmentButton(@click.prevent="ButtonBeClick && ShowContent(5)")
-                    img.doll(src="../asset/img/Team/doll_06.png", alt="", sizes="", srcset="") 
-                    .Department 公關組
+                    .ButtonInner
+                        img.doll(src="../asset/img/Team/doll_06.png", alt="", sizes="", srcset="") 
+                        img.Department(src="../asset/img/Team/department_06.png", alt="", sizes="", srcset="") 
 
             .Content(:class='{ elementShow:isContentActive }')
                 .CloseButton(@click.prevent="CloseContent()") 

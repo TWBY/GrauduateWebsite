@@ -20,12 +20,12 @@ html(lang="en")
                 .navbarOuter.bar
                     .activeBar
                 .navbar.bar
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(0)")
-                        .nav-link.initial(@click.prevent="ChangeTag('All')") 全部作品
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(1)")
-                        .nav-link(@click.prevent="ChangeTag('互動裝置類')") 互動裝置類
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(2)")
-                        .nav-link(@click.prevent="ChangeTag('遊戲類')") 遊戲類
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(0); ChangeTag('All')")
+                        .nav-link.initial 全部作品
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(1); ChangeTag('互動裝置類')")
+                        .nav-link 互動裝置類
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(2); ChangeTag('遊戲類')")
+                        .nav-link 遊戲類
 
             #myTabContent(:class='{ elementToFadeInAndOut:isTextActive }')
                 .ContentButton(v-for='(Button, index) in SelectedButton' 

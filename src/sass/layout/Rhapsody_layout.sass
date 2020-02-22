@@ -12,6 +12,16 @@
         .activeBar
             +size(calc(100%/5), 100%) //custom
 
+
+
+//transition
+.fade-enter-active, .fade-leave-active 
+    transition: opacity 0.5s
+.fade-enter, .fade-leave-to 
+    opacity: 0
+
+
+
 //Monster and Chart
 .BasicInfo
     border: solid 2px red
@@ -100,8 +110,6 @@
     border: solid 2px red
     grid-column: 9 / 13
     grid-row: 4 / 12
-
-    opacity: 0
     +size(100%, auto)
 
     display: grid
@@ -111,13 +119,9 @@
     align-items: center
 
     #myChart
-        // +size(100%, auto)
         width: 100% !important
         height: auto !important
         // border: solid 2px yellow
-
-.isShowMonsterChart
-    opacity: 1 
 
 
 //Topic

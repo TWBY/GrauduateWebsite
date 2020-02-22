@@ -6,6 +6,8 @@
         "MurMur": "行政組小murmur : ",
         "MurMurSlogan": "「行政組MurMurSlogan。」",
         "CoverImage": "../asset/img/Monster/chubby.png",
+        "CoverHead": "../asset/img/Team/doll_01.png",
+        "CoverWord": "../asset/img/Team/department_01.png",
         "ContentPicture": "../asset/img/Monster/boom.png"
     },
     {
@@ -16,6 +18,8 @@
         "MurMur": "美術組小murmur : ",
         "MurMurSlogan": "「畫圖畫到肌腱炎，剪片剪到長針眼。」",
         "CoverImage": "../asset/img/Monster/chubby.png",
+        "CoverHead": "../asset/img/Team/doll_02.png",
+        "CoverWord": "../asset/img/Team/department_02.png",
         "ContentPicture": "../asset/img/Monster/boom.png"
     },
     {
@@ -26,6 +30,8 @@
         "MurMur": "場務組小murmur : ",
         "MurMurSlogan": "「場務組MurMurSlogan。」",
         "CoverImage": "../asset/img/Monster/chubby.png",
+        "CoverHead": "../asset/img/Team/doll_03.png",
+        "CoverWord": "../asset/img/Team/department_03.png",
         "ContentPicture": "../asset/img/Monster/boom.png"
     },
     {
@@ -36,6 +42,8 @@
         "MurMur": "活動組小murmur : ",
         "MurMurSlogan": "「活動組MurMurSlogan。」",
         "CoverImage": "../asset/img/Monster/chubby.png",
+        "CoverHead": "../asset/img/Team/doll_04.png",
+        "CoverWord": "../asset/img/Team/department_04.png",
         "ContentPicture": "../asset/img/Monster/boom.png"
     },
     {
@@ -46,6 +54,8 @@
         "MurMur": "總務組小murmur : ",
         "MurMurSlogan": "「總務組MurMurSlogan。」",
         "CoverImage": "../asset/img/Monster/chubby.png",
+        "CoverHead": "../asset/img/Team/doll_05.png",
+        "CoverWord": "../asset/img/Team/department_05.png",
         "ContentPicture": "../asset/img/Monster/boom.png"
     },
     {
@@ -56,6 +66,8 @@
         "MurMur": "公關組小murmur : ",
         "MurMurSlogan": "「公關組MurMurSlogan。」",
         "CoverImage": "../asset/img/Monster/chubby.png",
+        "CoverHead": "../asset/img/Team/doll_06.png",
+        "CoverWord": "../asset/img/Team/department_06.png",
         "ContentPicture": "../asset/img/Monster/boom.png"
     }
 ]

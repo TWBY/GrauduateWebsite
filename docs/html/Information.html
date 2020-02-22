@@ -44,14 +44,14 @@
           <div class="activeBar"></div>
         </div>
         <div class="navbar bar">
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
-            <div class="nav-link initial" @click.prevent="ChalengePeopInfo(0)">校內展</div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0); ChangePeopleInfo(0)">
+            <div class="nav-link initial">校內展</div>
           </div>
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
-            <div class="nav-link" @click.prevent="ChangePeopleInfo(1)">校外展</div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1); ChangePeopleInfo(1)">
+            <div class="nav-link">校外展</div>
           </div>
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
-            <div class="nav-link" @click.prevent="ChangePeopleInfo(2)">放視大賞</div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2); ChangePeopleInfo(2)">
+            <div class="nav-link">放視大賞</div>
           </div>
         </div>
       </div>
@@ -65,7 +65,9 @@
           </div>
         </div>
       </div>
-      <div class="Map" :class="{ elementToFadeInAndOut:isTextActive }"><img v-bind:src="MapInfo.map" alt="" srcset=""/></div>
+      <div class="Map" :class="{ elementToFadeInAndOut:isTextActive }">
+        <iframe v-bind:src="MapInfo.map" alt="" srcset=""></iframe>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>

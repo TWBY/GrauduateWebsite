@@ -45,14 +45,14 @@
           <div class="activeBar"></div>
         </div>
         <div class="navbar bar">
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0)">
-            <div class="nav-link initial" @click.prevent="ChangeTag('All')">全部作品</div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0); ChangeTag('All')">
+            <div class="nav-link initial">全部作品</div>
           </div>
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1)">
-            <div class="nav-link" @click.prevent="ChangeTag('互動裝置類')">互動裝置類</div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(1); ChangeTag('互動裝置類')">
+            <div class="nav-link">互動裝置類</div>
           </div>
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2)">
-            <div class="nav-link" @click.prevent="ChangeTag('遊戲類')">遊戲類</div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2); ChangeTag('遊戲類')">
+            <div class="nav-link">遊戲類</div>
           </div>
         </div>
       </div>

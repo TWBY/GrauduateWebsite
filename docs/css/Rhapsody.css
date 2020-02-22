@@ -541,6 +541,14 @@ html, body {
   width: calc(100%/5);
   height: 100%; }
 
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.fade-enter, .fade-leave-to {
+  opacity: 0; }
+
 .BasicInfo {
   border: solid 2px red;
   -ms-grid-column: 3;
@@ -682,7 +690,6 @@ html, body {
   -ms-grid-row: 4;
   -ms-grid-row-span: 8;
   grid-row: 4 / 12;
-  opacity: 0;
   width: 100%;
   height: auto;
   display: -ms-grid;
@@ -698,9 +705,6 @@ html, body {
   .RadarChart #myChart {
     width: 100% !important;
     height: auto !important; }
-
-.isShowMonsterChart {
-  opacity: 1; }
 
 .concept {
   -ms-grid-column: 7;

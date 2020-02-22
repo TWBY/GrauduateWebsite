@@ -32,24 +32,38 @@
         +size(100%, 100%)
         +flexdisplay()
         border-radius: 25px
+
         background-image: url('../asset/img/Team/Curitorial_button_bg.png')
         background-size: cover
-        color: $CustomWhite
 
-        display: grid
-        grid-template-columns: 40% 60%
-        grid-template-rows: 100%
-        grid-column-gap: 1%
+        &:hover
+            .doll
+                animation: swing  1s linear
+                transform-origin: bottom center
+
+        .ButtonInner
+            display: flex
+            +size(80%, auto)
+            .doll
+                flex: 1
+                +size(10%, auto)
+                // border: solid 1px black
+
+            .Department
+                flex: 2
+                +size(10%, auto)
+                // border: solid 1px pink
+
 
         &:nth-child(1)
             grid-column: 1 / 2
             grid-row: 1 / 2
         &:nth-child(2)
+            grid-column: 1 / 2
+            grid-row: 2 / 3  
+        &:nth-child(3)
             grid-column: 2 / 3
             grid-row: 1 / 2
-        &:nth-child(3)
-            grid-column: 1 / 2
-            grid-row: 2 / 3    
         &:nth-child(4)
             grid-column: 2 / 3  
             grid-row: 2 / 3                                                                                     
@@ -60,16 +74,23 @@
             grid-column: 2 / 3  
             grid-row: 3 / 4
 
-        .doll
-            grid-column: 1 / 2
-            grid-row: 1 / 2
-            +size(80%, auto)
-            border: solid 1px black
-        .Department
-            grid-column: 2 / 3
-            grid-row: 1 / 2
-            +size(100%, 100%)
-            border: solid 1px pink
+
+@keyframes swing 
+    20% 
+        transform: rotate(10deg)
+
+    40% 
+        transform: rotate(-8deg)
+
+    60% 
+        transform: rotate(5deg)
+
+    80% 
+        transform: rotate(-3deg)
+
+    100% 
+        transform: rotate(0deg)
+
 
 
 

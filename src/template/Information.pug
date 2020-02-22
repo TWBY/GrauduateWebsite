@@ -15,19 +15,19 @@ html(lang="en")
                 .ChTitle 展覽資訊
                 .EnTitle Information
 
+
             //- .container
             .BarArea
                 .navbarOuter.bar
                     .activeBar
                 .navbar.bar
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(0)")
-                        .nav-link.initial(@click.prevent="ChalengePeopInfo(0)") 校內展
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(1)")
-                        .nav-link(@click.prevent="ChangePeopleInfo(1)") 校外展
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(2)")
-                        .nav-link(@click.prevent="ChangePeopleInfo(2)") 放視大賞
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(0); ChangePeopleInfo(0)")
+                        .nav-link.initial 校內展
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(1); ChangePeopleInfo(1)")
+                        .nav-link 校外展
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(2); ChangePeopleInfo(2)")
+                        .nav-link 放視大賞
 
-            //- #myTabContent(:class='{ elementToFadeInAndOut:isTextActive }')
             .BasicInfo(:class='{ elementToFadeInAndOut:isTextActive }')
                 .BasicInfoInner
                     .Info.time 活動時間 &nbsp;|&nbsp; {{ MapInfo.time }}
@@ -35,10 +35,10 @@ html(lang="en")
                     .Info.cost 費用資訊 &nbsp;|&nbsp; {{ MapInfo.cost }}
                     .Info.traffic 乘車資訊 &nbsp;|
                         .trafficDital(v-html='MapInfo.traffic') 
+                        
             .Map(:class='{ elementToFadeInAndOut:isTextActive }')
-                img(v-bind:src="MapInfo.map", alt="", srcset="")
-            //- iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14468.539257784269!2d121.25119020000001!3d24.96152745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822082a5bea99%3A0x9d747a9fcc08e0a!2z5Zub5a2j54Ok6bSo!5e0!3m2!1szh-TW!2stw!4v1582299315930!5m2!1szh-TW!2stw' width='600' height='450' frameborder='0' style='border:0;' allowfullscreen='')
-
+                iframe(v-bind:src="MapInfo.map", alt="", srcset="")
+    
 
         script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")

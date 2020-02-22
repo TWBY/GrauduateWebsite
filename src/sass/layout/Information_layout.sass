@@ -15,7 +15,16 @@
         .activeBar
             +size(calc(100%/3), 100%) //custom   
 
+//Cover
+.Cover
+    grid-column: 4 / 12
+    grid-row: 4 / 11
+    background-color: $CustomWhite
+    z-index: 1000
+    opacity: 0
 
+
+//BasicInfo
 .BasicInfo
     grid-column: 8 / 13
     grid-row: 5 / 13
@@ -36,13 +45,14 @@
             // color: rgba(0, 0, 0, 0.8)
             font-weight: 200
             letter-spacing: 0px
+
+//Map
 .Map
-    // border: solid 2px black
     grid-column: 4 / 8
     grid-row: 5 / 11
-    img
-        +size(85%, auto)
-        // padding: 30px
+    iframe
+        +size(100%, 100%)
+
             
 
                 

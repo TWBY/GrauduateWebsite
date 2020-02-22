@@ -83,15 +83,23 @@ new Vue({
     },
     methods: {
         ChangePeopleInfo(Index) {
-            this.isTextActive = true;
+
+            if (this.selectIndex != 0 && Index >= 1 && Index <= 4) {
+                this.isTextActive = true;
+                setTimeout(() => {
+                    this.isTextActive = false
+                }, 1100)
+            }
             this.selectIndex = Index;
 
-            setTimeout(() => {
-                this.isTextActive = false
-            }, 1005)
+            // this.isTextActive = true;
+            // setTimeout(() => {
+            //     this.isTextActive = false
+            //     this.selectIndex = Index;
+            // }, 1100)
+
 
             if (Index >= 1) {
-                console.log("Index =" + Index)
                 setTimeout(() => {
                     this.isShowMonster = true;
                     this.isShowTopic = false;
@@ -113,14 +121,18 @@ new Vue({
                         this.dataDetail.labels[j] = this.monster.ChartText[j]
                         this.dataDetail.datasets[0].data[j] = this.monster.ChartNum[j]
                     }
-                    this.createChart('myChart');
                 }, 500)
+
+                setTimeout(() => {
+                    this.createChart('myChart');
+                }, 600)
+
             }
 
             if (Index == 0) {
                 setTimeout(() => {
-                    this.isShowTopic = true;
                     this.isShowMonster = false;
+                    this.isShowTopic = true;
                 }, 500)
             }
 
