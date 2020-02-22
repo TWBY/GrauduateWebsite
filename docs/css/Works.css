@@ -656,7 +656,6 @@ html, body {
   -webkit-transform: translateY(20%);
   -ms-transform: translateY(20%);
   transform: translateY(20%);
-  border: solid 3px green;
   -webkit-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
@@ -698,7 +697,6 @@ html, body {
     width: fit-content;
     padding: 0px 10px; }
   .Content .TeamName {
-    border: dotted 2px red;
     font-size: 20px;
     -ms-grid-column: 3;
     -ms-grid-column-span: 3;
@@ -707,7 +705,6 @@ html, body {
     -ms-grid-row-span: 1;
     grid-row: 2 / 3; }
   .Content .TeamTag {
-    border: dotted 2px yellow;
     font-size: 20px;
     -ms-grid-column: 7;
     -ms-grid-column-span: 3;
@@ -731,7 +728,6 @@ html, body {
     z-index: 100;
     position: absolute; }
   .Content .ChangeArea {
-    border: solid 2px yellow;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -763,104 +759,99 @@ html, body {
           gap: 3%;
           width: 100% !important;
           height: 100% !important; }
-          .Content .ChangeArea .fullpage-wrapper .section .EachArea .intro {
-            font-size: 16px;
-            border: solid 1px black;
-            line-height: 30px; }
-      .Content .ChangeArea .fullpage-wrapper .s1 .EachArea {
-        border: dotted 5px green; }
-        .Content .ChangeArea .fullpage-wrapper .s1 .EachArea .logo {
-          border: dotted 5px green;
-          -ms-grid-column: 2;
-          -ms-grid-column-span: 5;
-          grid-column: 2 / 7;
-          -ms-grid-row: 3;
-          -ms-grid-row-span: 4;
-          grid-row: 3 / 7; }
-        .Content .ChangeArea .fullpage-wrapper .s1 .EachArea .intro {
-          -ms-grid-column: 7;
-          -ms-grid-column-span: 5;
-          grid-column: 7 / 12;
-          -ms-grid-row: 3;
-          -ms-grid-row-span: 2;
-          grid-row: 3 / 5; }
-      .Content .ChangeArea .fullpage-wrapper .s2 .EachArea {
-        border: dotted 5px red; }
-        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member {
-          border: solid 2px black;
+      .Content .ChangeArea .fullpage-wrapper .s1 .EachArea .logo {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 5;
+        grid-column: 2 / 7;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 4;
+        grid-row: 3 / 7; }
+      .Content .ChangeArea .fullpage-wrapper .s1 .EachArea .intro {
+        -ms-grid-column: 7;
+        -ms-grid-column-span: 5;
+        grid-column: 7 / 12;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 4;
+        grid-row: 3 / 7;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 3px;
+        -ms-grid-row-align: center;
+        align-self: center; }
+      .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member {
+        width: 100%;
+        height: 100%;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+        -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+        gap: 3%; }
+        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member .Picture {
           width: 100%;
-          height: 100%;
-          display: -ms-grid;
-          display: grid;
-          -ms-grid-columns: 70% 30%;
-          grid-template-columns: 70% 30%;
-          -ms-grid-rows: 100%;
-          grid-template-rows: 100%;
-          gap: 3%; }
-          .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member .Picture {
-            width: 100%;
-            height: auto;
-            background-color: yellow;
-            -ms-grid-column: 1;
-            -ms-grid-column-span: 1;
-            grid-column: 1 / 2;
-            -ms-grid-row: 1;
-            -ms-grid-row-span: 1;
-            grid-row: 1 / 2;
-            -webkit-clip-path: circle(48%);
-            clip-path: circle(48%); }
-          .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member .MemberInfo {
-            -ms-grid-column: 2;
-            -ms-grid-column-span: 1;
-            grid-column: 2 / 3;
-            -ms-grid-row: 1;
-            -ms-grid-row-span: 1;
-            grid-row: 1 / 2;
-            -ms-grid-row-align: end;
-            align-self: end;
-            font-size: 16px; }
-        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(1) {
+          height: auto;
+          background-color: yellow;
           -ms-grid-column: 1;
-          -ms-grid-column-span: 4;
-          grid-column: 1 / 5;
+          -ms-grid-column-span: 1;
+          grid-column: 1 / 2;
           -ms-grid-row: 1;
-          -ms-grid-row-span: 2;
-          grid-row: 1 / 3; }
-        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(2) {
-          -ms-grid-column: 5;
-          -ms-grid-column-span: 4;
-          grid-column: 5 / 9;
+          -ms-grid-row-span: 1;
+          grid-row: 1 / 2;
+          -webkit-clip-path: circle(48%);
+          clip-path: circle(48%); }
+        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member .MemberInfo {
+          -ms-grid-column: 2;
+          -ms-grid-column-span: 1;
+          grid-column: 2 / 3;
           -ms-grid-row: 1;
-          -ms-grid-row-span: 2;
-          grid-row: 1 / 3; }
-        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(3) {
-          -ms-grid-column: 9;
-          -ms-grid-column-span: 4;
-          grid-column: 9 / 13;
-          -ms-grid-row: 1;
-          -ms-grid-row-span: 2;
-          grid-row: 1 / 3; }
-        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(4) {
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 4;
-          grid-column: 1 / 5;
-          -ms-grid-row: 3;
-          -ms-grid-row-span: 2;
-          grid-row: 3 / 5; }
-        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(5) {
-          -ms-grid-column: 5;
-          -ms-grid-column-span: 4;
-          grid-column: 5 / 9;
-          -ms-grid-row: 3;
-          -ms-grid-row-span: 2;
-          grid-row: 3 / 5; }
-        .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(6) {
-          -ms-grid-column: 9;
-          -ms-grid-column-span: 4;
-          grid-column: 9 / 13;
-          -ms-grid-row: 3;
-          -ms-grid-row-span: 2;
-          grid-row: 3 / 5; }
+          -ms-grid-row-span: 1;
+          grid-row: 1 / 2;
+          -ms-grid-row-align: end;
+          align-self: end;
+          font-size: 16px; }
+      .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 4;
+        grid-column: 1 / 5;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        grid-row: 1 / 3; }
+      .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(2) {
+        -ms-grid-column: 5;
+        -ms-grid-column-span: 4;
+        grid-column: 5 / 9;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        grid-row: 1 / 3; }
+      .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(3) {
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 4;
+        grid-column: 9 / 13;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        grid-row: 1 / 3; }
+      .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(4) {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 4;
+        grid-column: 1 / 5;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 2;
+        grid-row: 3 / 5; }
+      .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(5) {
+        -ms-grid-column: 5;
+        -ms-grid-column-span: 4;
+        grid-column: 5 / 9;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 2;
+        grid-row: 3 / 5; }
+      .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member:nth-child(6) {
+        -ms-grid-column: 9;
+        -ms-grid-column-span: 4;
+        grid-column: 9 / 13;
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 2;
+        grid-row: 3 / 5; }
 
 #fp-nav {
   z-index: 300; }

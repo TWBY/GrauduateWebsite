@@ -83,14 +83,18 @@ new Vue({
         },
         //filter the show work button
         ChangeTag(Category) {
-            let vm = this;
+            // clearTimeout(CloseTextActive)
+            // clearTimeout(changeData)
 
+            let vm = this;
             this.isTextActive = true
-            setTimeout(() => {
+
+
+            let CloseTextActive = setTimeout(() => {
                 this.isTextActive = false
             }, 1100)
 
-            setTimeout(() => {
+            let changeData = setTimeout(() => {
 
                 if (Category == "All") {
                     vm.SelectedButton = vm.Buttons
