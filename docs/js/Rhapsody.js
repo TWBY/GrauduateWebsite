@@ -23,7 +23,8 @@ let optionsDetail = {
         pointLabels: {
             display: true,
             fontColor: '#044EB7',
-            fontSize: 16
+            fontSize: 16,
+            FontFamily: '微軟正黑體'
         },
         ticks: {
             display: false,
