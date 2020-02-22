@@ -480,8 +480,8 @@ html, body {
   animation: fade 1s linear; }
 
 .CloseButton {
-  width: 40%;
-  height: 80%;
+  width: 60%;
+  height: 100%;
   -ms-grid-column: 12;
   -ms-grid-column-span: 1;
   grid-column: 12 / 13;
@@ -861,6 +861,9 @@ html, body {
 
 #fp-nav {
   z-index: 300; }
+  #fp-nav ul li .fp-tooltip {
+    font-family: Noto Sans TC, 微軟正黑體;
+    font-size: 20px; }
 
 .elementShow {
   z-index: 300;

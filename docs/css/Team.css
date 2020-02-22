@@ -480,8 +480,8 @@ html, body {
   animation: fade 1s linear; }
 
 .CloseButton {
-  width: 40%;
-  height: 80%;
+  width: 60%;
+  height: 100%;
   -ms-grid-column: 12;
   -ms-grid-column-span: 1;
   grid-column: 12 / 13;
