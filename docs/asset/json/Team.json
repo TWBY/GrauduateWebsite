@@ -1,73 +1,91 @@
 [{
         "GroupName": "行政組",
-        "WorkContent": "行政工作一、行政工作二、行政工作三",
-        "MemberOne": "行政一、行政二、行政三、行政四",
-        "MemberTwo": "行政五、行政六、行政七、行政八",
+        "WorkContent": "管理所有組別、行政事項、掌握所有大小事",
+
+        "MemberOne": "唐嘉駿、林映瑄、李奕賢",
+        "MemberTwo": "",
+        "MemberThree": "",
         "MurMur": "行政組小murmur : ",
-        "MurMurSlogan": "「行政組MurMurSlogan。」",
+        "MurMurSlogan": "「所以你們的進度是…？」",
+
         "CoverImage": "../asset/img/Monster/chubby.png",
         "CoverHead": "../asset/img/Team/doll_01.png",
         "CoverWord": "../asset/img/Team/department_01.png",
-        "ContentPicture": "../asset/img/Monster/boom.png"
+        "ContentPicture": "../asset/img/CuratorialTeam/department_01.jpg"
     },
     {
         "GroupName": "美術組",
         "WorkContent": "主視覺設計、形象宣傳設計、視覺執行",
-        "MemberOne": "劉怡楨、劉芸汝、石偉晴、黃庭晧",
-        "MemberTwo": "陳律竹、李滇哲、余程漢、許湘鈞",
+        "MemberOne": "劉怡楨、劉芸汝、石偉晴",
+        "MemberTwo": "陳律竹、李滇哲、余程漢",
+        "MemberThree": "",
+
         "MurMur": "美術組小murmur : ",
         "MurMurSlogan": "「畫圖畫到肌腱炎，剪片剪到長針眼。」",
+
         "CoverImage": "../asset/img/Monster/chubby.png",
         "CoverHead": "../asset/img/Team/doll_02.png",
         "CoverWord": "../asset/img/Team/department_02.png",
-        "ContentPicture": "../asset/img/Monster/boom.png"
+        "ContentPicture": "../asset/img/CuratorialTeam/department_02.jpg"
     },
     {
         "GroupName": "場務組",
-        "WorkContent": "場務工作一、場務工作二、場務工作三",
-        "MemberOne": "場務一、場務二、場務三、場務四",
-        "MemberTwo": "場務五、場務六、場務七、場務八",
+        "WorkContent": "展演互動規劃、展覽場地籌備、各組需求協調 ",
+
+        "MemberOne": "李品彤、陳詩凱、蔡煒鈞、羅婷",
+        "MemberTwo": "林欣儒、李玫、陳竑宇、黃偉哲",
+        "MemberThree": "戚菫芃、陳柏穎、陳力瑋、陳妮余",
         "MurMur": "場務組小murmur : ",
-        "MurMurSlogan": "「場務組MurMurSlogan。」",
+        "MurMurSlogan": "「（我們的murmur先放心裡好了??）」",
+
         "CoverImage": "../asset/img/Monster/chubby.png",
         "CoverHead": "../asset/img/Team/doll_03.png",
         "CoverWord": "../asset/img/Team/department_03.png",
-        "ContentPicture": "../asset/img/Monster/boom.png"
+        "ContentPicture": "../asset/img/CuratorialTeam/department_03.jpg"
     },
     {
         "GroupName": "活動組",
-        "WorkContent": "活動工作一、活動工作二、活動工作三",
-        "MemberOne": "活動一、活動二、活動三、活動四",
-        "MemberTwo": "活動五、活動六、活動七、活動八",
+        "WorkContent": "活動企劃與執行",
+        "MemberOne": "李宜瑾、張薷云、張凱崴、陳怡瑂",
+        "MemberTwo": "陳奕勳、王睿鴻、楊筑鈞、陳雁琪",
+        "MemberThree": "",
+
         "MurMur": "活動組小murmur : ",
-        "MurMurSlogan": "「活動組MurMurSlogan。」",
+        "MurMurSlogan": "「活活活，動勳動動動?動！ = 我只想，當塊會呼吸的肉！」",
+
         "CoverImage": "../asset/img/Monster/chubby.png",
         "CoverHead": "../asset/img/Team/doll_04.png",
         "CoverWord": "../asset/img/Team/department_04.png",
-        "ContentPicture": "../asset/img/Monster/boom.png"
+        "ContentPicture": "../asset/img/CuratorialTeam/department_04.jpg"
     },
     {
         "GroupName": "總務組",
-        "WorkContent": "行政總務工作一、總務工作二、總務工作三",
-        "MemberOne": "總務一、總務二、總務三、總務四",
-        "MemberTwo": "總務五、總務六、總務七、總務八",
+        "WorkContent": "帳目管理、採購比價、印刷品接洽",
+        "MemberOne": "施孟萱、張瀚文、王巧竹",
+        "MemberTwo": "",
+        "MemberThree": "",
+
         "MurMur": "總務組小murmur : ",
-        "MurMurSlogan": "「總務組MurMurSlogan。」",
+        "MurMurSlogan": "「勸大家如果想畢業的話，就把錢錢全都交出來喔！(???)。」",
+
         "CoverImage": "../asset/img/Monster/chubby.png",
         "CoverHead": "../asset/img/Team/doll_05.png",
         "CoverWord": "../asset/img/Team/department_05.png",
-        "ContentPicture": "../asset/img/Monster/boom.png"
+        "ContentPicture": "../asset/img/CuratorialTeam/department_05.jpg"
     },
     {
         "GroupName": "公關組",
-        "WorkContent": "公關工作一、公關工作二、公關工作三",
-        "MemberOne": "公關一、公關二、公關三、公關四",
-        "MemberTwo": "公關五、公關六、公關七、公關八",
+        "WorkContent": "粉專管理、處理贊助相關事宜、聯繫畢展講師事宜",
+        "MemberOne": "張家瑄、楊雅鈞",
+        "MemberTwo": "曾逸昀、許湘鈞",
+        "MemberThree": "",
+
         "MurMur": "公關組小murmur : ",
-        "MurMurSlogan": "「公關組MurMurSlogan。」",
+        "MurMurSlogan": "「文案 文案 文案」，人生第一次發現文案這麼重要！",
+
         "CoverImage": "../asset/img/Monster/chubby.png",
         "CoverHead": "../asset/img/Team/doll_06.png",
         "CoverWord": "../asset/img/Team/department_06.png",
-        "ContentPicture": "../asset/img/Monster/boom.png"
+        "ContentPicture": "../asset/img/CuratorialTeam/department_06.jpg"
     }
 ]

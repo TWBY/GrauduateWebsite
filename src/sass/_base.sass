@@ -25,10 +25,23 @@ html, body
 
     .bg
         background-size: 100% 100%
-        +size(100%, 100%)
+        +size(auto, 100%)
         grid-column: 1 / 13
         grid-row: 1 / 13
         z-index: -1
+
+    .videoWrap
+        background-size: 100% 100%
+        +size(100%, 100%)
+        // border: solid 2px pink
+        grid-column: 1 / 13
+        grid-row: 1 / 13
+        z-index: -1
+        overflow: hidden
+        #myVideo
+            min-width: 100%
+            min-height: 100%
+
 
 
 // Tour Side
