@@ -1,12 +1,10 @@
-// console.log("Work");
-
-
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
+
 
 
 new Vue({
@@ -41,6 +39,10 @@ new Vue({
             SelectedButton: [],
             isTextActive: false,
             selectedCategory: "All",
+
+            //style setting
+            MemberWidth: "20%",
+            MemberMaxWidth: "60%"
         }
     },
     created() {
@@ -72,6 +74,24 @@ new Vue({
 
             this.FullPageOptions.navigation = true
             this.FullPageOptions.showActiveTooltip = true
+
+
+            setTimeout(() => {
+                let MemLength = this.Content.Member.length;
+
+                if (MemLength <= 6) {
+                    this.MemberWidth = "33%";
+                    this.MemberMaxWidth = "60%"
+
+                } else if (MemLength == 6 || MemLength == 7) {
+                    this.MemberWidth = "25%"
+                    this.MemberMaxWidth = "100%"
+                } else {
+                    this.MemberWidth = "20%"
+                    this.MemberMaxWidth = "70%"
+                }
+            }, 100)
+
         },
         CloseContent() {
             this.isContentActive = false

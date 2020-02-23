@@ -87,7 +87,7 @@
             </div>
             <div class="section s2">
               <div class="EachArea">
-                <div class="Member" v-for="(Member, index) in Content.Member"><img class="Picture" v-bind:src="Member.Picture" alt="" srcset=""/>
+                <div class="Member" v-for="(Member, index) in Content.Member" :style="{ width: MemberWidth }"><img class="Picture" v-bind:src="Member.Picture" alt="" srcset="" :style="{ width: MemberMaxWidth }"/>
                   <div class="MemberInfo">
                     <div class="Name">{{  Member.Name }}</div>
                     <div class="JobTitle"> {{ Member.JobTitle }}</div>

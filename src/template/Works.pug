@@ -53,8 +53,9 @@ html(lang="en")
                                 .intro(v-html='Content.Intro') 
                         .section.s2
                             .EachArea
-                                .Member(v-for='(Member, index) in Content.Member')
-                                    img.Picture(v-bind:src="Member.Picture", alt="", srcset="")
+                                .Member(v-for='(Member, index) in Content.Member' :style="{ width: MemberWidth }")
+                                    //- 
+                                    img.Picture(v-bind:src="Member.Picture", alt="", srcset=""  :style="{ width: MemberMaxWidth }")
                                     .MemberInfo
                                         .Name {{  Member.Name }}
                                         .JobTitle  {{ Member.JobTitle }}

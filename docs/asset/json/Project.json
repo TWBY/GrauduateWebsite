@@ -61,6 +61,10 @@
         "Picture": "../asset/img/WorkIntro/Team2/Member/Member6.jpg",
         "Name": "曾思瑜",
         "JobTitle": "美術"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member7.jpg",
+        "Name": "第七",
+        "JobTitle": "第七工作"
     }]
 
 }, {
@@ -81,6 +85,18 @@
     }, {
         "Picture": "../asset/img/WorkIntro/Team3/Member/Member3.jpg",
         "Name": "Member3",
+        "JobTitle": "JobTitle1"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member4.jpg",
+        "Name": "Member4",
+        "JobTitle": "JobTitle1"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member5.jpg",
+        "Name": "Member5",
+        "JobTitle": "JobTitle1"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member6.jpg",
+        "Name": "Member6",
         "JobTitle": "JobTitle1"
     }, {
         "Picture": "../asset/img/WorkIntro/Team3/Member/Member4.jpg",
