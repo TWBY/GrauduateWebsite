@@ -159,17 +159,6 @@ html, body {
   -ms-grid-rows: (1fr)[12];
   grid-template-rows: repeat(12, 1fr);
   gap: 2%; }
-  #app .bg {
-    background-size: 100% 100%;
-    width: auto;
-    height: 100%;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-column: 1 / 13;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 12;
-    grid-row: 1 / 13;
-    z-index: -1; }
   #app .videoWrap {
     background-size: 100% 100%;
     width: 100%;
