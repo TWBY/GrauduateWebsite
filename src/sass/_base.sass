@@ -147,7 +147,7 @@ html, body
 .PageTitlePoaTwo
     grid-column: 3 / 6
     grid-row: 2 / 3
-    +border(dotted, 3px, yellow)
+    // +border(dotted, 3px, yellow)
 
 .PageTitleStyle
     +size(100%, 90%) 
@@ -268,11 +268,11 @@ html, body
 
 // Close Button
 .CloseButton
-    +size(60%, 100%)
+    +size(50%, 100%)
     grid-column: 12 / 13
     grid-row: 1 / 2
-    justify-self: end
-    border: solid 1px pink
+    justify-self: center
+    // border: solid 1px pink
 
     .cross
         +size(100%, 100%)
@@ -280,7 +280,7 @@ html, body
         // background-color: $CustomBlue
         transition-duration: 0.5s
         cursor: pointer
-        border: solid 1px green
+        // border: solid 1px green
         
         .line1,.line2
             +size(80%, 10%)

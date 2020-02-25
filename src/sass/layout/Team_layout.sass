@@ -105,14 +105,15 @@
     grid-template-rows: repeat(12, 1fr)
     gap: 3%
 
-    border: solid 2px pink  
+    // border: solid 2px pink  
     z-index: 10
 
     .Picture
-        +size(auto, 100%)
+        +size(auto, 90%)
         grid-column: 2 / 6
         grid-row: 2 / 12
-        border: solid 1px pink
+        // border: solid 1px pink
+        align-self: center
         +flexdisplay()
         .teamPic
             +size(auto, 100%)
@@ -122,7 +123,7 @@
         grid-column: 7 / 12
         grid-row: 3 / 11
         // align-self: center 
-        border: solid 1px pink
+        // border: solid 1px pink
 
         display: flex
         flex-direction: column

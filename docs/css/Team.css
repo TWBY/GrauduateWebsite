@@ -371,10 +371,7 @@ html, body {
   grid-column: 3 / 6;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-  border-style: dotted;
-  border-width: 3px;
-  border-color: yellow; }
+  grid-row: 2 / 3; }
 
 .PageTitleStyle {
   width: 100%;
@@ -494,7 +491,7 @@ html, body {
   animation: fade 1s linear; }
 
 .CloseButton {
-  width: 60%;
+  width: 50%;
   height: 100%;
   -ms-grid-column: 12;
   -ms-grid-column-span: 1;
@@ -502,9 +499,8 @@ html, body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  -ms-grid-column-align: end;
-  justify-self: end;
-  border: solid 1px pink; }
+  -ms-grid-column-align: center;
+  justify-self: center; }
   .CloseButton .cross {
     width: 100%;
     height: 100%;
@@ -512,8 +508,7 @@ html, body {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    cursor: pointer;
-    border: solid 1px green; }
+    cursor: pointer; }
     .CloseButton .cross .line1, .CloseButton .cross .line2 {
       width: 80%;
       height: 10%;
@@ -714,18 +709,17 @@ html, body {
   -ms-grid-rows: (1fr)[12];
   grid-template-rows: repeat(12, 1fr);
   gap: 3%;
-  border: solid 2px pink;
   z-index: 10; }
   .Content .Picture {
     width: auto;
-    height: 100%;
+    height: 90%;
     -ms-grid-column: 2;
     -ms-grid-column-span: 4;
     grid-column: 2 / 6;
     -ms-grid-row: 2;
     -ms-grid-row-span: 10;
     grid-row: 2 / 12;
-    border: solid 1px pink;
+    align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -751,7 +745,6 @@ html, body {
     -ms-grid-row: 3;
     -ms-grid-row-span: 8;
     grid-row: 3 / 11;
-    border: solid 1px pink;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -806,15 +799,17 @@ html, body {
   #app .Content .CloseButton .word {
     color: white;
     font-size: 20px; }
-  #app .Content .Picture .teamPic::before {
+  #app .Content .Picture::before {
     content: "";
     display: inline-block;
     position: absolute;
-    background-color: #044EB7;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
     width: 100%;
-    height: 120%;
-    top: 25%;
-    left: -11%; }
+    height: 100%;
+    top: 3%;
+    left: 3%; }
   #app .Content .DetailInfo {
     color: white; }
     #app .Content .DetailInfo .Info {
