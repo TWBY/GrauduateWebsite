@@ -36,23 +36,36 @@
         background-image: url('../asset/img/Team/Curitorial_button_bg.png')
         background-size: cover
 
+
+        // display: flex
+
+        .doll
+            // flex: 1
+            // border: solid 1px black
+            width: 25%
+        .Department
+            // flex: 3
+            // border: solid 1px black
+            width: 65%
+
         &:hover
             .doll
                 animation: swing  1s linear
                 transform-origin: bottom center
 
-        .ButtonInner
-            display: flex
-            +size(80%, auto)
-            .doll
-                flex: 1
-                +size(10%, auto)
-                // border: solid 1px black
+        // .ButtonInner
+        //     display: flex
+        //     +size(80%, auto)
+        //     .doll
+        //         flex: 1
+        //         +size(10%, auto)
+        //         border: solid 1px black
 
-            .Department
-                flex: 2
-                +size(10%, auto)
-                // border: solid 1px pink
+        //     .Department
+        //         flex: 3
+                
+        //         width: 10%
+        //         border: solid 1px pink
 
 
         &:nth-child(1)

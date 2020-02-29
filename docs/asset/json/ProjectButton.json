@@ -1,15 +1,23 @@
 [{
         "Index": 1,
         "name": "深夜眼科-Cの大冒險",
-        "Category": "互動裝置類"
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png"
     },
     {
         "Index": 2,
         "name": "無距的夢",
-        "Category": "遊戲類"
+        "Category": "遊戲類",
+        "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png"
     }, {
         "Index": 3,
         "name": "初 | 生",
-        "Category": "互動裝置類"
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png"
+    }, {
+        "Index": 4,
+        "name": "測 | 是",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png"
     }
 ]

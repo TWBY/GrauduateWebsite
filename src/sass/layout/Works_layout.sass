@@ -28,6 +28,11 @@
             +size(calc(100%/3), 100%) //custom
 
 
+    
+#myTabContent > *:first-child 
+    grid-row: 1 / 1
+    grid-column: 1 / 1
+
 #myTabContent
     grid-column: 3 / 12
     grid-row: 4 / 13
@@ -39,46 +44,66 @@
 
     z-index: 100
 
-    display: grid
-    grid-template-columns: repeat(3, 31%)
-    grid-template-rows: repeat(10, 40%)
-    grid-row-gap: 5%
-    grid-column-gap: 2%
+
 
     overflow: scroll
     &::-webkit-scrollbar 
         width: 0px
-    .ContentButton
-        +size(100%, 100%)
-        border: solid 1px pink
-        +flexdisplay()
 
-        background-color: $CustomRed
+    .ContentButton
+        width: calc(100%/3)
+        border: solid 1px pink
+        // +flexdisplay()
+        background-color: rgba(0,0,0,0.5)
+
+        display: inline-block
+        position: relative
+
+        background-size: cover
+        
+
+        &::after           
+            content: ""
+            display: block
+            padding-bottom: 100% 
 
         &:hover
-            background-color: $CustomBlue
+            // background-color: rgba(4, 78, 183, 1)
+            .buttonInfo
+                background-color: rgba(4, 78, 183, 0.8)
+                opacity: 1
+                transition-duration: 0.5s
 
         .buttonInfo
-            +size(80%, 40%)
+            +size(100%, 100%)
+            position: absolute
+            +flexdisplay()
+
+            display: flex
+            flex-direction: column
+
             border: solid 1px green
             text-align: center
             color: $CustomWhite
             letter-spacing: 4px
 
-            display: grid
-            grid-template-rows: 50% 50%
+            opacity: 0
+            transition-duration: 0.5s
+
             .name
                 font-size: $InnerFontSize
+    
             .Category
+                width: 50%
                 font-size: $InnerInnerFontSize
                 border: solid 1px yellow
+                margin-top: 10%
                 +flexdisplay()
-    
+
                 .word
                     border: solid 1px $CustomWhite
                     border-radius: 50px
-                    +size(fit-content, fit-content)
-                    padding: 1.5% 5%
+                    padding: 3% 10%
 
 
 
@@ -216,7 +241,9 @@
                             clip-path: circle(48%)
 
                         .MemberInfo
-                            font-size: $InnerInnerFontSize                            
+                            font-size: $InnerInnerFontSize
+                            border: solid 1px black       
+                            text-align: center                     
 
 
 #fp-nav

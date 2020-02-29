@@ -21,22 +21,24 @@ html(lang="en")
                 .navbarOuter.bar
                     .activeBar
                 .navbar.bar
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(0); ChangeTag('All')")
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(0); ChangeTag('All', 0)")
                         .nav-link.initial 全部作品
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(1); ChangeTag('互動裝置類')")
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(1); ChangeTag('互動裝置類', 1)")
                         .nav-link 互動裝置類
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(2); ChangeTag('遊戲類')")
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(2); ChangeTag('遊戲類', 2)")
                         .nav-link 遊戲類
 
             #myTabContent(:class='{ elementToFadeInAndOut:isTextActive }')
                 .ContentButton(v-for='(Button, index) in SelectedButton' 
-                                @click.prevent="ButtonBeClick && ShowContent(Button.Index-1)") 
+                                @click.prevent="ButtonBeClick && ShowContent(Button.Index-1)"
+                                :style="{backgroundImage: 'url(' + Button.Logo + ')' }") 
                                 .buttonInfo
+                                    //- img.logo(v-bind:src="Button.Logo", alt="", srcset="")
                                     .name {{ Button.name }} 
                                     .Category  
                                         .word {{ Button.Category }}
 
-            .Content(:class='{ elementShow:isContentActive }')
+            .Content(:class='{ elementShow:isContentActive }' @click.prevent="CloseContent()")
                 .TeamInfo.TeamCategory {{ Content.Category }}
                 .TeamInfo.TeamName {{ Content.Title }}
                 .TeamInfo.TeamTag {{  Content.Tag }}
@@ -55,7 +57,6 @@ html(lang="en")
                         .section.s2
                             .EachArea
                                 .Member(v-for='(Member, index) in Content.Member' :style="{ width: MemberWidth }")
-                                    //- 
                                     img.Picture(v-bind:src="Member.Picture", alt="", srcset=""  :style="{ width: MemberMaxWidth }")
                                     .MemberInfo
                                         .Name {{  Member.Name }}

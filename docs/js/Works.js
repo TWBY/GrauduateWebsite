@@ -33,6 +33,7 @@ new Vue({
             },
             isContentActive: false,
             ButtonBeClick: true,
+            selectIndex: 0,
 
             //filter data and show the showWorkButton
             Buttons: [],
@@ -102,30 +103,33 @@ new Vue({
             fullpage_api.moveTo(1, 1)
         },
         //filter the show work button
-        ChangeTag(Category) {
-            // clearTimeout(CloseTextActive)
-            // clearTimeout(changeData)
+        ChangeTag(Category, Index) {
 
-            let vm = this;
-            this.isTextActive = true
+            if (this.selectIndex != Index) {
+                this.selectIndex = Index;
+
+                let vm = this;
+                this.isTextActive = true
+
+                setTimeout(() => {
+                    this.isTextActive = false
+                }, 1100)
+
+                setTimeout(() => {
+
+                    if (Category == "All") {
+                        vm.SelectedButton = vm.Buttons
+                    } else {
+                        vm.SelectedButton = vm.Buttons.filter(function (project) {
+                            return project.Category === Category;
+                        });
+                    }
+                    shuffle(vm.SelectedButton)
+
+                }, 500)
+            }
 
 
-            let CloseTextActive = setTimeout(() => {
-                this.isTextActive = false
-            }, 1100)
-
-            let changeData = setTimeout(() => {
-
-                if (Category == "All") {
-                    vm.SelectedButton = vm.Buttons
-                } else {
-                    vm.SelectedButton = vm.Buttons.filter(function (project) {
-                        return project.Category === Category;
-                    });
-                }
-                shuffle(vm.SelectedButton)
-
-            }, 500)
         },
         ChangeActiveBarPoa(index) {
             let navbarOuter = document.querySelector('.navbarOuter');

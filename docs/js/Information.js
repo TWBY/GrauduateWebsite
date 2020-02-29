@@ -14,6 +14,7 @@ new Vue({
                 map: "",
             },
             isTextActive: false,
+            selectIndex: 0
         }
     },
     created() {
@@ -29,19 +30,25 @@ new Vue({
     },
     methods: {
         ChangePeopleInfo(Index) {
-            this.isTextActive = true
+            if (this.selectIndex != Index) {
+                this.selectIndex = Index;
+                this.isTextActive = true
 
-            setTimeout(() => {
-                this.MapInfo.time = this.MapsInfo[Index].time;
-                this.MapInfo.location = this.MapsInfo[Index].location;
-                this.MapInfo.cost = this.MapsInfo[Index].cost;
-                this.MapInfo.traffic = this.MapsInfo[Index].traffic;
-                this.MapInfo.map = this.MapsInfo[Index].map;
-            }, 500)
+                setTimeout(() => {
+                    this.MapInfo.time = this.MapsInfo[Index].time;
+                    this.MapInfo.location = this.MapsInfo[Index].location;
+                    this.MapInfo.cost = this.MapsInfo[Index].cost;
+                    this.MapInfo.traffic = this.MapsInfo[Index].traffic;
+                    this.MapInfo.map = this.MapsInfo[Index].map;
+                }, 500)
 
-            setTimeout(() => {
-                this.isTextActive = false
-            }, 1100)
+                setTimeout(() => {
+                    this.isTextActive = false
+                }, 1100)
+
+            }
+
+
         },
         ChangeActiveBarPoa(index) {
             let navbarOuter = document.querySelector('.navbarOuter');

@@ -66,7 +66,7 @@ html, body
 
             &:hover
                 .SlideBar
-                    transform: translateX(10%)
+                    transform: translateX(-5%)
 
             .TourLink
                 // display: grid
@@ -83,36 +83,40 @@ html, body
                     align-self: end
 
             .SlideBar
-                +size(48%, 30%)
-                max-height: 30px
-                max-width: 100px
+                +size(50%, 60%)
+                max-height: 60px
+                max-width: 140px
 
                 transform: translateX(-100%)
 
                 background-color: $CustomWhite
                 border: solid 1px black
-                font-size: $InnerInnerFontSize - 6px
-                box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2) 
+
+                font-size: $InnerInnerFontSize
+                box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3) 
                 text-decoration: none 
                 padding: 2%
                         
                 z-index: 3        
                 transition-duration: 0.8s
 
-                display: flex
-                align-items: center
-                +border(dotted, 1px, #f24)
+                // display: flex
+                // align-items: center
+                // +border(dotted, 1px, #f24)
+                text-align: center
                 color: $CustomBlue          
 
-                .Rect
-                    flex: 1
-                    background-color: $CustomBlue
-                    +size(80%, 60%)
+                // .Rect
+                //     flex: 1
+                //     background-color: $CustomBlue
+                //     +size(80%, 60%)
                     
-                .Word
-                    flex: 6
-                    +border(dotted, 1px, green)
-                    text-align: center
+                // .Word
+                //     flex: 6
+                //     +border(dotted, 1px, green)
+                //     text-align: center
+                .EnWord
+                    font-size: $InnerInnerFontSize - 8px
 
 
 
@@ -120,11 +124,14 @@ html, body
 .LinkAreaOuter
     grid-column: 11 / 13
     grid-row: 1 / 2
+
+    top: 20%
     // border: solid 1px black
     z-index: 12
     +flexdisplay()  
     .LinkAreaInner
-        +size(60%, auto)
+        +size(60%, 80%)
+        // border: solid 1px black
         +flexdisplay(flex, row, space-between, center)
 
         justify-self: center 
@@ -227,6 +234,7 @@ html, body
 
 .BarArea
     border: solid 2px $CustomBlue
+    background-color: $CustomWhite
     border-radius: 50px
     z-index: 100
     grid-column: 6 / 12
@@ -289,16 +297,14 @@ html, body
             left: 50%
             top: 50%
             transition-duration: 0.5s
-
         .line1
-            transform: translateX(-50%) translateY(-200%)
+            transform: translateX(-50%) translateY(-50%) rotate(45deg) scaleX(1.2)
         .line2
-            transform: translateX(-50%) translateY(200%)
-
+            transform: translateX(-50%) translateY(-50%) rotate(-45deg) scaleX(1.2)
         &:hover
             // background-color: $CustomRed
             .line1
-                transform: translateX(-50%) translateY(-50%) rotate(45deg) scaleX(1.2)
+                transform: translateX(-50%) 
             
             .line2
-                transform: translateX(-50%) translateY(-50%) rotate(-45deg) scaleX(1.2)
+                transform: translateX(-50%) 

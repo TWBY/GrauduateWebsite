@@ -14,23 +14,23 @@
       <div class="TourBarOuter">
         <div class="TourBarInner">
           <div class="TourArea"><a class="TourLink" href="Information.html"><img class="TourImg" src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="Information.html">
-              <div class="Rect"></div>
-              <div class="Word">展覽資訊</div></a></div>
+              <div class="ChWord">展覽資訊</div>
+              <div class="EnWord">Information</div></a></div>
           <div class="TourArea"><a class="TourLink" href="Rhapsody.html"><img src="../asset/img/Icon/Rhapsody.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="Rhapsody.html">
-              <div class="Rect"></div>
-              <div class="Word">狂想故事</div></a></div>
+              <div class="ChWord">狂想故事</div>
+              <div class="EnWord">Theme Story</div></a></div>
           <div class="TourArea"><a class="TourLink" href="Works.html"><img src="../asset/img/Icon/ExhibitionWorks.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="Works.html">
-              <div class="Rect"></div>
-              <div class="Word">展覽作品</div></a></div>
+              <div class="ChWord">展覽作品</div>
+              <div class="EnWord">Works of Display</div></a></div>
           <div class="TourArea"><a class="TourLink" href="Team.html"><img src="../asset/img/Icon/CuratorialTeam.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="Team.html">
-              <div class="Rect"></div>
-              <div class="Word">策展團隊</div></a></div>
+              <div class="ChWord">策展團隊</div>
+              <div class="EnWord">Curatorial Team</div></a></div>
           <div class="TourArea"><a class="TourLink" href="Partner.html"><img src="../asset/img/Icon/Partner.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="Partner.html">
-              <div class="Rect"></div>
-              <div class="Word">合作廠商</div></a></div>
+              <div class="ChWord">合作廠商</div>
+              <div class="EnWord">Sponsor</div></a></div>
           <div class="TourArea"><a class="TourLink" href="ContactUs.html"><img src="../asset/img/Icon/ContactUs.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="ContactUs.html">
-              <div class="Rect"></div>
-              <div class="Word">聯絡我們</div></a></div>
+              <div class="ChWord">聯絡我們</div>
+              <div class="EnWord">Contact Us</div></a></div>
         </div>
       </div>
       <div class="LinkAreaOuter">
@@ -42,26 +42,14 @@
         <div class="EnTitle">Curatorial  Team</div>
       </div>
       <div class="ButtonArea">
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(0)">
-          <div class="ButtonInner"> <img class="doll" src="../asset/img/Team/doll_01.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_01.png" alt="" sizes="" srcset=""/></div>
-        </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(1)"> 
-          <div class="ButtonInner"><img class="doll" src="../asset/img/Team/doll_02.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_02.png" alt="" sizes="" srcset=""/></div>
-        </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(2)">
-          <div class="ButtonInner"><img class="doll" src="../asset/img/Team/doll_03.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_03.png" alt="" sizes="" srcset=""/></div>
-        </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(3)">
-          <div class="ButtonInner"><img class="doll" src="../asset/img/Team/doll_04.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_04.png" alt="" sizes="" srcset=""/></div>
-        </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(4)">
-          <div class="ButtonInner"><img class="doll" src="../asset/img/Team/doll_05.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_05.png" alt="" sizes="" srcset=""/></div>
-        </div>
-        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(5)">
-          <div class="ButtonInner"><img class="doll" src="../asset/img/Team/doll_06.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_06.png" alt="" sizes="" srcset=""/></div>
-        </div>
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(0)"><img class="doll" src="../asset/img/Team/doll_01.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_01.png" alt="" sizes="" srcset=""/></div>
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(1)"> <img class="doll" src="../asset/img/Team/doll_02.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_02.png" alt="" sizes="" srcset=""/></div>
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(2)"><img class="doll" src="../asset/img/Team/doll_03.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_03.png" alt="" sizes="" srcset=""/></div>
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(3)"><img class="doll" src="../asset/img/Team/doll_04.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_04.png" alt="" sizes="" srcset=""/></div>
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(4)"><img class="doll" src="../asset/img/Team/doll_05.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_05.png" alt="" sizes="" srcset=""/></div>
+        <div class="DepartmentButton" @click.prevent="ButtonBeClick &amp;&amp; ShowContent(5)"><img class="doll" src="../asset/img/Team/doll_06.png" alt="" sizes="" srcset=""/><img class="Department" src="../asset/img/Team/department_06.png" alt="" sizes="" srcset=""/></div>
       </div>
-      <div class="Content" :class="{ elementShow:isContentActive }">
+      <div class="Content" :class="{ elementShow:isContentActive }" @click.prevent="CloseContent()">
         <div class="CloseButton" @click.prevent="CloseContent()"> 
           <div class="cross">
             <div class="line1"></div>

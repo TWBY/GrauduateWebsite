@@ -242,9 +242,9 @@ html, body {
       -ms-flex-align: end;
       align-items: flex-end; }
       .TourBarOuter .TourBarInner .TourArea:hover .SlideBar {
-        -webkit-transform: translateX(10%);
-        -ms-transform: translateX(10%);
-        transform: translateX(10%); }
+        -webkit-transform: translateX(-5%);
+        -ms-transform: translateX(-5%);
+        transform: translateX(-5%); }
       .TourBarOuter .TourBarInner .TourArea .TourLink {
         width: 50%;
         max-height: auto;
@@ -259,49 +259,28 @@ html, body {
           -ms-grid-row-align: end;
           align-self: end; }
       .TourBarOuter .TourBarInner .TourArea .SlideBar {
-        width: 48%;
-        height: 30%;
-        max-height: 30px;
-        max-width: 100px;
+        width: 50%;
+        height: 60%;
+        max-height: 60px;
+        max-width: 140px;
         -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
         transform: translateX(-100%);
         background-color: white;
         border: solid 1px black;
-        font-size: 10px;
-        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
         text-decoration: none;
         padding: 2%;
         z-index: 3;
         -webkit-transition-duration: 0.8s;
         -o-transition-duration: 0.8s;
         transition-duration: 0.8s;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        border-style: dotted;
-        border-width: 1px;
-        border-color: #f24;
+        text-align: center;
         color: #044EB7; }
-        .TourBarOuter .TourBarInner .TourArea .SlideBar .Rect {
-          -webkit-box-flex: 1;
-          -ms-flex: 1;
-          flex: 1;
-          background-color: #044EB7;
-          width: 80%;
-          height: 60%; }
-        .TourBarOuter .TourBarInner .TourArea .SlideBar .Word {
-          -webkit-box-flex: 6;
-          -ms-flex: 6;
-          flex: 6;
-          border-style: dotted;
-          border-width: 1px;
-          border-color: green;
-          text-align: center; }
+        .TourBarOuter .TourBarInner .TourArea .SlideBar .EnWord {
+          font-size: 8px; }
 
 .LinkAreaOuter {
   -ms-grid-column: 11;
@@ -310,6 +289,7 @@ html, body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  top: 20%;
   z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,7 +306,7 @@ html, body {
   align-items: center; }
   .LinkAreaOuter .LinkAreaInner {
     width: 60%;
-    height: auto;
+    height: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -427,6 +407,7 @@ html, body {
 
 .BarArea {
   border: solid 2px #044EB7;
+  background-color: white;
   border-radius: 50px;
   z-index: 100;
   -ms-grid-column: 6;
@@ -520,21 +501,21 @@ html, body {
       -o-transition-duration: 0.5s;
       transition-duration: 0.5s; }
     .CloseButton .cross .line1 {
-      -webkit-transform: translateX(-50%) translateY(-200%);
-      -ms-transform: translateX(-50%) translateY(-200%);
-      transform: translateX(-50%) translateY(-200%); }
-    .CloseButton .cross .line2 {
-      -webkit-transform: translateX(-50%) translateY(200%);
-      -ms-transform: translateX(-50%) translateY(200%);
-      transform: translateX(-50%) translateY(200%); }
-    .CloseButton .cross:hover .line1 {
       -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg) scaleX(1.2);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg) scaleX(1.2);
       transform: translateX(-50%) translateY(-50%) rotate(45deg) scaleX(1.2); }
-    .CloseButton .cross:hover .line2 {
+    .CloseButton .cross .line2 {
       -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg) scaleX(1.2);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg) scaleX(1.2);
       transform: translateX(-50%) translateY(-50%) rotate(-45deg) scaleX(1.2); }
+    .CloseButton .cross:hover .line1 {
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .CloseButton .cross:hover .line2 {
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
 
 .bg {
   background-image: url("../asset/img/BG/BGExhibitionWorks.png"); }
@@ -556,6 +537,12 @@ html, body {
     width: calc(100%/3);
     height: 100%; }
 
+#myTabContent > *:first-child {
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1; }
+
 #myTabContent {
   -ms-grid-column: 3;
   -ms-grid-column-span: 9;
@@ -570,53 +557,61 @@ html, body {
   border: solid 2px #f24;
   max-width: 1100px;
   z-index: 100;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (31%)[3];
-  grid-template-columns: repeat(3, 31%);
-  -ms-grid-rows: (40%)[10];
-  grid-template-rows: repeat(10, 40%);
-  grid-row-gap: 5%;
-  grid-column-gap: 2%;
   overflow: scroll; }
   #myTabContent::-webkit-scrollbar {
     width: 0px; }
   #myTabContent .ContentButton {
-    width: 100%;
-    height: 100%;
+    width: calc(100%/3);
     border: solid 1px pink;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #FF506E; }
-    #myTabContent .ContentButton:hover {
-      background-color: #044EB7; }
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    position: relative;
+    background-size: cover; }
+    #myTabContent .ContentButton::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; }
+    #myTabContent .ContentButton:hover .buttonInfo {
+      background-color: rgba(4, 78, 183, 0.8);
+      opacity: 1;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
     #myTabContent .ContentButton .buttonInfo {
-      width: 80%;
-      height: 40%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
       border: solid 1px green;
       text-align: center;
       color: white;
       letter-spacing: 4px;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%; }
+      opacity: 0;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
       #myTabContent .ContentButton .buttonInfo .name {
         font-size: 20px; }
       #myTabContent .ContentButton .buttonInfo .Category {
+        width: 50%;
         font-size: 16px;
         border: solid 1px yellow;
+        margin-top: 10%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -633,13 +628,7 @@ html, body {
         #myTabContent .ContentButton .buttonInfo .Category .word {
           border: solid 1px white;
           border-radius: 50px;
-          width: -webkit-fit-content;
-          width: -moz-fit-content;
-          width: fit-content;
-          height: -webkit-fit-content;
-          height: -moz-fit-content;
-          height: fit-content;
-          padding: 1.5% 5%; }
+          padding: 3% 10%; }
 
 .Content {
   position: absolute;
@@ -816,7 +805,9 @@ html, body {
             -webkit-clip-path: circle(48%);
             clip-path: circle(48%); }
           .Content .ChangeArea .fullpage-wrapper .s2 .EachArea .Member .MemberInfo {
-            font-size: 16px; }
+            font-size: 16px;
+            border: solid 1px black;
+            text-align: center; }
 
 #fp-nav {
   z-index: 300; }
