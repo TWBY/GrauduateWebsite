@@ -521,8 +521,12 @@ html, body {
   background-image: url("../asset/img/BG/BGExhibitionInformation_.png"); }
 
 .BarArea {
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 4;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 6;
+  grid-column: 6 / 12;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
   grid-column: 7 / 11; }
   .BarArea .navbar .nav-item {
     width: calc(100%/3);
@@ -543,9 +547,9 @@ html, body {
   opacity: 0; }
 
 .BasicInfo {
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 5;
-  grid-column: 8 / 13;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3 / 7;
   -ms-grid-row: 5;
   -ms-grid-row-span: 8;
   grid-row: 5 / 13;
@@ -567,9 +571,9 @@ html, body {
       letter-spacing: 0px; }
 
 .Map {
-  -ms-grid-column: 4;
+  -ms-grid-column: 7;
   -ms-grid-column-span: 4;
-  grid-column: 4 / 8;
+  grid-column: 7 / 11;
   -ms-grid-row: 5;
   -ms-grid-row-span: 6;
   grid-row: 5 / 11; }

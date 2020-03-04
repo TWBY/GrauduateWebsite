@@ -56,6 +56,12 @@
           <div class="nav-item" @click.prevent="ChangeActiveBarPoa(2); ChangeTag('遊戲類', 2)">
             <div class="nav-link">遊戲類</div>
           </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(3); ChangeTag('影視動畫類', 3)">
+            <div class="nav-link">影視與動畫類</div>
+          </div>
+          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(4); ChangeTag('專題研究類', 4)">
+            <div class="nav-link">專題研究</div>
+          </div>
         </div>
       </div>
       <div id="myTabContent" :class="{ elementToFadeInAndOut:isTextActive }">

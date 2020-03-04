@@ -527,21 +527,15 @@ html, body {
   z-index: 100;
   background-color: white; }
   .BarArea .navbar .nav-item {
-    width: calc(100%/3);
+    width: calc(100%/5);
     height: 100%; }
   .BarArea .navbarOuter .activeBar {
     border-bottom: solid 2px white;
     border-top: solid 2px white;
     border-right: solid 6px white;
     border-left: solid 6px white;
-    width: calc(100%/3);
+    width: calc(100%/5);
     height: 100%; }
-
-#myTabContent > *:first-child {
-  -ms-grid-row: 1;
-  grid-row: 1 / 1;
-  -ms-grid-column: 1;
-  grid-column: 1 / 1; }
 
 #myTabContent {
   -ms-grid-column: 3;
@@ -555,7 +549,6 @@ html, body {
   -ms-grid-column-align: center;
   justify-self: center;
   border: solid 2px #f24;
-  max-width: 1100px;
   z-index: 100;
   overflow: scroll; }
   #myTabContent::-webkit-scrollbar {
@@ -563,10 +556,10 @@ html, body {
   #myTabContent .ContentButton {
     width: calc(100%/3);
     border: solid 1px pink;
+    background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
-    position: relative;
-    background-size: cover; }
+    position: relative; }
     #myTabContent .ContentButton::after {
       content: "";
       display: block;

@@ -1,23 +1,123 @@
 [{
         "Index": 1,
-        "name": "深夜眼科-Cの大冒險",
+        "name": "夜芒 Yeh Mang",
         "Category": "互動裝置類",
         "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png"
     },
     {
         "Index": 2,
-        "name": "無距的夢",
-        "Category": "遊戲類",
-        "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png"
+        "name": "The Witches",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team2/Logo/TeamLogo.png"
     }, {
         "Index": 3,
-        "name": "初 | 生",
-        "Category": "互動裝置類",
-        "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png"
+        "name": "《這趟旅程不跳錶》",
+        "Category": "影視動畫類",
+        "Logo": "../asset/img/WorkIntro/Team3/Logo/TeamLogo.png"
     }, {
         "Index": 4,
-        "name": "測 | 是",
+        "name": "深夜眼科-Cの大冒險",
         "Category": "互動裝置類",
-        "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png"
+        "Logo": "../asset/img/WorkIntro/Team4/Logo/TeamLogo.png"
+    }, {
+        "Index": 5,
+        "name": "狗狗GO!",
+        "Category": "影視動畫類",
+        "Logo": "../asset/img/WorkIntro/Team5/Logo/TeamLogo.png"
+    },
+    {
+        "Index": 6,
+        "name": "Fruth 真實之花",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team6/Logo/TeamLogo.png"
+    }, {
+        "Index": 7,
+        "name": "商品感性資料庫建置與視覺化",
+        "Category": "專題研究類",
+        "Logo": "../asset/img/WorkIntro/Team7/Logo/TeamLogo.png"
+    }, {
+        "Index": 8,
+        "name": "扌采彡",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team8/Logo/TeamLogo.png"
+    }, {
+        "Index": 9,
+        "name": "阿那納斯Ananas",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team9/Logo/TeamLogo.png"
+    },
+    {
+        "Index": 10,
+        "name": "Fish Story",
+        "Category": "影視動畫類",
+        "Logo": "../asset/img/WorkIntro/Team10/Logo/TeamLogo.png"
+    }, {
+        "Index": 11,
+        "name": "安帕晞谷",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team11/Logo/TeamLogo.png"
+    }, {
+        "Index": 12,
+        "name": "Get the ball rolling",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team12/Logo/TeamLogo.png"
+    }, {
+        "Index": 13,
+        "name": "HUNTER",
+        "Category": "遊戲類",
+        "Logo": "../asset/img/WorkIntro/Team13/Logo/TeamLogo.png"
+    },
+    {
+        "Index": 14,
+        "name": "KARMA",
+        "Category": "遊戲類",
+        "Logo": "../asset/img/WorkIntro/Team14/Logo/TeamLogo.png"
+    }, {
+        "Index": 15,
+        "name": "轉聲",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team15/Logo/TeamLogo.png"
+    }, {
+        "Index": 16,
+        "name": "初 | 生",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team16/Logo/TeamLogo.png"
+    }, {
+        "Index": 17,
+        "name": "無距的夢 Dreameet",
+        "Category": "遊戲類",
+        "Logo": "../asset/img/WorkIntro/Team17/Logo/TeamLogo.png"
+    },
+    {
+        "Index": 18,
+        "name": "在消失以前",
+        "Category": "影視動畫類",
+        "Logo": "../asset/img/WorkIntro/Team18/Logo/TeamLogo.png"
+    }, {
+        "Index": 19,
+        "name": "誰…搞的鬼?",
+        "Category": "遊戲類",
+        "Logo": "../asset/img/WorkIntro/Team19/Logo/TeamLogo.png"
+    }, {
+        "Index": 20,
+        "name": "TIC TALK認識妥瑞",
+        "Category": "遊戲類",
+        "Logo": "../asset/img/WorkIntro/Team20/Logo/TeamLogo.png"
+    }, {
+        "Index": 21,
+        "name": "假新聞分類方法研究",
+        "Category": "專題研究類",
+        "Logo": "../asset/img/WorkIntro/Team21/Logo/TeamLogo.png"
+    },
+    {
+        "Index": 22,
+        "name": "擒慾",
+        "Category": "互動裝置類",
+        "Logo": "../asset/img/WorkIntro/Team22/Logo/TeamLogo.png"
+    }, {
+        "Index": 23,
+        "name": "沒有 Title",
+        "Category": "遊戲類",
+        "Logo": "../asset/img/WorkIntro/Team23/Logo/TeamLogo.png"
     }
 ]

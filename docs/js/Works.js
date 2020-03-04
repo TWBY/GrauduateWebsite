@@ -136,7 +136,7 @@ new Vue({
             let activeBar = document.querySelector('.activeBar');
             let navbarOuterWidth = navbarOuter.clientWidth
 
-            transRange = index * (navbarOuterWidth / 3);
+            transRange = index * (navbarOuterWidth / 5);
             activeBar.style.transform = 'translateX(' + transRange + 'px)';
 
 
@@ -146,7 +146,7 @@ new Vue({
                 if (i == index) {
                     navLink[i].style.color = "white"
                 } else {
-                    navLink[i].style.color = "black"
+                    navLink[i].style.color = "rgb(4, 78, 183)";
                 }
             }
         },

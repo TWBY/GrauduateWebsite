@@ -541,7 +541,6 @@ html, body {
   grid-row: 3 / 13;
   width: 100%;
   height: 100%;
-  max-width: 1100px;
   -ms-grid-column-align: center;
   justify-self: center;
   border: solid 2px #044EB7;
@@ -549,65 +548,23 @@ html, body {
   -webkit-box-shadow: 2px -2px 8px 2px rgba(0, 0, 0, 0.6);
   box-shadow: 2px -2px 8px 2px rgba(0, 0, 0, 0.6);
   background-color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-  grid-template-columns: 50% 50%;
-  -ms-grid-rows: (40%)[10];
-  grid-template-rows: repeat(10, 40%);
-  grid-row-gap: 5%;
   overflow: scroll; }
   .container::-webkit-scrollbar {
     width: 0px; }
   .container .Sponsors {
-    border: solid 1px blue;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .container .Sponsors .SponsorPic {
-      border: solid 2px green;
-      width: 100%;
-      height: 90%;
-      -webkit-transition-duration: 0.3s;
-      -o-transition-duration: 0.3s;
-      transition-duration: 0.3s; }
-      .container .Sponsors .SponsorPic img {
-        width: auto;
-        height: 100%; }
-        .container .Sponsors .SponsorPic img:hover {
-          -webkit-transform: scale(1.05);
-          -ms-transform: scale(1.05);
-          transform: scale(1.05); }
-    .container .Sponsors .Name {
-      border: solid 1px red;
-      font-size: 20px;
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-      -ms-grid-column-align: center;
-      justify-self: center;
-      color: #044EB7;
-      width: 100%;
-      height: 10%;
-      text-align: center; }
-      .container .Sponsors .Name::before, .container .Sponsors .Name::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        background-color: #044EB7; }
-      .container .Sponsors .Name::before {
-        width: 3.5%;
-        height: 35%;
-        top: 20%;
-        left: 19%; }
-      .container .Sponsors .Name::after {
-        width: 50%;
-        height: 3%;
-        top: 80%;
-        left: 25%; }
+    width: calc(100%/2);
+    display: inline-block;
+    position: relative; }
+    .container .Sponsors::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; }
+    .container .Sponsors .SponsorImg {
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }

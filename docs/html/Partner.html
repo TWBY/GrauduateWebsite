@@ -42,10 +42,7 @@
         <div class="EnTitle">Sponsor</div>
       </div>
       <div class="container">
-        <div class="Sponsors" v-for="(item, index) in SponsorsInfo">
-          <div class="SponsorPic"><img v-bind:src="item.Look" alt="" srcset=""/></div>
-          <div class="Name"> {{ item.Name }}</div>
-        </div>
+        <div class="Sponsors" v-for="(item, index) in SponsorsInfo"><img class="SponsorImg" v-bind:src="item.Look" alt="" srcset=""/></div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

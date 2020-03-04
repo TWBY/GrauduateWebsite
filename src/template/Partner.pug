@@ -18,9 +18,7 @@ html(lang="en")
 
             .container
                 .Sponsors(v-for='(item, index) in SponsorsInfo')
-                    .SponsorPic
-                        img(v-bind:src="item.Look", alt="", srcset="")
-                    .Name  {{ item.Name }}
+                    img.SponsorImg(v-bind:src="item.Look", alt="", srcset="")
 
             
         script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")

@@ -1,25 +1,25 @@
 [{
         "Name": "果物配 MAKE LIFE SIMPLE",
-        "Look": "../asset/img/Monster/chubby.png"
+        "Look": "../asset/img/Sponsor/sponsor1.jpg"
     },
     {
         "Name": "Hands Up 跨社群直播平台",
-        "Look": "../asset/img/Monster/boom.png"
+        "Look": "../asset/img/Sponsor/sponsor2.jpg"
     },
     {
         "Name": "第三個贊助廠商",
-        "Look": "../asset/img/Monster/boom.png"
+        "Look": "../asset/img/Sponsor/sponsor3.jpg"
     },
     {
         "Name": "第四個贊助廠商",
-        "Look": "../asset/img/Monster/chubby.png"
+        "Look": "../asset/img/Sponsor/sponsor4.jpg"
     },
     {
         "Name": "第五個贊助廠商",
-        "Look": "../asset/img/Monster/boom.png"
+        "Look": "../asset/img/Sponsor/sponsor5.jpg"
     },
     {
         "Name": "第六個贊助廠商",
-        "Look": "../asset/img/Monster/chubby.png"
+        "Look": "../asset/img/Sponsor/sponsor6.jpg"
     }
 ]

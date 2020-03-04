@@ -27,6 +27,10 @@ html(lang="en")
                         .nav-link 互動裝置類
                     .nav-item(@click.prevent="ChangeActiveBarPoa(2); ChangeTag('遊戲類', 2)")
                         .nav-link 遊戲類
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(3); ChangeTag('影視動畫類', 3)")
+                        .nav-link 影視與動畫類
+                    .nav-item(@click.prevent="ChangeActiveBarPoa(4); ChangeTag('專題研究類', 4)")
+                        .nav-link 專題研究
 
             #myTabContent(:class='{ elementToFadeInAndOut:isTextActive }')
                 .ContentButton(v-for='(Button, index) in SelectedButton' 

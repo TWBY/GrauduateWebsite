@@ -13,7 +13,7 @@
     grid-column: 3 / 12
     grid-row: 3 / 13
     +size(100%, 100%)
-    max-width: 1100px
+    // max-width: 1100px
     justify-self: center
 
     border: solid 2px $CustomBlue
@@ -21,51 +21,35 @@
     box-shadow: 2px -2px 8px 2px rgba(0,0,0,0.6)
     background-color: $CustomWhite
 
-    display: grid
-    grid-template-columns: 50% 50%
-    grid-template-rows: repeat(10, 40%)
-    grid-row-gap: 5%
-
     overflow: scroll
 
     &::-webkit-scrollbar 
         width: 0px
 
     .Sponsors
-        border: solid 1px blue
-        +size(100%, 100%)
+        // border: solid 1px blue
+        width: calc(100%/2)
 
-        // display: grid
-        // grid-template-rows: 70% 30%
+        display: inline-block
+        position: relative
+    
 
-        display: flex
-        flex-direction: column
-        .SponsorPic
-            border: solid 2px green
-            +size(100%, 90%)
-            transition-duration: 0.3s
-            img
-                +size(auto, 100%)
-                &:hover
-                    transform: scale(1.05)
-        .Name
-            border: solid 1px red
-            font-size: $InnerFontSize
-            align-self: center
-            justify-self: center
-            color: $CustomBlue
-            +size(100%, 10%)
-            text-align: center
-            &::before, &::after
-                content: ""
-                display: inline-block
-                position: absolute
-                background-color: $CustomBlue
-            &::before
-                +size(3.5%, 35%)
-                top: 20%
-                left: 19%
-            &::after
-                +size(50%, 3%)
-                top: 80%
-                left: 25%
+        &::after           
+            content: ""
+            display: block
+            padding-bottom: 100% 
+
+        .SponsorImg
+            position: absolute
+            // border: solid 2px green
+            +size(80%, 80%)
+
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+
+            
+
+
+
+

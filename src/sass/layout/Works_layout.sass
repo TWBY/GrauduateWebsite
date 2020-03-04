@@ -17,7 +17,7 @@
     background-color: $CustomWhite
     .navbar
         .nav-item
-            +size(calc(100%/3), 100%) //custom
+            +size(calc(100%/5), 100%) //custom
     .navbarOuter
         .activeBar
             // border: solid 6px $CustomWhite
@@ -25,13 +25,8 @@
             border-top: solid 2px $CustomWhite
             border-right: solid 6px $CustomWhite
             border-left: solid 6px $CustomWhite
-            +size(calc(100%/3), 100%) //custom
+            +size(calc(100%/5), 100%) //custom
 
-
-    
-#myTabContent > *:first-child 
-    grid-row: 1 / 1
-    grid-column: 1 / 1
 
 #myTabContent
     grid-column: 3 / 12
@@ -40,11 +35,9 @@
     // align-self: center
     justify-self: center
     border: solid 2px #f24
-    max-width: 1100px
+    // max-width: 1100px
 
     z-index: 100
-
-
 
     overflow: scroll
     &::-webkit-scrollbar 
@@ -53,14 +46,11 @@
     .ContentButton
         width: calc(100%/3)
         border: solid 1px pink
-        // +flexdisplay()
+        background-size: cover
         background-color: rgba(0,0,0,0.5)
 
         display: inline-block
         position: relative
-
-        background-size: cover
-        
 
         &::after           
             content: ""
@@ -273,8 +263,3 @@
         opacity: 1
     50%
         opacity: 0
-
-
-
-    
-    

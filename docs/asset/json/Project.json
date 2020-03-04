@@ -1,114 +1,697 @@
 [{
     "Index": 1,
+    "Title": "夜芒 Yeh Mang",
+    "Tag": " #互動 #燈光 #芒草 #夜裏 #撥動",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team1/Logo/MasterVision.png",
+    "Intro": "夜在其中，沐浴在夜晚的芒林中。揮舞你的雙手，掀開林中神秘的面紗吧!<br/>以互動燈光秀的體驗手法，傳遞生生不息的理念。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member1.png",
+        "Name": " 惠品媛",
+        "JobTitle": "美術設計、包裝製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member2.png",
+        "Name": "黃庭晧",
+        "JobTitle": "視覺規劃、包裝製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member3.png",
+        "Name": "高子軒",
+        "JobTitle": "包裝製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member4.png",
+        "Name": "林瑞翔",
+        "JobTitle": "行銷規劃、裝置製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member5.png",
+        "Name": "陳右哲",
+        "JobTitle": "影音製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team1/Member/Member6.png",
+        "Name": "陳力瑋",
+        "JobTitle": "程式撰寫、裝置製作"
+    }]
+}, {
+    "Index": 2,
+    "Title": "The Witches",
+    "Tag": " #AR #實體解謎",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team2/Logo/MasterVision.png",
+    "Intro": "人人都嚮往進入魔法世界一探究竟。<br/>為此，我們想給玩家留下一個深刻的印象，帶著他們進入神秘的魔法世界。由於使用AR技術，很多物品及效果可以不受真實世界束縛，我們將想像出來的魔法世界呈現給玩家，滿足大家探索魔法的渴望。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member1.png",
+        "Name": "翁佳瑜",
+        "JobTitle": "程式撰寫、場景佈置"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member2.png",
+        "Name": "林欣儒",
+        "JobTitle": "美術設計、場景佈置"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member3.png",
+        "Name": "郭文亭",
+        "JobTitle": "美術設計、場景佈置"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team2/Member/Member4.png",
+        "Name": "蔡煒鈞",
+        "JobTitle": "企劃書撰寫、場景佈置"
+    }]
+}, {
+    "Index": 3,
+    "Title": "《這趟旅程不跳錶》",
+    "Tag": " #劇情短片 #影視 #CG",
+    "Category": "影視動畫類",
+    "Logo": "../asset/img/WorkIntro/Team3/Logo/MasterVision.png",
+    "Intro": "《這趟旅程不跳錶》是一部結合CG技術的劇情短片，我們將以『救贖』為這部短片的劇情主軸。<br/>被控施暴者以及被社會邊緣的人，是否該給予機會讓他們重新走入社會呢？<br/>而對於被害者，傷害已經造成，又該不該原諒？<br/>我們想藉由這個故事來探討親情之間的愛與傷痕。<br/>劇情簡介:因酗酒家暴而被保護令限制的陳大春，還來不及好好跟家人重修舊好，妻子便意外去世，他也失去了兒子的監護權，大春決定鋌而走險私下帶走兒子，開著那輛賴以維生的老舊計程車，開啟一趟父子的飄泊之旅。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member1.png",
+        "Name": "戚菫芃",
+        "JobTitle": "編導、剪輯"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member2.png",
+        "Name": "李品彤",
+        "JobTitle": "製片、調色"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member3.png",
+        "Name": "邱芷芸",
+        "JobTitle": "製片、文宣"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member4.png",
+        "Name": "吳敏瑜",
+        "JobTitle": "美術、展場"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member5.png",
+        "Name": "洪睿鴻",
+        "JobTitle": "攝影、CG特效"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member6.png",
+        "Name": "陳竑宇",
+        "JobTitle": "燈光、CG特效"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member7.png",
+        "Name": "齊藤嘉輝",
+        "JobTitle": "攝影、CG特效"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member8.png",
+        "Name": "蔡奇軒",
+        "JobTitle": "收音、CG特效"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team3/Member/Member9.png",
+        "Name": "楊家瑞",
+        "JobTitle": "場務、CG特效"
+    }]
+}, {
+    "Index": 4,
     "Title": "深夜眼科-Cの大冒險",
     "Tag": " #動畫 #投影 #實體場景",
     "Category": "互動裝置類",
-    "Logo": "../asset/img/WorkIntro/Team1/Logo/TeamLogo.png",
-    "Intro": "搭建與現實等比例之真實場景，結合生動活潑<br>的動畫劇情，利用投影技術，直接將劇情與實<br>景做結合，為觀眾帶來全新觀賞體驗。<br>故事發生在一間打烊的眼科診間...<br>視力檢查表上C居然從視力檢查表上摔下來了!?<br>眼看檢查表高掛上方，小C要怎麼回家呢?<br>一場深夜的返家大冒險即將展開...！",
+    "Logo": "../asset/img/WorkIntro/Team4/Logo/MasterVision.png",
+    "Intro": "搭建與現實等比例之真實場景，結合生動活潑的動畫劇情，利用投影技術，直接將劇情與實景做結合，為觀眾帶來全新觀賞體驗。故事發生在一間打烊的眼科診間...視力檢查表上C居然從視力檢查表上摔下來了!?眼看檢查表高掛上方，小C要怎麼回家呢?一場深夜的返家大冒險即將展開...！",
     "Member": [{
-        "Picture": "../asset/img/WorkIntro/Team1/Member/Member1.jpg",
+        "Picture": "../asset/img/WorkIntro/Team4/Member/Member1.png",
         "Name": "陳律竹",
-        "JobTitle": "動畫、美術"
+        "JobTitle": "動畫、投影"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team1/Member/Member2.jpg",
+        "Picture": "../asset/img/WorkIntro/Team4/Member/Member2.png",
         "Name": "劉怡楨",
         "JobTitle": "動畫、企劃"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team1/Member/Member3.jpg",
+        "Picture": "../asset/img/WorkIntro/Team4/Member/Member3.png",
         "Name": "梁瀚文",
         "JobTitle": "動畫、美術"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team1/Member/Member4.jpg",
+        "Picture": "../asset/img/WorkIntro/Team4/Member/Member4.png",
         "Name": "李滇哲",
         "JobTitle": "場景、投影"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team1/Member/Member5.jpg",
+        "Picture": "../asset/img/WorkIntro/Team4/Member/Member5.png",
         "Name": "沈書慧",
         "JobTitle": "企劃、投影"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team1/Member/Member6.jpg",
+        "Picture": "../asset/img/WorkIntro/Team4/Member/Member6.png",
         "Name": "王睿鴻",
         "JobTitle": "投影、程式"
     }]
 }, {
-    "Index": 2,
-    "Title": "無距的夢",
-    "Tag": " #遊戲 #動畫",
-    "Category": "遊戲類",
-    "Logo": "../asset/img/WorkIntro/Team2/Logo/TeamLogo.png",
-    "Intro": "「無距的夢」是一款結合空間迷宮及橫向卷軸玩法的益智冒險手機遊戲<br>遊戲講述小男孩伊凡及鬼男孩盧恩從無法相互理解到共同合作的友誼故事<br>夢境是人鬼交會的關鍵場所<br>遊戲運用空間迷宮翻轉破關的特性呈現夢境的不真實性<br>並透過橫向卷軸推動劇情與強調人物的情感轉變<br>也以角色勇於相互探索不了解事物的性格<br>鼓勵玩家對未知事物保有開放態度。",
+    "Index": 5,
+    "Title": "狗狗GO!",
+    "Tag": " #搞笑動畫 #獸人",
+    "Category": "影視動畫類",
+    "Logo": "../asset/img/WorkIntro/Team5/Logo/MasterVision.png",
+    "Intro": "室友好煩、作業好難！<br/>阿狗被壓力逼得衝出校園，在街上奔跑，遭遇被狗追、被賞巴掌，還突然被車撞飛，拖著疲憊的身軀，阿狗究竟要前往哪裡？<br/>「狗狗GO!」是一部搞笑的2D動畫短片，覺得自己的人生好難嗎？跟著阿狗go go go ~ 你會發現人生更難",
     "Member": [{
-        "Picture": "../asset/img/WorkIntro/Team2/Member/Member1.jpg",
-        "Name": "顏薏馨",
-        "JobTitle": "美術"
+        "Picture": "../asset/img/WorkIntro/Team5/Member/Member1.png",
+        "Name": "李依靜",
+        "JobTitle": "編劇、分鏡、物件設計、色彩計畫、監製、背景上色、後期製作"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team2/Member/Member2.jpg",
-        "Name": "張瀚文",
-        "JobTitle": "程式"
+        "Picture": "../asset/img/WorkIntro/Team5/Member/Member2.png",
+        "Name": "趙文郁",
+        "JobTitle": "編劇、分鏡、場景設計、背景線稿、第一原畫"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team2/Member/Member3.jpg",
-        "Name": "施孟萱",
-        "JobTitle": "美術"
+        "Picture": "../asset/img/WorkIntro/Team5/Member/Member3.png",
+        "Name": "吳宜蓁",
+        "JobTitle": "編劇、分鏡、排程、物件設計、角色設計、第二原畫"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team2/Member/Member4.jpg",
-        "Name": "阮柏燁",
-        "JobTitle": "程式"
+        "Picture": "../asset/img/WorkIntro/Team5/Member/Member4.png",
+        "Name": "陳亞松",
+        "JobTitle": "編劇、分鏡、物件設計、場景設計、補間"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team2/Member/Member5.jpg",
-        "Name": "吳致萱",
-        "JobTitle": "美術"
-    }, {
-        "Picture": "../asset/img/WorkIntro/Team2/Member/Member6.jpg",
-        "Name": "曾思瑜",
-        "JobTitle": "美術"
-    }, {
-        "Picture": "../asset/img/WorkIntro/Team2/Member/Member7.jpg",
-        "Name": "第七",
-        "JobTitle": "第七工作"
+        "Picture": "../asset/img/WorkIntro/Team5/Member/Member5.png",
+        "Name": "陳柏穎",
+        "JobTitle": "編劇、上色、配樂音效素材收集"
     }]
-
 }, {
-    "Index": 3,
-    "Title": "初 | 生",
-    "Tag": "#遊戲",
+    "Index": 6,
+    "Title": "Fruth 真實之花",
+    "Tag": " #互動 #媒體識讀 #眼見不一定為憑",
     "Category": "互動裝置類",
-    "Logo": "../asset/img/WorkIntro/Team3/Logo/TeamLogo.png",
-    "Intro": "搭建與現實等比例之真實場景，結合生動活潑<br>的動畫劇情，利用投影技術，直接將劇情與實<br>景做結合，為觀眾帶來全新觀賞體驗。<br>故事發生在一間打烊的眼科診間...<br>視力檢查表上C居然從視力檢查表上摔下來了!?<br>眼看檢查表高掛上方，小C要怎麼回家呢?<br>一場深夜的返家大冒險即將展開...！",
+    "Logo": "../asset/img/WorkIntro/Team6/Logo/MasterVision.png",
+    "Intro": "身處在一個資訊雜遝的時代，真實之花，以AR來呈現出虛實交錯的世界，我們所見的事物究竟是赤裸的真相，還是經過包裝的事實？亦或是徹頭徹尾的謊言？就用你的雙眼來見證真實之花的綻放吧！",
     "Member": [{
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member1.jpg",
-        "Name": "Member1",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team6/Member/Member1.png",
+        "Name": "王靜珊",
+        "JobTitle": "企劃、3D建模貼圖"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member2.jpg",
-        "Name": "Member2",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team6/Member/Member2.png",
+        "Name": "林映瑄",
+        "JobTitle": "企劃、主視覺、展間美術"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member3.jpg",
-        "Name": "Member3",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team6/Member/Member3.png",
+        "Name": "周宜叡",
+        "JobTitle": "企劃、3D建模"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member4.jpg",
-        "Name": "Member4",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team6/Member/Member4.png",
+        "Name": "孫世銘",
+        "JobTitle": "企劃、硬體機構設計"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member5.jpg",
-        "Name": "Member5",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team6/Member/Member5.png",
+        "Name": "楊凡霆",
+        "JobTitle": "企劃、軟體程式設計"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member6.jpg",
-        "Name": "Member6",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team6/Member/Member6.png",
+        "Name": "林冠銘",
+        "JobTitle": "企劃、軟體程式設計輔助、機動人員"
+    }]
+}, {
+    "Index": 7,
+    "Title": "商品感性資料庫建置與視覺化",
+    "Tag": " #大專生研究計畫",
+    "Category": "專題研究類",
+    "Logo": "../asset/img/WorkIntro/Team7/Logo/MasterVision.png",
+    "Intro": "利用商品感性語彙能有效協助設計師或是企業，透過本網站的資訊視覺化，不但能使介面美觀易讀，內容豐富的視覺化圖形還能清晰地簡易地了解消費者的喜好，以及知道市場趨勢的變化。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team7/Member/Member1.png",
+        "Name": "李玫",
+        "JobTitle": "個人完成"
+    }]
+}, {
+    "Index": 8,
+    "Title": "扌采彡",
+    "Tag": " #互動 #燈光 #色彩 #濾鏡 #藝術家",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team8/Logo/MasterVision.png",
+    "Intro": "在這個世界裡。現代社會，雖然湧現了大量的美術館與藝術家，但是人們對於藝術創作的追求卻越來越望而卻步，仿佛只有藝術家進行的事業才能叫做創作，所以我們設計了一個簡單而好看的燈光裝置，通過讓使用者改變燈光裝置的顏色，讓大家體會到簡單的創作快樂，激發更多人在生活中去進行創作。我們希望透過裝置讓使用者放手去嘗試創作自己的作品，與色彩互動碰撞，體會完成作品那一刻的感動，並且可以拍照留念。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team8/Member/Member1.png",
+        "Name": "梁鉦浠",
+        "JobTitle": "企劃撰寫、撰寫程式、濾鏡製作、材料購買"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member4.jpg",
-        "Name": "Member4",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team8/Member/Member2.png",
+        "Name": "楊雅鈞",
+        "JobTitle": "企劃撰寫、美術設計、材料購買、宣傳拍攝"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member5.jpg",
-        "Name": "Member5",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team8/Member/Member3.png",
+        "Name": "陳靖涵",
+        "JobTitle": "材料購買、音效製作、濾鏡美術、美術設計"
     }, {
-        "Picture": "../asset/img/WorkIntro/Team3/Member/Member6.jpg",
-        "Name": "Member6",
-        "JobTitle": "JobTitle1"
+        "Picture": "../asset/img/WorkIntro/Team8/Member/Member4.png",
+        "Name": "葉軒宇",
+        "JobTitle": "撰寫程式、材料購買、作品攝影"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team8/Member/Member5.png",
+        "Name": "祝博雅",
+        "JobTitle": "材料購買、美術設計、周邊設計、場地租借"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team8/Member/Member6.png",
+        "Name": "施雨彤",
+        "JobTitle": "材料購買、美術設計、周邊設計、會議記錄"
+    }]
+}, {
+    "Index": 9,
+    "Title": "阿那納斯Ananas",
+    "Tag": " #投影 #互動裝置 #神蹟 #動畫 #即時人臉合成",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team9/Logo/MasterVision.png",
+    "Intro": "「阿那納斯教」是一個具有宗教意味的神聖空間，參與者以教友的身分完成「喚神儀式」。目的是讓參與者體驗宗教於人心中的定位及意涵，在此以「鳳梨」作為信仰的對象，看似無俚頭的宗教，卻反映出世人對於信仰的重視及高度的無理包容。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team9/Member/Member1.png",
+        "Name": "唐嘉駿",
+        "JobTitle": "機械裝置製作、裝置程式、現場修復"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team9/Member/Member2.png",
+        "Name": "石偉晴",
+        "JobTitle": "主視覺設計、平面設計與輸出、展場設計"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team9/Member/Member3.png",
+        "Name": "陳妮余",
+        "JobTitle": "主視覺設計、平面設計與輸出、動畫製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team9/Member/Member4.png",
+        "Name": "程奕甄",
+        "JobTitle": "企劃書撰寫、各項工作監督與協助、展場搭建"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team9/Member/Member5.png",
+        "Name": "洪裕瑋",
+        "JobTitle": "機械裝置製作、裝置程式、展場後台規劃"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team9/Member/Member6.png",
+        "Name": "溫慶榆",
+        "JobTitle": "展場搭建、協助裝置、裝置包裝"
+    }]
+}, {
+    "Index": 10,
+    "Title": "Fish Story",
+    "Tag": " #動畫",
+    "Category": "影視動畫類",
+    "Logo": "../asset/img/WorkIntro/Team10/Logo/MasterVision.png",
+    "Intro": "一事無成的魯蛇阿宏，在街角遇見了奇蹟，一道光灑下，聖魔導士出現，給了阿宏一支神奇的魔法棒，阿宏得到魔法棒後，擁有了隨心所欲的能力，究竟這魔法給阿宏帶來的是……？",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team10/Member/Member1.png",
+        "Name": "曾繪伶",
+        "JobTitle": "分鏡、動態分鏡、角色設定、原畫、補間、描線、上色、排程"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team10/Member/Member2.png",
+        "Name": "林雍容",
+        "JobTitle": "編劇、分鏡、動態分鏡、動作測試、補間、描線、上色、後製"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team10/Member/Member3.png",
+        "Name": "蔡允瑄",
+        "JobTitle": "道具設定、色彩設定、補間、描線、上色、總務、IG小編、公關"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team10/Member/Member4.png",
+        "Name": "陳思如",
+        "JobTitle": "道具設定、色彩設定、動作測試、補間、描線、上色"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team10/Member/Member5.png",
+        "Name": "李育蓁",
+        "JobTitle": "角色設定、場景設定、色彩設定、原畫、補間、描線、上色、背景"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team10/Member/Member6.png",
+        "Name": "王巧竹",
+        "JobTitle": "場景設定、道具設定、補間、描線、上色、背景、FB小編"
+    }]
+}, {
+    "Index": 11,
+    "Title": "安帕晞谷",
+    "Tag": " #繪本 #互動 #投影 #隧道 #同理心",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team11/Logo/MasterVision.png",
+    "Intro": "在很多情況下我們都可能成為極少數。是否我們時常忘了同理心?你是否也願意一起和我們一起種下同理心的種子?<br/>快進入我們繪本的世界中，看看飽受霸凌的小雀鳥如何將負面的能量轉為力量，去感染那位霸凌者-布梨鳥，又是如何用同理心讓世界變得更好!",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team11/Member/Member1.png",
+        "Name": "張薷云",
+        "JobTitle": "繪本設計執行、美術編輯"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team11/Member/Member2.png",
+        "Name": "陳侑楷",
+        "JobTitle": "行銷企劃執行"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team11/Member/Member3.png",
+        "Name": "李淑晴",
+        "JobTitle": "專案統整、美術編輯"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team11/Member/Member4.png",
+        "Name": "李惠筑",
+        "JobTitle": "展場規劃佈置"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team11/Member/Member5.png",
+        "Name": "余程漢",
+        "JobTitle": "移動式投影機架設"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team11/Member/Member6.png",
+        "Name": "游釋恩",
+        "JobTitle": "展場架設、互動機構"
+    }]
+}, {
+    "Index": 12,
+    "Title": "Get the ball rolling",
+    "Tag": " #互動 #軌道 #童話 #聲光效果 #趣味",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team12/Logo/MasterVision.png",
+    "Intro": "人生如同軌道般，我們像是滾動中的球，需要不斷地rolling，不斷地向前。人生也像一個遊樂場，路上總會有意外的驚喜，總會有嘗試過後的失敗，也總會有需要自己做抉擇的時機，不論好壞，我們的生命還是不斷地在運轉中，直到那自己嚮往的終點。不要氣餒地，快來與我們一起享受rolling玩樂的趣味吧！",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team12/Member/Member1.png",
+        "Name": "徐昕蘅",
+        "JobTitle": "主視覺、軌道製作、木板削鋸、軌道架設"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team12/Member/Member2.png",
+        "Name": "曾逸昀",
+        "JobTitle": "主視覺、軌道製作、木板削鋸、軌道架設"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team12/Member/Member3.png",
+        "Name": "陳君妍",
+        "JobTitle": "程式撰寫、機關設計製作、粉專管理、企劃發想"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team12/Member/Member4.png",
+        "Name": "吳雅晴",
+        "JobTitle": "程式撰寫、機關設計製作、粉專管理、企劃發想"
+    }]
+}, {
+    "Index": 13,
+    "Title": "HUNTER",
+    "Tag": " #VR #動作RPG #開放世界 #體感衣",
+    "Category": "遊戲類",
+    "Logo": "../asset/img/WorkIntro/Team13/Logo/MasterVision.png",
+    "Intro": "HUNTER是一款 VR 奇幻 RPG，當中融合了探險、尋寶的元素，主要敘述是在中古世紀大航海時代的尋寶、奪寶行動。戴上 VR 眼鏡後可以體驗在叢林中奔跑，路上隨機出現的道具可以提升玩家能力，讓尋寶抗敵過程更加順利。過程中也會出現各種阻礙，像是陷阱與守護神的追擊，玩家必須躲開這些難關順利取得寶藏。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team13/Member/Member1.png",
+        "Name": "陳奕勳",
+        "JobTitle": "企劃、遊戲製作進度"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team13/Member/Member2.png",
+        "Name": "歐陽友",
+        "JobTitle": "程式撰寫、企劃"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team13/Member/Member3.png",
+        "Name": "林凱群",
+        "JobTitle": "程式撰寫"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team13/Member/Member4.png",
+        "Name": "李婕如",
+        "JobTitle": "遊戲UI製作、企劃"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team13/Member/Member5.png",
+        "Name": "謝靜宜",
+        "JobTitle": "場景建模、美術圖、LOGO製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team13/Member/Member6.png",
+        "Name": "歐陽梓田",
+        "JobTitle": "場景建模、美術圖"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team13/Member/Member7.png",
+        "Name": "黃榆雅",
+        "JobTitle": "場景建模、美術圖"
+    }]
+}, {
+    "Index": 14,
+    "Title": "KARMA",
+    "Tag": " #遊戲 #恐怖 #冒險 #2.5D",
+    "Category": "遊戲類",
+    "Logo": "../asset/img/WorkIntro/Team14/Logo/MasterVision.png",
+    "Intro": "玩家扮演因為實驗失敗，意識轉移至機械實驗體的科學家卡瑪，在充滿著自己創造出來的失敗品的垃圾場中，找尋四散的零件以及能源躲避追殺，求取生存。玩家反思因果報、考驗玩家資源分配、感受遊戲營造的恐怖冒險刺激感",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team14/Member/Member1.png",
+        "Name": "孫懷駿",
+        "JobTitle": "遊戲程式撰寫"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team14/Member/Member2.png",
+        "Name": "陳 潁",
+        "JobTitle": "程式撰寫支援、進度管理"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team14/Member/Member3.png",
+        "Name": "許承郁",
+        "JobTitle": "場景、角色設計、UV圖"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team14/Member/Member4.png",
+        "Name": "謝鴻鈞",
+        "JobTitle": "場景、角色建模、角色動作製作、UV圖"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team14/Member/Member5.png",
+        "Name": "楊筑鈞",
+        "JobTitle": "美術支援、視覺圖製作、展場規劃、宣傳"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team14/Member/Member6.png",
+        "Name": "劉逢軒",
+        "JobTitle": "音效製作、片頭剪輯、關卡設計、企劃書撰寫、UI設計"
+    }]
+}, {
+    "Index": 15,
+    "Title": "轉聲",
+    "Tag": " #音樂 #投影 #動畫 #互動裝置",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team15/Logo/MasterVision.png",
+    "Intro": "「轉聲」利用生活中的噪音將其轉化為美妙的音樂，想傳達出即使是令人討人厭的事物，換了不同形式呈現也能有不一樣的面貌。同時在傳達理念的過程中，也能讓觀展者親自動手選擇各種不同的旋律和節奏，編織成屬於自己獨一無二的音樂。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team15/Member/Member1.png",
+        "Name": "陳詩凱",
+        "JobTitle": "程式設計"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team15/Member/Member2.png",
+        "Name": "王宇祥",
+        "JobTitle": "程式設計"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team15/Member/Member3.png",
+        "Name": "李冠翰",
+        "JobTitle": "音樂製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team15/Member/Member4.png",
+        "Name": "黃政勳",
+        "JobTitle": "主視覺設計"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team15/Member/Member5.png",
+        "Name": "林可欣",
+        "JobTitle": "展場裝置設計"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team15/Member/Member6.png",
+        "Name": "游宛諭",
+        "JobTitle": "展場裝置設計"
+    }]
+}, {
+    "Index": 16,
+    "Title": "初 | 生",
+    "Tag": " #光影互動 #生命 #沈浸 #安心",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team16/Logo/MasterVision.png",
+    "Intro": "裝置的設計讓體驗者如同回到母親子宮裡溫暖、舒適，回到生命的起源，回到媽媽的肚子裡，展場內的懶骨頭，讓體驗者感受到回到母體的舒適與安心，牆上的光影互動感應，讓體驗者體驗身為胎兒的感覺，我們希望藉由此互動裝置體驗，除了讓人體驗回歸在母親子宮中的模擬情境，也讓他們找回最初的自我，心情舒服。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team16/Member/Member1.png",
+        "Name": "黃偉哲",
+        "JobTitle": "主撰寫程式、裝置製作"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team16/Member/Member2.png",
+        "Name": "張天嬡",
+        "JobTitle": "聲音處理、展場視覺"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team16/Member/Member3.png",
+        "Name": "楊郁喬",
+        "JobTitle": "行銷、主展場視覺"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team16/Member/Member4.png",
+        "Name": "洪宛鈴",
+        "JobTitle": "主裝置製作、專案管理"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team16/Member/Member5.png",
+        "Name": "葉子軒",
+        "JobTitle": "主裝置製作、行銷"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team16/Member/Member6.png",
+        "Name": "曹瑜",
+        "JobTitle": "主視覺設計、平面設計"
+    }]
+}, {
+    "Index": 17,
+    "Title": "無距的夢 Dreameet",
+    "Tag": " #手機遊戲 #空間迷宮 #橫向捲軸 #故事繪本 #益智冒險",
+    "Category": "遊戲類",
+    "Logo": "../asset/img/WorkIntro/Team17/Logo/MasterVision.png",
+    "Intro": "「無距的夢」是一款結合空間迷宮及橫向卷軸玩法的益智冒險手機遊戲，遊戲講述小男孩伊凡及鬼男孩盧恩從無法相互理解到共同合作的友誼故事。夢境是人鬼交會的關鍵場所，遊戲運用空間迷宮翻轉破關的特性呈現夢境的不真實性，並透過橫向卷軸推動劇情與強調人物的情感轉變。也以角色勇於相互探索不了解事物的性格,鼓勵玩家對未知事物保有開放態度。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team17/Member/Member1.png",
+        "Name": "施孟萱",
+        "JobTitle": "遊戲總籌、關卡設計、場景建模、配樂音效"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team17/Member/Member2.png",
+        "Name": "吳致萱",
+        "JobTitle": "美術總籌、視覺設計、場景美術、繪本原畫"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team17/Member/Member3.png",
+        "Name": "顏薏馨",
+        "JobTitle": "角色動作、角色建模"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team17/Member/Member4.png",
+        "Name": "曾思瑜",
+        "JobTitle": "行銷企劃、繪本繪製、介面設計"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team17/Member/Member5.png",
+        "Name": "張瀚文",
+        "JobTitle": "程式總籌、程式撰寫、遊戲整合"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team17/Member/Member6.png",
+        "Name": "阮柏燁",
+        "JobTitle": "程式撰寫、遊戲整合"
+    }]
+}, {
+    "Index": 18,
+    "Title": "在消失以前",
+    "Tag": " #影視組 #劇情片 #CG特效 #火車 #玉鐲",
+    "Category": "影視動畫類",
+    "Logo": "../asset/img/WorkIntro/Team18/Logo/MasterVision.png",
+    "Intro": "本片以實景拍攝搭配CG特效，片裡以一間什麼東西都能夠修好的魔法店鋪作為主軸。這間魔法店鋪的主人什麼東西都能夠修好，但付出的代價是其上面的「回憶」會消失不見。藉此告訴觀眾物品的價值不再於「價格」，而在於上面的「回憶」。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team18/Member/Member1.png",
+        "Name": "許湘鈞",
+        "JobTitle": "編導、剪接、調色"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team18/Member/Member2.png",
+        "Name": "周嘉芸",
+        "JobTitle": "副導、場記"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team18/Member/Member3.png",
+        "Name": "李宜瑾",
+        "JobTitle": "製片"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team18/Member/Member4.png",
+        "Name": "李嘉珍",
+        "JobTitle": "攝影、CG特效"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team18/Member/Member5.png",
+        "Name": "吳妮䤴",
+        "JobTitle": "攝助、美術"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team18/Member/Member6.png",
+        "Name": "陳思宇",
+        "JobTitle": "道具、燈光、CG特效"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team18/Member/Member7.png",
+        "Name": "劉菀晴",
+        "JobTitle": "造型、收音、配樂"
+    }]
+}, {
+    "Index": 19,
+    "Title": "誰…搞的鬼?",
+    "Tag": "",
+    "Category": "遊戲類",
+    "Logo": "../asset/img/WorkIntro/Team19/Logo/MasterVision.png",
+    "Intro": "近年來因VR能帶給玩家真實與虛擬的視覺衝擊感受而竄紅，但是一般市售的單人VR遊戲較缺乏與人互動的趣味，因此我們嘗試以雙人互動的玩法PC+VR來增加遊戲豐富性，並結合早期台灣傳統家庭的背景帶領玩家在趣味詼諧的遊戲中體驗民間宗教信仰。在台灣，多數人習慣拿香拜拜，祈求神明給予平安，以及諸事順利，這是一款結合台灣習俗的刺激遊戲，讓我們跟著遊戲裡的角色共同對抗你眼中的惡勢力吧！",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team19/Member/Member1.png",
+        "Name": "陳奕潔",
+        "JobTitle": "介面設計、3D建模、平面設計"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team19/Member/Member2.png",
+        "Name": "羅婷",
+        "JobTitle": "程式撰寫、特效製作、ＶＲ測試"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team19/Member/Member3.png",
+        "Name": "姚昌辰",
+        "JobTitle": "程式整合、特效製作、ＶＲ測試"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team19/Member/Member4.png",
+        "Name": "李秉彥",
+        "JobTitle": "程式撰寫、特效製作、ＶＲ測試"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team19/Member/Member5.png",
+        "Name": "黃宥嘉",
+        "JobTitle": "程式撰寫、3D建模、3D人物骨架"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team19/Member/Member6.png",
+        "Name": "劉芸汝",
+        "JobTitle": "3D模型設計、主視覺設計"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team19/Member/Member7.png",
+        "Name": "丁延欣",
+        "JobTitle": "程式撰寫、ＶＲ測試"
+    }]
+}, {
+    "Index": 20,
+    "Title": "TIC TALK認識妥瑞",
+    "Tag": "",
+    "Category": "遊戲類",
+    "Logo": "../asset/img/WorkIntro/Team20/Logo/MasterVision.png",
+    "Intro": "每200人就有1人為妥瑞患者，妥瑞症並不罕見，但總被視而不見。疾病教育的不全，導致社會大眾對妥瑞有所偏見，患者病況惡化、被侵害了基本人權，有苦難言亦不敢言。本團隊欲以妥瑞氏症資訊教育宣傳為主題，結合遊戲式學習做非營利行銷專題。以桌遊、手遊設計結合活動向大眾推廣宣傳妥瑞症相關資訊讓大眾親身體驗妥瑞患者不能言說的困擾感受，並在遊戲中教育患者及大眾如何減緩妥瑞症症狀發作。社群媒體用以宣傳更多妥瑞症相關專業資訊以及妥瑞病友面對妥瑞症的心路歷程&處理方式。希望最終能讓大眾及患者對妥瑞症更加了解，以更健康包容的心態面對妥瑞。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team20/Member/Member1.png",
+        "Name": "涂琮渝",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team20/Member/Member2.png",
+        "Name": "葉昱暄",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team20/Member/Member3.png",
+        "Name": "萬緯",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team20/Member/Member4.png",
+        "Name": "鍾柏元",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team20/Member/Member5.png",
+        "Name": "陳雁琦",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team20/Member/Member6.png",
+        "Name": "許皓翔",
+        "JobTitle": ""
+    }]
+}, {
+    "Index": 21,
+    "Title": "假新聞分類方法研究",
+    "Tag": "",
+    "Category": "專題研究類",
+    "Logo": "../asset/img/WorkIntro/Team21/Logo/MasterVision.png",
+    "Intro": "",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team21/Member/Member1.png",
+        "Name": "黃翎嘉",
+        "JobTitle": "個人完成"
+    }]
+}, {
+    "Index": 22,
+    "Title": "擒慾",
+    "Tag": "",
+    "Category": "互動裝置類",
+    "Logo": "../asset/img/WorkIntro/Team22/Logo/MasterVision.png",
+    "Intro": "有另一半的你/妳身邊伴侶有沒有可能是恐怖情人呢？怪美幫互動作品「擒慾」將帶著大家浸入充滿浪漫、情慾卻充斥詭譎的一段愛情探索之旅。",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team22/Member/Member1.png",
+        "Name": "張家瑄",
+        "JobTitle": "演員、場景"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team22/Member/Member2.png",
+        "Name": "黃筱渝",
+        "JobTitle": "程式撰寫、場景採購"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team22/Member/Member3.png",
+        "Name": "陳怡瑂",
+        "JobTitle": "企劃、劇情"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team22/Member/Member4.png",
+        "Name": "胡歆柔",
+        "JobTitle": "劇情、影音剪輯"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team22/Member/Member5.png",
+        "Name": "吳孟蓁",
+        "JobTitle": "程式撰寫、家具採購"
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team22/Member/Member6.png",
+        "Name": "李奕賢",
+        "JobTitle": "主視覺、場景"
+    }]
+}, {
+    "Index": 23,
+    "Title": "沒有 Title",
+    "Tag": "",
+    "Category": "遊戲類",
+    "Logo": "../asset/img/WorkIntro/Team23/Logo/MasterVision.png",
+    "Intro": "",
+    "Member": [{
+        "Picture": "../asset/img/WorkIntro/Team23/Member/Member1.png",
+        "Name": "郭翔瀚",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team23/Member/Member2.png",
+        "Name": "張凱崴",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team23/Member/Member3.png",
+        "Name": "吳佩珊",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team23/Member/Member4.png",
+        "Name": "謝典霖",
+        "JobTitle": ""
+    }, {
+        "Picture": "../asset/img/WorkIntro/Team23/Member/Member5.png",
+        "Name": "陳含懿",
+        "JobTitle": ""
     }]
 }]
