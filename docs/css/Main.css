@@ -260,7 +260,7 @@ html, body {
           align-self: end; }
       .TourBarOuter .TourBarInner .TourArea .SlideBar {
         width: 50%;
-        height: 60%;
+        height: 40%;
         max-height: 60px;
         max-width: 140px;
         -webkit-transform: translateX(-100%);
@@ -278,7 +278,27 @@ html, body {
         -o-transition-duration: 0.8s;
         transition-duration: 0.8s;
         text-align: center;
-        color: #044EB7; }
+        color: #044EB7;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .TourBarOuter .TourBarInner .TourArea .SlideBar .Word {
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          height: -webkit-fit-content;
+          height: -moz-fit-content;
+          height: fit-content; }
         .TourBarOuter .TourBarInner .TourArea .SlideBar .EnWord {
           font-size: 8px; }
 

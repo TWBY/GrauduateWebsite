@@ -8,7 +8,7 @@ html(lang="en")
     body
         #app
             .videoWrap
-                video#myVideo(src='../asset/video/bg1.mp4' autoplay='true' loop='true')
+                video#myVideo(src='../asset/video/BG_3.mp4' autoplay='true' loop='true')
             include Component/TourBar.pug
             include Component/LinkArea.pug
             
@@ -28,7 +28,7 @@ html(lang="en")
                     .nav-item(@click.prevent="ChangeActiveBarPoa(2); ChangeTag('遊戲類', 2)")
                         .nav-link 遊戲類
                     .nav-item(@click.prevent="ChangeActiveBarPoa(3); ChangeTag('影視動畫類', 3)")
-                        .nav-link 影視與動畫類
+                        .nav-link 影視/動畫類
                     .nav-item(@click.prevent="ChangeActiveBarPoa(4); ChangeTag('專題研究類', 4)")
                         .nav-link 專題研究
 

@@ -67,6 +67,8 @@ html, body
             &:hover
                 .SlideBar
                     transform: translateX(-5%)
+                    // transform: translateX(100%)
+                    
 
             .TourLink
                 // display: grid
@@ -83,7 +85,7 @@ html, body
                     align-self: end
 
             .SlideBar
-                +size(50%, 60%)
+                +size(50%, 40%)
                 max-height: 60px
                 max-width: 140px
 
@@ -100,21 +102,14 @@ html, body
                 z-index: 3        
                 transition-duration: 0.8s
 
-                // display: flex
-                // align-items: center
-                // +border(dotted, 1px, #f24)
                 text-align: center
-                color: $CustomBlue          
+                color: $CustomBlue 
+                +flexdisplay()
 
-                // .Rect
-                //     flex: 1
-                //     background-color: $CustomBlue
-                //     +size(80%, 60%)
-                    
-                // .Word
-                //     flex: 6
-                //     +border(dotted, 1px, green)
-                //     text-align: center
+                .Word
+                    +size(fit-content, fit-content)
+                    // border: solid 1px black
+
                 .EnWord
                     font-size: $InnerInnerFontSize - 8px
 
