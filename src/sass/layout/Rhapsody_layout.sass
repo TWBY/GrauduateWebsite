@@ -135,13 +135,13 @@
 
 //Topic
 .concept
-    // border: solid 1px yellow
+    border: solid 2px yellow
     grid-column: 8 / 12
-    grid-row: 5 / 12
+    grid-row: 4 / 11
 
     font-size: $InnerInnerFontSize
     letter-spacing: 3px
-    line-height: $InnerInnerFontSize*1.5
+    line-height: $InnerInnerFontSize*2.5
 
     display: flex
     align-items: center
@@ -152,15 +152,15 @@
     .conceptSlogan
         color: $CustomBlue
 .conceptImgOuter
-    border: solid 1px blue
-    grid-column: 3 / 8
-    grid-row: 4 / 13
+    border: solid 2px blue
+    grid-column: 4 / 8
+    grid-row: 4 / 11
 
     display: grid
     grid-template-columns: 100%
     grid-template-rows: 100%
     .conceptImgInner
         // border: solid 2px pink
-        +size(auto, 100%)
+        +size(auto, 90%)
         align-self: center
         justify-self: center
