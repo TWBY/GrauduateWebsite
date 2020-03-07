@@ -139,9 +139,10 @@ new Vue({
         ChangeActiveBarPoa(index) {
             let navbarOuter = document.querySelector('.navbarOuter');
             let activeBar = document.querySelector('.activeBar');
+            let navItem = document.getElementsByClassName("nav-item");
             let navbarOuterWidth = navbarOuter.clientWidth
 
-            transRange = index * (navbarOuterWidth / 5);
+            transRange = index * (navbarOuterWidth / navItem.length);
             activeBar.style.transform = 'translateX(' + transRange + 'px)';
 
             let navLink = document.querySelectorAll('.nav-link');
