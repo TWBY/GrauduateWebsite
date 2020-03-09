@@ -1,0 +1,125 @@
+/*-------------------------*/
+/*----------Team-----------*/
+/*-------------------------*/
+@-webkit-keyframes "Show" {
+  0% {
+    top: 30%;
+    opacity: 0; }
+  100% {
+    top: 0%;
+    opacity: 1; } }
+@keyframes "Show" {
+  0% {
+    top: 30%;
+    opacity: 0; }
+  100% {
+    top: 0%;
+    opacity: 1; } }
+
+@media (max-width: 1200px) {
+  .videoWrap {
+    display: none; }
+  #app {
+    overflow: hidden;
+    background-color: black; }
+  .PageTitleStyle {
+    display: none; }
+  .content {
+    display: none; }
+  .phoneContent {
+    display: none;
+    height: auto;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    overflow: auto;
+    z-index: 1100;
+    opacity: 0; }
+  .TestelementShow {
+    display: block;
+    -webkit-animation-name: Show;
+    animation-name: Show;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal;
+    animation-direction: normal; } }
+
+#app .elementShow {
+  background-color: black;
+  height: 100%; }
+
+#app .Content .Picture {
+  height: auto; }
+  #app .Content .Picture::before {
+    display: none; }
+
+#app .Content .DetailInfo .Info {
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 10px; }
+
+#app .Content .DetailInfo .MurMur {
+  margin-bottom: 0px; }
+
+#app .Content .MurMurTalk {
+  text-align: right;
+  color: white;
+  font-size: 15px; }
+
+#app .ButtonArea .DepartmentButton {
+  width: 90%;
+  height: 20vw;
+  margin-bottom: 5%;
+  grid-column: none;
+  grid-row: none; }
+
+.phoneContent .CloseButton {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  margin: 2%; }
+
+.phoneContent .Picture .teamPic {
+  width: 66%;
+  margin-top: 10%;
+  height: auto; }
+
+.phoneContent .DetailInfo > .Title {
+  text-align: left; }
+
+.Content .DetailInfo {
+  height: auto;
+  margin-left: 18%;
+  margin-right: 18%;
+  width: 65%; }
+  .Content .DetailInfo .Info:nth-child(1) {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none; }
+  .Content .DetailInfo .Info:nth-child(2) {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none; }
+  .Content .DetailInfo .Info:nth-child(3) {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none; }
+  .Content .DetailInfo .Info:nth-child(4) {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none; }
+
+.ButtonArea {
+  display: block;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 10;
+  grid-row: 3 / 13;
+  overflow: auto; }
+  .ButtonArea .DepartmentButton .Department {
+    width: 50%; }

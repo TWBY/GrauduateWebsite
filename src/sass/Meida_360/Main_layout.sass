@@ -1,0 +1,236 @@
+/*-------------------------*/
+/*---------index-----------*/
+/*-------------------------*/
+@import  base
+
+@keyframes "marqee01"    
+	0%    
+		top: 0   
+	
+	25%    
+		top: 0   
+	
+	30%    
+		top: -100%   
+	
+	49.9%    
+		visibility: visible   
+		top: -100%   
+	
+	50%    
+		visibility: hidden   
+		top: -100%   
+	
+	50.1%    
+		top: 100%   
+	
+	95%    
+		visibility: visible   
+		top: 100%   
+	
+	100%    
+		top: 0   
+	
+
+@keyframes "marqee02"    
+	0%    
+		visibility: visible   
+		top: 100%   
+	
+	5%    
+		top: 0   
+	
+	25%    
+		top: 0   
+	
+	30%    
+		top: -100%   
+	
+	50%    
+		top: -100%   
+	
+	55%    
+		top: -200%   
+	
+	74.9%    
+		visibility: visible   
+		top: -200%   
+	
+	75%    
+		visibility: hidden   
+		top: -200%   
+	
+	75.1%    
+		top: 100%   
+	
+	100%    
+		top: 100%   
+	
+
+@keyframes "marqee03"    
+	0%    
+		visibility: visible   
+		top: 100%   
+	
+	5%    
+		top: 0   
+	
+	25%    
+		top: 0   
+	
+	30%    
+		top: -100%   
+	
+	50%    
+		top: -100%   
+	
+	55%    
+		top: -200%   
+	
+	75%    
+		top: -200%   
+	
+	80%    
+		top: -300%   
+	
+	98.9%    
+		visibility: hidden   
+		top: -300%   
+	
+	99%    
+		visibility: hidden   
+		top: -300%   
+	
+	100%    
+		visibility: hidden   
+		top: 100%   
+	
+
+@keyframes "marqee04"    
+	0%    
+		visibility: visible   
+		top: 100%   
+	
+	5%    
+		top: 0   
+	
+	25%    
+		top: 0   
+	
+	30%    
+		top: -100%   
+	
+	50%    
+		top: -100%   
+
+	55%    
+		top: -200%   
+	
+	75%    
+		top: -200%   
+	
+	80%    
+		top: -300%   
+	
+	95%    
+		top: -300%   
+	
+	100%    
+		top: -400%   
+	
+
+@media (max-width: 1200px)    
+	.videoWrap    
+		display: none   
+	
+	#app    
+		overflow: hidden   
+		background-color: black   
+	
+	.bgImg    
+		display: none   
+	
+	.Title    
+		grid-column: 1/13   
+		.MainTitle    
+			height: auto   
+			margin: auto   
+			width: 50%   
+			img    
+				height: auto   
+			
+		
+		.Subtitle    
+			height: auto   
+			margin: auto   
+			width: 50%   
+			left: 2%   
+			font-size: 15px   
+		
+	
+	.ExhibitionInfo    
+		grid-row: none   
+		grid-column: 1/13   
+		display: block   
+		position: absolute   
+		right: 0   
+		text-align: right   
+		overflow: hidden   
+		height: 15%   
+		top: 85%   
+		.Info    
+			display: block   
+			width: 95%   
+			height: 100%   
+			top: 100%   
+			.Topic    
+				display: none   
+			
+			.Space    
+				display: none   
+			
+			.Time    
+				flex: 3   
+				margin: auto   
+			
+			.Location    
+				margin: auto   
+			
+		
+		.Campus    
+			display: block   
+			animation-duration: 10s   
+			animation-iteration-count: infinite   
+			animation-fill-mode: forwards   
+			animation-direction: normal   
+			animation-timing-function: linear   
+			animation-name: marqee01   
+		
+		.FilmFestival    
+			display: block   
+			animation-duration: 10s   
+			animation-iteration-count: infinite   
+			animation-fill-mode: forwards   
+			animation-direction: normal   
+			animation-timing-function: linear   
+			animation-name: marqee02   
+		
+		.OffCampus    
+			display: block   
+			animation-duration: 10s   
+			animation-iteration-count: infinite   
+			animation-fill-mode: forwards   
+			animation-direction: normal   
+			animation-timing-function: linear   
+			animation-name: marqee03   
+		
+		.VisionAward    
+			display: block   
+			animation-duration: 10s   
+			animation-iteration-count: infinite   
+			animation-fill-mode: forwards   
+			animation-direction: normal   
+			animation-timing-function: linear   
+			animation-name: marqee04   
+		
+	

@@ -42,6 +42,7 @@ html(lang="en")
                                     .Category  
                                         .word {{ Button.Category }}
 
+            //- web
             .Content(:class='{ elementShow:isContentActive }' @click.prevent="CloseContent()")
                 .TeamInfo.TeamCategory {{ Content.Category }}
                 .TeamInfo.TeamName {{ Content.Title }}
@@ -65,7 +66,23 @@ html(lang="en")
                                     .MemberInfo
                                         .Name {{  Member.Name }}
                                         .JobTitle  {{ Member.JobTitle }}
-                                        
+
+            //- phone
+            .Content.phoneContent(:class='{ elementShow:isContentActive, TestelementShow:isContentActive } ' @click.prevent='CloseContent()')
+                .TeamInfo.TeamCategory {{ Content.Category }}
+                .TeamInfo.TeamName {{ Content.Title }}
+                .TeamInfo.TeamTag(v-html='Content.Tag')
+                .CloseButton(@click.prevent='CloseContent()')
+                    .cross
+                        .line1
+                        .line2
+                img.logo(v-bind:src='Content.Logo' alt='' srcset='')
+                .intro(v-html='Content.Intro')  
+                .Member(v-for='(Member, index) in Content.Member' :style='{ width: MemberWidth }')
+                    img.Picture(v-bind:src='Member.Picture' alt='' srcset='' :style='{ width: MemberMaxWidth }')
+                    .MemberInfo
+                        .Name {{ Member.Name }}
+                        .JobTitle  {{ Member.JobTitle }}
 
 
         script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")

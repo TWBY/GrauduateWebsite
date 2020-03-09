@@ -186,6 +186,9 @@ html, body {
       min-width: 100%;
       min-height: 100%; }
 
+.mmenu {
+  display: none; }
+
 .TourBarOuter {
   border-style: dotted;
   border-width: 2px;

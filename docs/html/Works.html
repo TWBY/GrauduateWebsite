@@ -12,6 +12,21 @@
       <div class="videoWrap">
         <video id="myVideo" src="../asset/video/BG_3.mp4" autoplay="true" loop="true"></video>
       </div>
+      <div class="mmenu">
+        <div class="MenuBtn" id="MenuBtn">
+          <p class="Top"></p>
+          <p class="Middle"></p>
+          <p class="Bottom"></p>
+        </div>
+        <ul>
+          <li></li><a href="../html/Information.html"><img src="../asset/img/mmenu/menu_01.png"/><span>展覽資訊;</span></a>
+          <li></li><a href="../html/Rhapsody.html"><img src="../asset/img/mmenu/menu_02.png"/><span>狂想故事;</span></a>
+          <li></li><a href="../html/Works.html"><img src="../asset/img/mmenu/menu_03.png"/><span>展覽作品;</span></a>
+          <li></li><a href="../html/Team.html"><img src="../asset/img/mmenu/menu_04.png"/><span>策展團隊;</span></a>
+          <li></li><a href="../html/Partner.html"><img src="../asset/img/mmenu/menu_05.png"/><span>合作廠商;</span></a>
+          <li></li><a href="../html/ContactUs.html"><img src="../asset/img/mmenu/menu_06.png"/><span>聯絡我們;</span></a>
+        </ul>
+      </div>
       <div class="TourBarOuter">
         <div class="TourBarInner">
           <div class="TourArea"><a class="TourLink" href="Information.html"><img class="TourImg" src="../asset/img/Icon/ExhibitionInformation.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="Information.html">
@@ -116,6 +131,24 @@
               </div>
             </div>
           </full-page>
+        </div>
+      </div>
+      <div class="Content phoneContent" :class="{ elementShow:isContentActive, TestelementShow:isContentActive } " @click.prevent="CloseContent()">
+        <div class="TeamInfo TeamCategory">{{ Content.Category }}</div>
+        <div class="TeamInfo TeamName">{{ Content.Title }}</div>
+        <div class="TeamInfo TeamTag" v-html="Content.Tag"></div>
+        <div class="CloseButton" @click.prevent="CloseContent()">
+          <div class="cross">
+            <div class="line1"></div>
+            <div class="line2"></div>
+          </div>
+        </div><img class="logo" v-bind:src="Content.Logo" alt="" srcset=""/>
+        <div class="intro" v-html="Content.Intro"> </div>
+        <div class="Member" v-for="(Member, index) in Content.Member" :style="{ width: MemberWidth }"><img class="Picture" v-bind:src="Member.Picture" alt="" srcset="" :style="{ width: MemberMaxWidth }"/>
+          <div class="MemberInfo">
+            <div class="Name">{{ Member.Name }}</div>
+            <div class="JobTitle"> {{ Member.JobTitle }}</div>
+          </div>
         </div>
       </div>
     </div>
