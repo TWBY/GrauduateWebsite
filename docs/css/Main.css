@@ -190,9 +190,6 @@ html, body {
   display: none; }
 
 .TourBarOuter {
-  border-style: dotted;
-  border-width: 2px;
-  border-color: pink;
   width: 100%;
   height: 100%;
   -ms-grid-column: 1;
@@ -230,14 +227,10 @@ html, body {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    border-style: dotted;
-    border-width: 2px;
-    border-color: #f24; }
+    align-items: center; }
     .TourBarOuter .TourBarInner .TourArea {
       width: 100%;
       height: 15%;
-      background-color: green;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -270,7 +263,6 @@ html, body {
         -ms-transform: translateX(-100%);
         transform: translateX(-100%);
         background-color: white;
-        border: solid 1px black;
         font-size: 16px;
         -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
         box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
@@ -543,53 +535,54 @@ html, body {
 .bg {
   background-color: #044EB7; }
 
-.monsterB {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 6;
-  grid-column: 6 / 12;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  grid-row: 2 / 5;
-  border: solid 1px black; }
-  .monsterB img {
-    width: auto;
-    height: 100%; }
-
-.title {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 6;
-  grid-column: 6 / 12;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 2;
-  grid-row: 5 / 7;
-  border: solid 1px black; }
-  .title img {
-    width: 80%;
-    height: auto; }
-
-.monsterA {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 6;
-  grid-column: 6 / 12;
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 3;
-  grid-row: 7 / 10;
-  border: solid 1px black; }
-  .monsterA img {
-    width: auto;
-    height: 100%; }
-
-.monsterBig {
+.MainPicture {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  grid-column: 3 / 6;
+  -ms-grid-column-span: 9;
+  grid-column: 3 / 12;
   -ms-grid-row: 2;
   -ms-grid-row-span: 8;
   grid-row: 2 / 10;
-  border: solid 2px black; }
-  .monsterBig img {
-    width: auto;
-    height: 100%; }
+  -ms-grid-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 35% 65%;
+  grid-template-columns: 35% 65%; }
+  .MainPicture .MonsterPic {
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .MainPicture .MonsterPic img {
+      width: auto;
+      height: 100%; }
+  .MainPicture .monsterB {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2; }
+  .MainPicture .title {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3; }
+  .MainPicture .monsterA {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4; }
+  .MainPicture .monsterBig {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4; }
 
 .ExhibitionInfo {
   width: 100%;
