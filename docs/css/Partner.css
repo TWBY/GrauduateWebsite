@@ -553,14 +553,10 @@ html, body {
   grid-column: 3 / 12;
   -ms-grid-row: 3;
   -ms-grid-row-span: 7;
-  grid-row: 3 / 10; }
+  grid-row: 3 / 10;
+  border: solid 2px pink;
+  margin: auto; }
   .construction .word {
     font-size: 60px;
     color: #044EB7;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin: auto; }
+    border: solid 1px black; }

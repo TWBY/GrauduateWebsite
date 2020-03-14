@@ -1001,65 +1001,57 @@ html, body {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-direction: normal;
-    animation-direction: normal; } }
-
-#fp-nav {
-  display: none; }
-
-.phoneContent .TeamCategory {
-  height: 20vh;
-  margin-left: 5%;
-  font-size: 15px;
-  position: fixed; }
-
-.phoneContent .TeamName {
-  margin-top: 5%;
-  margin-bottom: 2%;
-  text-align: center; }
-
-.phoneContent .TeamTag {
-  font-size: 15px;
-  text-align: center; }
-
-.phoneContent .CloseButton {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 30px;
-  height: 30px;
-  margin: 2%; }
-
-.phoneContent .logo {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 10%;
-  margin-bottom: 2%; }
-
-.phoneContent .intro {
-  color: white;
-  font-size: 15px;
-  width: 70%;
-  margin: auto;
-  line-height: 30px;
-  margin-bottom: 30px; }
-
-.phoneContent .Member {
-  width: 70% !important;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px; }
-  .phoneContent .Member > img {
-    display: inline-block;
-    width: 30% !important;
-    vertical-align: bottom; }
-  .phoneContent .Member > .MemberInfo {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 12px;
+    animation-direction: normal; }
+  #fp-nav {
+    display: none; }
+  .phoneContent .TeamCategory {
+    height: 20vh;
+    margin-left: 5%;
+    font-size: 15px;
+    position: fixed; }
+  .phoneContent .TeamName {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center; }
+  .phoneContent .TeamTag {
+    font-size: 15px;
+    text-align: center; }
+  .phoneContent .CloseButton {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    margin: 2%; }
+  .phoneContent .logo {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 2%; }
+  .phoneContent .intro {
+    color: white;
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
     line-height: 30px;
-    color: #fff;
-    width: 60%;
-    vertical-align: bottom; }
-    .phoneContent .Member > .MemberInfo > .name {
-      font-size: 20px; }
+    margin-bottom: 30px; }
+  .phoneContent .Member {
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; }
+    .phoneContent .Member > img {
+      display: inline-block;
+      width: 30% !important;
+      vertical-align: bottom; }
+    .phoneContent .Member > .MemberInfo {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 12px;
+      line-height: 30px;
+      color: #fff;
+      width: 60%;
+      vertical-align: bottom; }
+      .phoneContent .Member > .MemberInfo > .name {
+        font-size: 20px; } }

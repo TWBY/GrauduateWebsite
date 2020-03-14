@@ -139,6 +139,7 @@
 		top: -400%   
 	
 
+	
 @media (max-width: 1200px)    
 	.videoWrap    
 		display: none   
@@ -146,7 +147,7 @@
 	#app    
 		overflow: hidden   
 		background-color: black
-        gap:0;
+        gap: 0
 	
 	.bgImg    
 		display: none   
@@ -186,23 +187,20 @@
 			top: 100%   
 			.Topic    
 				display: none   
-			
 			.Space    
 				display: none   
-			
 			.Time    
 				flex: 3   
-				margin: auto
-                display: inline-block 
+				display: inline-block 
                 font-size: 16px 
                 vertical-align: bottom 
-			.Location    
 				margin: auto
-                display: inline-block 
+			.Location   
+				display: inline-block 
                 font-size: 16px 
                 vertical-align: bottom 
-			
-		
+				margin: auto
+
 		.Campus    
 			display: block   
 			animation-duration: 10s   
@@ -239,47 +237,58 @@
 			animation-timing-function: linear   
 			animation-name: marqee04  
 
-        .MainPicture 
-            grid-column: 2/12 
-            grid-row: 2/12 
-            grid-template-rows: 470fr 225fr 264fr 271fr 
-            grid-template-columns: repeat(12, 1fr) 
-            .MonsterPic 
-                grid-column: 1/13 
-                display: grid 
-                .title 
-                    grid-row: 2/3 
-                    > img 
-                        height: 100% 
-                        width: auto 
-                        margin: auto 
-                .monsterA 
-                    grid-row: 4/5 
-                    > img 
-                        height: 95% 
-                        width: auto 
-                        margin: auto 
-                .monsterB 
-                    grid-row: 3/4 
-                    > img 
-                        height: 95% 
-                        width: auto 
-                        margin: auto 
-                .monsterBig 
-                    &.MonsterPic 
-                        display: none 
-                .phoneA 
-                    grid-row: 1/2 
-                    > img 
-                        height: 95% 
-                        width: auto 
-                        margin: auto 
-@media (max-width: 425px)
-    .MainPicture
-      .monsterA > img, .monsterB > img, .title > img, .phoneA > img
-        height: auto
-        width: 100%
+	.MainPicture 
+		grid-column: 2/12 
+		grid-row: 2/12 
+		grid-template-rows: 470fr 225fr 264fr 271fr 
+		grid-template-columns: repeat(12, 1fr) 
+		.MonsterPic 
+			grid-column: 1 / 13 
+			display: grid 
 
+		.title 
+			grid-row: 2/3 
+			> img 
+				height: 100% 
+				width: auto 
+				margin: auto 
+		.monsterA 
+			grid-row: 4/5 
+			> img 
+				height: 95% 
+				width: auto 
+				margin: auto 
+		.monsterB 
+			grid-row: 3/4 
+			> img 
+				height: 95% 
+				width: auto 
+				margin: auto 
+		.monsterBig
+			display: none 
+		.phoneA 
+			grid-row: 1/2 
+			> img 
+				height: 95% 
+				width: auto 
+				margin: auto 
 
-		
-	
+						
+@media (max-width: 425px) 
+    .MainPicture 
+        .monsterA 
+            >img 
+                height: auto
+                width: 100%
+        .monsterB 
+            >img 
+                height: auto
+                width: 100%
+        .title 
+            >img 
+                height: auto
+                width: 100%
+        .phoneA 
+            >img 
+                height: auto
+                width: 100%
