@@ -16,7 +16,7 @@
 	
 	.BasicInfo    
 		grid-column: 1/ 13   
-		grid-row: 11 / 13   
+		grid-row: 10 / 13   
 		.BasicInfoInner    
 			width: 90%   
 			margin: auto   
@@ -30,26 +30,30 @@
 					margin-left: 10px   
 				
 			
-			.MonsterTitle    
+			.MonsterTitle
+                text-align: center;
 				.name    
 					margin-bottom: 20px   
 
 	.conceptImgOuter    
-		grid-column: 1/13   
+		grid-column: 1/13
+        grid-row: 3/10
 		border: none   
 		.conceptImgInner    
 			height: 100%   
 
 	.concept    
-		grid-row: 11/13   
+		grid-row: 10/13
 		grid-column: 1/13   
 		border: none   
 		.conceptInner    
 			width: 100%   
-			height: 100%   
+			height: 100%
+            margin-right: 12%
+            margin-left: 12%
 
 	.conceptDetail    
-		width: 80%   
+		width: 100%
 		line-height: 30px   
 		margin: auto   
 		margin-bottom: 20px   
@@ -58,18 +62,34 @@
 		text-align: center   
 		font-size: 20px   
 		line-height: 30px   
-		margin-bottom: 20px   
+		margin-bottom: 0px   
 	
 	.RadarChart    
 		display: none   
 	
 	.Look    
 		grid-column: 1 / 13   
-		grid-row: 4 / 11   
+		grid-row: 3 / 10   
 	
 	.BarArea    
 		display: none   
 		.navbar    
 			.nav-item    
 				.nav-link    
-					font-size: 10px   
+					font-size: 10px
+    .ChangePage
+      width: 100vw
+      position: absolute
+      top: 40%
+
+      img
+        display: inline-block
+        z-index: 10
+        width: 60px
+
+      .Previous
+        position: absolute
+
+      .Next
+        position: absolute
+        right: 0
