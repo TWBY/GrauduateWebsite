@@ -1,1 +1,11 @@
-console.log("ContactUs");
+new Vue({
+    el: "#app",
+    data: function () {
+        return {
+            isMenuOpen: false,
+        }
+    },
+    methods: {
+
+    }
+})

@@ -4,6 +4,9 @@ new Vue({
     el: "#app",
     data: function () {
         return {
+            //Common
+            isMenuOpen: false,
+            //Custom
             TeamsInfo: [],
             TeamInfo: {
                 GroupName: "",

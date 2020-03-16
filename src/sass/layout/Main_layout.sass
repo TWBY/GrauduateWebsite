@@ -9,7 +9,7 @@
 .MainPicture
     display: grid
     grid-column: 3 / 12
-    grid-row: 2 / 10
+    grid-row: 2 / 11
 
     grid-template-rows: 1fr 1fr 1fr
     grid-template-columns: 35% 65%
@@ -36,24 +36,25 @@
 
 
 .ExhibitionInfo
-    +size(100%, 100%)
+    +size(100%, fit-content)
     grid-column: 3 / 13
-    grid-row: 10 / 12
+    grid-row: 11 / 13
+
     justify-self: center
+    align-self: center
+    
     max-width: 1200px
 
     // +border(dotted, 2px, pink)
 
-    display: grid
-    grid-template-columns: 50% 50%
-    grid-template-rows: 50% 50%
-    
+    display: flex
+
     color: $CustomWhite
     font-size: $InnerFontSize
 
     .Info
         // border: solid 2px purple
-        +size(90%, 100%)
+        +size(100%, fit-content)
         display: flex
         .Topic
             flex: 3
@@ -65,21 +66,10 @@
             flex: 1
         .Time
             flex: 4
+        .bar 
+            flex: 1
         .Location
-            flex: 5
+            flex: 6
 
-    .Campus
-        grid-column: 1 / 2
-        grid-row: 1 / 2
 
-    .OffCampus
-        grid-column: 2 / 3
-        grid-row: 1 / 2
     
-    .FilmFestival
-        grid-column: 1 / 2
-        grid-row: 2 / 3
-
-    .VisionAward
-        grid-column: 2 / 3
-        grid-row: 2 / 3

@@ -6,11 +6,13 @@ function shuffle(array) {
 }
 
 
-
 new Vue({
     el: '#app',
     data() {
         return {
+            //Common
+            isMenuOpen: false,
+            //Custom
             //FullPage setting
             FullPageOptions: {
                 autoScrolling: true,
@@ -55,7 +57,7 @@ new Vue({
             .then(axios.spread((buttons, work) => {
                 this.Buttons = buttons.data;
                 this.SelectedButton = this.Buttons;
-
+                shuffle(this.SelectedButton)
                 this.ContentsInfo = work.data;
             }))
     },

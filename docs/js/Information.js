@@ -5,6 +5,9 @@ new Vue({
     el: "#app",
     data: function () {
         return {
+            //Common
+            isMenuOpen: false,
+            //Custom
             MapsInfo: "",
             MapInfo: {
                 time: "",
@@ -40,14 +43,13 @@ new Vue({
                     this.MapInfo.cost = this.MapsInfo[Index].cost;
                     this.MapInfo.traffic = this.MapsInfo[Index].traffic;
                     this.MapInfo.map = this.MapsInfo[Index].map;
-                }, 500)
+                }, 400)
 
                 setTimeout(() => {
                     this.isTextActive = false
-                }, 1100)
+                }, 900)
 
             }
-
 
         },
         ChangeActiveBarPoa(index) {

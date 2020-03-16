@@ -5,40 +5,43 @@ html(lang="en")
         link(rel="stylesheet", href="docs/css/Main.css")
         title 狂想進化論
     body
+        .loadingPage
+            img(src='docs/asset/img/monster/Family.png')
+            p Loading...
         #app
             .bg
             
             // 手機板選單
-            .mmenu
+            .mmenu(:class="{ menuOpen: isMenuOpen }" @click="isMenuOpen = !isMenuOpen")
                 #MenuBtn.MenuBtn
                     p.Top
                     p.Middle
                     p.Bottom
                 ul
                     li
-                    a(href='docs/html/Information.html')
-                        img(src='docs/asset/img/mmenu/menu_01.png')
-                        span 展覽資訊
+                        a(href='docs/html/Information.html')
+                            img(src='docs/asset/img/mmenu/menu_01.png')
+                            span 展覽資訊
                     li
-                    a(href='docs/html/Rhapsody.html')
-                        img(src='docs/asset/img/mmenu/menu_02.png')
-                        span 狂想故事
+                        a(href='docs/html/Rhapsody.html')
+                            img(src='docs/asset/img/mmenu/menu_02.png')
+                            span 狂想故事
                     li
-                    a(href='docs/html/Works.html')
-                        img(src='docs/asset/img/mmenu/menu_03.png')
-                        span 展覽作品
+                        a(href='docs/html/Works.html')
+                            img(src='docs/asset/img/mmenu/menu_03.png')
+                            span 展覽作品
                     li
-                    a(href='docs/html/Team.html')
-                        img(src='docs/asset/img/mmenu/menu_04.png')
-                        span 策展團隊
+                        a(href='docs/html/Team.html')
+                            img(src='docs/asset/img/mmenu/menu_04.png')
+                            span 策展團隊
                     li
-                    a(href='docs/html/Partner.html')
-                        img(src='docs/asset/img/mmenu/menu_05.png')
-                        span 合作廠商
+                        a(href='docs/html/Partner.html' onclick='return false;')
+                            img(src='docs/asset/img/mmenu/menu_05.png')
+                            span 活動紀錄
                     li
-                    a(href='docs/html/ContactUs.html')
-                        img(src='docs/asset/img/mmenu/menu_06.png')
-                        span 聯絡我們
+                        a(href='docs/html/ContactUs.html')
+                            img(src='docs/asset/img/mmenu/menu_06.png')
+                            span 聯絡我們
             // *******
 
             //- img.bgImg(src="docs/asset/img/Monster/Family.png", alt="", sizes="", srcset="")
@@ -65,21 +68,21 @@ html(lang="en")
                         a.SlideBar(href="docs/html/Works.html")
                             .Word
                                 .ChWord 展覽作品
-                                .EnWord Works of Display
+                                .EnWord Project
                     .TourArea
                         a.TourLink(href="docs/html/Team.html")
                             img(src="docs/asset/img/Icon/CuratorialTeam.png", alt="", sizes="", srcset="")
                         a.SlideBar(href="docs/html/Team.html")
                             .Word
                                 .ChWord 策展團隊
-                                .EnWord Curatorial Team
+                                .EnWord Team
                     .TourArea
-                        a.TourLink(href="docs/html/Partner.html")
+                        a.TourLink(href="docs/html/Partner.html" onclick='return false;')
                             img(src="docs/asset/img/Icon/Partner.png", alt="", sizes="", srcset="")
-                        a.SlideBar(href="docs/html/Partner.html")
+                        a.SlideBar(href="docs/html/Partner.html" onclick='return false;')
                             .Word
-                                .ChWord 合作廠商
-                                .EnWord Sponsor
+                                .ChWord 活動紀錄
+                                .EnWord Activity record
                     .TourArea
                         a.TourLink(href="docs/html/ContactUs.html")
                             img(src="docs/asset/img/Icon/ContactUs.png", alt="", sizes="", srcset="")
@@ -111,25 +114,20 @@ html(lang="en")
 
             .ExhibitionInfo
                 .Info.Campus
-                    .Topic 校內首展
+                    .Topic 校內展
                     .Space
-                    .Time 04/13&nbsp;-&nbsp;04/16
+                    .Time 2020.04.13-16 
+                    .bar |
                     .Location 元智大學五館、六館
-                .Info.FilmFestival
-                    .Topic 校內影展
-                    .Space
-                    .Time 04/15、04/18
-                    .Location 元智大學六館有庠廳
                 .Info.OffCampus
-                    .Topic 校外展出
+                    .Topic 校外展
                     .Space
-                    .Time 05/08&nbsp;-&nbsp;05/11
-                    .Location 臺北松山文創園區
-                .Info.VisionAward
-                    .Topic 放視大賞
-                    .Space
-                    .Time 05/13&nbsp;-&nbsp;05/15
-                    .Location 高雄展覽館
+                    .Time 2020.04.15-18 
+                    .bar |
+                    .Location 臺北松山北向製菸廠
 
+
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="docs/js/Common/Loading.js")
         script(src="docs/js/script.js")
-        script(src="docs/js/custom.js")
+        

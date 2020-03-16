@@ -5,9 +5,11 @@ html(lang="en")
         link(rel="stylesheet", href="../css/ContactUs.css")
         title Document
     body
+        include Component/LoadingPage.pug
         #app
-            .videoWrap
-                video#myVideo(src='../asset/video/BG_3.mp4' autoplay='true' loop='true')
+            //- .videoWrap
+            //-     video#myVideo(src='../asset/video/BG_3.mp4' autoplay='true' loop='true')
+            .bg
             include Component/TourBar.pug
             include Component/LinkArea.pug
 
@@ -61,5 +63,7 @@ html(lang="en")
                                 .ConTile Email：
                                 .ConInfo barabaraboom@yzu.edu.tw
                                 
-                    
+        script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+        script(src="../../docs/js/Common/Loading.js")     
         script(src="../../docs/js/ContactUs.js")
+        

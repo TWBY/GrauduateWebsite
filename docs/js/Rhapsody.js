@@ -41,6 +41,9 @@ new Vue({
     el: "#app",
     data: function () {
         return {
+            //Common
+            isMenuOpen: false,
+            //Custom
             monsters: "",
             monster: {
                 grade: "",
@@ -60,7 +63,8 @@ new Vue({
             isShowTopic: true,
             isShowMonster: false,
 
-            selectIndex: 0
+            selectIndex: 0,
+            PhoneIndex: 0
         }
     },
     mounted() {
@@ -83,57 +87,14 @@ new Vue({
         })
     },
     methods: {
-        ChangePeopleInfo(Index) {
-
-            if (this.selectIndex != Index) {
-
-                if (this.selectIndex != 0 && Index >= 1 && Index <= 4) {
-                    this.isTextActive = true;
-                    setTimeout(() => {
-                        this.isTextActive = false
-                    }, 1100)
-                }
-                this.selectIndex = Index;
-
-
-                if (Index >= 1) {
-                    setTimeout(() => {
-                        this.isShowMonster = true;
-                        this.isShowTopic = false;
-
-                        this.monster.grade = this.monsters[Index - 1].grade;
-                        this.monster.EnName = this.monsters[Index - 1].EnName;
-                        this.monster.ChName = this.monsters[Index - 1].ChName;
-                        this.monster.Height = this.monsters[Index - 1].Height;
-                        this.monster.Weight = this.monsters[Index - 1].Weight;
-                        this.monster.Intro = this.monsters[Index - 1].Intro;
-                        this.monster.Look = this.monsters[Index - 1].Look;
-
-                        for (let i = 0; i < this.monster.ChartText.length; i++) {
-                            this.monster.ChartText[i] = this.monsters[Index - 1].ChartText[i];
-                            this.monster.ChartNum[i] = this.monsters[Index - 1].ChartNum[i];
-                        }
-
-                        for (let j = 0; j < this.monster.ChartText.length; j++) {
-                            this.dataDetail.labels[j] = this.monster.ChartText[j]
-                            this.dataDetail.datasets[0].data[j] = this.monster.ChartNum[j]
-                        }
-                    }, 500)
-
-                    setTimeout(() => {
-                        this.createChart('myChart');
-                    }, 600)
-
-                }
-
-                if (Index == 0) {
-                    setTimeout(() => {
-                        this.isShowMonster = false;
-                        this.isShowTopic = true;
-                    }, 500)
-                }
-
-            }
+        ChangeWebMonsterInfo(Index) {
+            this.ChangeMonsterInfo(Index);
+        },
+        ChangePhoneMonsterInfo(delta) {
+            let Index = this.PhoneIndex + delta;
+            console.log("Index" + Index);
+            this.PhoneIndex = Index;
+            this.ChangeMonsterInfo(Index);
 
         },
         ChangeActiveBarPoa(index) {
@@ -163,7 +124,56 @@ new Vue({
                 options: this.optionsDetail
             });
             myChart.options.legend.display = false;
+        },
+        ChangeMonsterInfo(Index) {
+            // 確保不重複點擊
+            if (this.selectIndex != Index) {
 
+                //怪獸更換 1~4
+                if (this.selectIndex != 0 && Index >= 1 && Index <= 4) {
+                    this.isTextActive = true;
+                    setTimeout(() => {
+                        this.isTextActive = false
+                    }, 900)
+                }
+                this.selectIndex = Index;
+
+                if (Index >= 1) {
+                    setTimeout(() => {
+                        this.isShowMonster = true;
+                        this.isShowTopic = false;
+
+                        this.monster.grade = this.monsters[Index - 1].grade;
+                        this.monster.EnName = this.monsters[Index - 1].EnName;
+                        this.monster.ChName = this.monsters[Index - 1].ChName;
+                        this.monster.Height = this.monsters[Index - 1].Height;
+                        this.monster.Weight = this.monsters[Index - 1].Weight;
+                        this.monster.Intro = this.monsters[Index - 1].Intro;
+                        this.monster.Look = this.monsters[Index - 1].Look;
+
+                        for (let i = 0; i < this.monster.ChartText.length; i++) {
+                            this.monster.ChartText[i] = this.monsters[Index - 1].ChartText[i];
+                            this.monster.ChartNum[i] = this.monsters[Index - 1].ChartNum[i];
+                        }
+
+                        for (let j = 0; j < this.monster.ChartText.length; j++) {
+                            this.dataDetail.labels[j] = this.monster.ChartText[j]
+                            this.dataDetail.datasets[0].data[j] = this.monster.ChartNum[j]
+                        }
+                    }, 400)
+
+                    setTimeout(() => {
+                        this.createChart('myChart');
+                    }, 500)
+                }
+                //首頁圖 1~4
+                if (Index == 0) {
+                    setTimeout(() => {
+                        this.isShowMonster = false;
+                        this.isShowTopic = true;
+                    }, 400)
+                }
+            }
         }
     }
 })

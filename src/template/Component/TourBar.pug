@@ -1,33 +1,38 @@
-.mmenu
+
+.BackToindexBtn
+    a(href='../../index.html')
+        img(src="../asset/img/mmenu/PhoneHome.png")
+
+.mmenu(:class="{ menuOpen: isMenuOpen }" @click="isMenuOpen = !isMenuOpen")
     #MenuBtn.MenuBtn
         p.Top
         p.Middle
         p.Bottom
     ul
         li
-        a(href='../html/Information.html')
-            img(src='../asset/img/mmenu/menu_01.png')
-            span 展覽資訊;
+            a(href='../html/Information.html')
+                img(src='../asset/img/mmenu/menu_01.png')
+                span 展覽資訊
         li
-        a(href='../html/Rhapsody.html')
-            img(src='../asset/img/mmenu/menu_02.png')
-            span 狂想故事;
+            a(href='../html/Rhapsody.html')
+                img(src='../asset/img/mmenu/menu_02.png')
+                span 狂想故事
         li
-        a(href='../html/Works.html')
-            img(src='../asset/img/mmenu/menu_03.png')
-            span 展覽作品;
+            a(href='../html/Works.html')
+                img(src='../asset/img/mmenu/menu_03.png')
+                span 展覽作品
         li
-        a(href='../html/Team.html')
-            img(src='../asset/img/mmenu/menu_04.png')
-            span 策展團隊;
+            a(href='../html/Team.html')
+                img(src='../asset/img/mmenu/menu_04.png')
+                span 策展團隊
         li
-        a(href='../html/Partner.html')
-            img(src='../asset/img/mmenu/menu_05.png')
-            span 合作廠商;
+            a(href='../html/Partner.html' onclick='return false;')
+                img(src='../asset/img/mmenu/menu_05.png')
+                span 活動紀錄
         li
-        a(href='../html/ContactUs.html')
-            img(src='../asset/img/mmenu/menu_06.png')
-            span 聯絡我們;
+            a(href='../html/ContactUs.html')
+                img(src='../asset/img/mmenu/menu_06.png')
+                span 聯絡我們
 
 
 .TourBarOuter
@@ -61,11 +66,11 @@
                     .ChWord 策展團隊
                     .EnWord Curatorial Team
         .TourArea
-            a.TourLink(href="Partner.html")
+            a.TourLink(href="Partner.html" onclick='return false;')
                 img(src="../asset/img/Icon/Partner.png", alt="", sizes="", srcset="")
-            a.SlideBar(href="Partner.html")
+            a.SlideBar(href="Partner.html" onclick='return false;')
                 .Word
-                    .ChWord 合作廠商
+                    .ChWord 活動紀錄
                     .EnWord Sponsor
         .TourArea
             a.TourLink(href="ContactUs.html")

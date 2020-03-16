@@ -7,22 +7,25 @@
     <title>狂想進化論</title>
   </head>
   <body>
+    <div class="loadingPage"><img src="docs/asset/img/monster/Family.png"/>
+      <p>Loading...</p>
+    </div>
     <div id="app">
       <div class="bg"></div>
       <!-- 手機板選單-->
-      <div class="mmenu">
+      <div class="mmenu" :class="{ menuOpen: isMenuOpen }" @click="isMenuOpen = !isMenuOpen">
         <div class="MenuBtn" id="MenuBtn">
           <p class="Top"></p>
           <p class="Middle"></p>
           <p class="Bottom"></p>
         </div>
         <ul>
-          <li></li><a href="docs/html/Information.html"><img src="docs/asset/img/mmenu/menu_01.png"/><span>展覽資訊</span></a>
-          <li></li><a href="docs/html/Rhapsody.html"><img src="docs/asset/img/mmenu/menu_02.png"/><span>狂想故事</span></a>
-          <li></li><a href="docs/html/Works.html"><img src="docs/asset/img/mmenu/menu_03.png"/><span>展覽作品</span></a>
-          <li></li><a href="docs/html/Team.html"><img src="docs/asset/img/mmenu/menu_04.png"/><span>策展團隊</span></a>
-          <li></li><a href="docs/html/Partner.html"><img src="docs/asset/img/mmenu/menu_05.png"/><span>合作廠商</span></a>
-          <li></li><a href="docs/html/ContactUs.html"><img src="docs/asset/img/mmenu/menu_06.png"/><span>聯絡我們</span></a>
+          <li><a href="docs/html/Information.html"><img src="docs/asset/img/mmenu/menu_01.png"/><span>展覽資訊</span></a></li>
+          <li><a href="docs/html/Rhapsody.html"><img src="docs/asset/img/mmenu/menu_02.png"/><span>狂想故事</span></a></li>
+          <li><a href="docs/html/Works.html"><img src="docs/asset/img/mmenu/menu_03.png"/><span>展覽作品</span></a></li>
+          <li><a href="docs/html/Team.html"><img src="docs/asset/img/mmenu/menu_04.png"/><span>策展團隊</span></a></li>
+          <li><a href="docs/html/Partner.html" onclick="return false;"><img src="docs/asset/img/mmenu/menu_05.png"/><span>活動紀錄</span></a></li>
+          <li><a href="docs/html/ContactUs.html"><img src="docs/asset/img/mmenu/menu_06.png"/><span>聯絡我們</span></a></li>
         </ul>
       </div>
       <!-- *******-->
@@ -41,17 +44,17 @@
           <div class="TourArea"><a class="TourLink" href="docs/html/Works.html"><img src="docs/asset/img/Icon/ExhibitionWorks.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="docs/html/Works.html">
               <div class="Word">
                 <div class="ChWord">展覽作品</div>
-                <div class="EnWord">Works of Display</div>
+                <div class="EnWord">Project</div>
               </div></a></div>
           <div class="TourArea"><a class="TourLink" href="docs/html/Team.html"><img src="docs/asset/img/Icon/CuratorialTeam.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="docs/html/Team.html">
               <div class="Word">
                 <div class="ChWord">策展團隊</div>
-                <div class="EnWord">Curatorial Team</div>
+                <div class="EnWord">Team</div>
               </div></a></div>
-          <div class="TourArea"><a class="TourLink" href="docs/html/Partner.html"><img src="docs/asset/img/Icon/Partner.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="docs/html/Partner.html">
+          <div class="TourArea"><a class="TourLink" href="docs/html/Partner.html" onclick="return false;"><img src="docs/asset/img/Icon/Partner.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="docs/html/Partner.html" onclick="return false;">
               <div class="Word">
-                <div class="ChWord">合作廠商</div>
-                <div class="EnWord">Sponsor</div>
+                <div class="ChWord">活動紀錄</div>
+                <div class="EnWord">Activity record</div>
               </div></a></div>
           <div class="TourArea"><a class="TourLink" href="docs/html/ContactUs.html"><img src="docs/asset/img/Icon/ContactUs.png" alt="" sizes="" srcset=""/></a><a class="SlideBar" href="docs/html/ContactUs.html">
               <div class="Word">
@@ -72,32 +75,23 @@
       </div>
       <div class="ExhibitionInfo">
         <div class="Info Campus">
-          <div class="Topic">校內首展</div>
+          <div class="Topic">校內展</div>
           <div class="Space"></div>
-          <div class="Time">04/13&nbsp;-&nbsp;04/16</div>
+          <div class="Time">2020.04.13-16 </div>
+          <div class="bar">|</div>
           <div class="Location">元智大學五館、六館</div>
         </div>
-        <div class="Info FilmFestival">
-          <div class="Topic">校內影展</div>
-          <div class="Space"></div>
-          <div class="Time">04/15、04/18</div>
-          <div class="Location">元智大學六館有庠廳</div>
-        </div>
         <div class="Info OffCampus">
-          <div class="Topic">校外展出</div>
+          <div class="Topic">校外展</div>
           <div class="Space"></div>
-          <div class="Time">05/08&nbsp;-&nbsp;05/11</div>
-          <div class="Location">臺北松山文創園區</div>
-        </div>
-        <div class="Info VisionAward">
-          <div class="Topic">放視大賞</div>
-          <div class="Space"></div>
-          <div class="Time">05/13&nbsp;-&nbsp;05/15</div>
-          <div class="Location">高雄展覽館</div>
+          <div class="Time">2020.04.15-18 </div>
+          <div class="bar">|</div>
+          <div class="Location">臺北松山北向製菸廠</div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="docs/js/Common/Loading.js"></script>
     <script src="docs/js/script.js"></script>
-    <script src="docs/js/custom.js"></script>
   </body>
 </html>

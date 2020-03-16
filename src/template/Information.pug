@@ -5,9 +5,12 @@ html(lang="en")
         link(rel="stylesheet", href="../css/Information.css")
         title Document
     body
+        include Component/LoadingPage.pug
         #app
-            .videoWrap
-                video#myVideo(src='../asset/video/BG_3.mp4' autoplay='true' loop='true')
+            //- .videoWrap
+            //-     video#myVideo(src='../asset/video/BG_3.mp4' autoplay='true' loop='true')
+            .bg
+
             include Component/TourBar.pug
             include Component/LinkArea.pug
             
@@ -26,8 +29,8 @@ html(lang="en")
                         .nav-link.initial 校內展
                     .nav-item(@click.prevent="ChangeActiveBarPoa(1); ChangePeopleInfo(1)")
                         .nav-link 校外展
-                    .nav-item(@click.prevent="ChangeActiveBarPoa(2); ChangePeopleInfo(2)")
-                        .nav-link 放視大賞
+                    //- .nav-item(@click.prevent="ChangeActiveBarPoa(2); ChangePeopleInfo(2)")
+                    //-     .nav-link 放視大賞
 
             .BasicInfo(:class='{ elementToFadeInAndOut:isTextActive }')
                 .BasicInfoInner
@@ -43,5 +46,7 @@ html(lang="en")
 
         script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
+        script(src="../../docs/js/Common/Loading.js")
         script(src="../../docs/js/Information.js")
+        
         

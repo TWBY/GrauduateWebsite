@@ -4,136 +4,125 @@
 
 @import  base
 
-@keyframes "Show"    
-	0%    
-		top: 30%   
-		opacity: 0   
-	100%    
-		top: 0%   
-		opacity: 1    
+@keyframes "Show"
+	0%
+		top: 30%
+		opacity: 0
+	100%
+		top: 0%
+		opacity: 1
+@media (max-width: 1200px)
+	.videoWrap
+		display: none
+	
+	#app
+		background-size: 100% 100%
+		overflow: hidden
+		background-image: url(../asset/img/BG/BG_C.jpg)
 
-
-@media (max-width: 1200px)    
-	.videoWrap    
-		display: none   
+	.PageTitleStyle
+		display: none
 	
-	#app    
-		overflow: hidden   
-		background-color: black   
+	.content
+		display: none
 	
-	.PageTitleStyle    
-		display: none   
+	.phoneContent
+		display: none
+		height: auto
+		width: 100vw
+		background-color: rgba(0, 0, 0, 1)
+		position: absolute
+		overflow: auto
+		z-index: 1100
+		opacity: 0
 	
-	.content    
-		display: none   
+	.TestelementShow
+		display: block
+		animation-name: Show
+		animation-duration: 0.5s
+		animation-iteration-count: 1
+		animation-fill-mode: forwards
+		animation-direction: normal
 	
-	.phoneContent    
-		display: none   
-		height: auto   
-		width: 100vw   
-		background-color: rgba(0, 0, 0, 1)   
-		position: absolute   
-		overflow: auto   
-		z-index: 1100   
-		opacity: 0   
-	
-	.TestelementShow    
-		display: block   
-		animation-name: Show   
-		animation-duration: 0.5s   
-		animation-iteration-count: 1   
-		animation-fill-mode: forwards   
-		animation-direction: normal   
-	
-
-	#app    
-		.elementShow    
-			background-color: rgba(0, 0, 0, 1)   
-			height: 100%   
+	#app
+		.elementShow
+			background-color: rgba(0, 0, 0, 1)
+			height: 100%
 		
-		.Content    
-			.Picture    
-				height: auto   
-				&::before    
-					display: none   
+		.Content
+			.Picture
+				height: auto
+				&::before
+					display: none 
 				
 			
-			.DetailInfo    
-				.Info    
-					text-align: left   
-					font-size: 15px   
-					margin-bottom: 10px   
+			.DetailInfo
+				.Info
+					text-align: left
+					font-size: 15px
+					margin-bottom: 10px
 				
-				.MurMur    
-					margin-bottom: 0px   
-				
+				.MurMur
+					margin-bottom: 0px
 			
-			.MurMurTalk    
-				text-align: right   
-				color: white   
-				font-size: 15px   
-			
+			.MurMurTalk
+				text-align: right
+				color: white
+				font-size: 15px
 		
-		.ButtonArea    
-			.DepartmentButton    
-				width: 90%   
-				height: 20vw   
-				margin-bottom: 5%   
-				grid-column: none   
-				grid-row: none   
-			
+		.ButtonArea
+			.DepartmentButton
+				width: 90%
+				height: 20vw
+				margin-bottom: 5%
+				grid-column: none
+				grid-row: none
 		
-
-	.phoneContent    
-		.CloseButton    
-			position: fixed   
-			right: 0   
-			top: 0   
-			width: 30px   
-			height: 30px   
-			margin: 2%   
+	.phoneContent
+		.CloseButton
+			position: fixed
+			right: 0
+			top: 0
+			width: 30px
+			height: 30px
+			margin: 2%
 		
-		.Picture    
-			.teamPic    
-				width: 66%   
-				margin-top: 10%   
-				height: auto   
-			
+		.Picture
+			.teamPic
+				width: 66%
+				margin-top: 10%
+				height: auto
 		
-		.DetailInfo    
-			>.Title    
-				text-align: left   
+		.DetailInfo
+			>.Title
+				text-align: left
 			
-
-	.Content    
-		.DetailInfo    
-			.Info    
-				&:nth-child(1)    
-					flex: none   
+	.Content
+		.DetailInfo
+			.Info
+				&:nth-child(1)
+					flex: none
 				
-				&:nth-child(2)    
-					flex: none   
+				&:nth-child(2)
+					flex: none
 				
-				&:nth-child(3)    
-					flex: none   
+				&:nth-child(3)
+					flex: none
 				
-				&:nth-child(4)    
-					flex: none   
+				&:nth-child(4)
+					flex: none
 				
 			
-			height: auto   
-			margin-left: 18%   
-			margin-right: 18%   
-			width: 65%   
+			height: auto
+			margin-left: 18%
+			margin-right: 18%
+			width: 65%
 		
-
-	.ButtonArea    
-		display: block   
-		grid-row: 3 / 13   
-		overflow: auto   
-		.DepartmentButton    
-			.Department    
-				width: 50%   
-		
-	
+	.ButtonArea
+		display: block
+		grid-row: 3 / 13
+		overflow: auto
+		.DepartmentButton
+			.Department
+				width: 50%
 
