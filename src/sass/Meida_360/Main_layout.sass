@@ -7,21 +7,22 @@
 	0%    
 		top: 0   
 	
-	25%    
+	45%    
 		top: 0   
 	
-	30%    
-		top: -100%   
-	
-	49.9%    
-		visibility: visible   
-		top: -100%   
-	
 	50%    
-		visibility: hidden   
 		top: -100%   
 	
 	50.1%    
+		visibility: visible   
+		top: -100%   
+	
+	50.2%    
+		visibility: hidden   
+		top: -100%   
+	
+	50.3%
+		visibility: hidden
 		top: 100%   
 	
 	95%    
@@ -29,117 +30,32 @@
 		top: 100%   
 	
 	100%    
-		top: 0   
+		top: 0
 	
 
 @keyframes "marqee02"    
 	0%    
-		visibility: visible   
-		top: 100%   
-	
-	5%    
 		top: 0   
-	
-	25%    
+	45%    
 		top: 0   
-	
-	30%    
-		top: -100%   
-	
 	50%    
 		top: -100%   
-	
-	55%    
-		top: -200%   
-	
-	74.9%    
-		visibility: visible   
-		top: -200%   
-	
-	75%    
-		visibility: hidden   
-		top: -200%   
-	
-	75.1%    
-		top: 100%   
-	
-	100%    
-		top: 100%   
-	
-
-@keyframes "marqee03"    
-	0%    
-		visibility: visible   
-		top: 100%   
-	
-	5%    
-		top: 0   
-	
-	25%    
-		top: 0   
-	
-	30%    
-		top: -100%   
-	
-	50%    
-		top: -100%   
-	
-	55%    
-		top: -200%   
-	
-	75%    
-		top: -200%   
-	
-	80%    
-		top: -300%   
-	
-	98.9%    
-		visibility: hidden   
-		top: -300%   
-	
+	95%
+		top: -100%
 	99%    
-		visibility: hidden   
-		top: -300%   
-	
-	100%    
-		visibility: hidden   
-		top: 100%   
-	
-
-@keyframes "marqee04"    
-	0%    
 		visibility: visible   
-		top: 100%   
-	
-	5%    
-		top: 0   
-	
-	25%    
-		top: 0   
-	
-	30%    
-		top: -100%   
-	
-	50%    
-		top: -100%   
-
-	55%    
 		top: -200%   
-	
-	75%    
-		top: -200%   
-	
-	80%    
-		top: -300%   
-	
-	95%    
-		top: -300%   
-	
-	100%    
-		top: -400%   
+	99.1%
+		visibility: hidden  
+		top: -200%
+	99.2%
+		visibility: hidden  
+		top: 0
+	100%
+		visibility: visible
+		top: 0
 	
 
-	
 @media (max-width: 1200px)    
 	.videoWrap    
 		display: none   
@@ -187,7 +103,9 @@
 			.Topic    
 				display: none   
 			.Space    
-				display: none   
+				display: none
+			.bar
+				display: none
 			.Time    
 				flex: 3   
 				display: inline-block 
@@ -200,41 +118,24 @@
 				vertical-align: bottom 
 				margin: auto
 
+
 		.Campus    
 			display: block   
-			animation-duration: 10s   
+			animation-duration: 5s   
 			animation-iteration-count: infinite   
 			animation-fill-mode: forwards   
 			animation-direction: normal   
 			animation-timing-function: linear   
-			animation-name: marqee01   
-		
-		.FilmFestival    
-			display: block   
-			animation-duration: 10s   
-			animation-iteration-count: infinite   
-			animation-fill-mode: forwards   
-			animation-direction: normal   
-			animation-timing-function: linear   
-			animation-name: marqee02   
+			animation-name: marqee01  
 		
 		.OffCampus    
 			display: block   
-			animation-duration: 10s   
+			animation-duration: 5s   
 			animation-iteration-count: infinite   
 			animation-fill-mode: forwards   
 			animation-direction: normal   
 			animation-timing-function: linear   
-			animation-name: marqee03   
-		
-		.VisionAward    
-			display: block   
-			animation-duration: 10s   
-			animation-iteration-count: infinite   
-			animation-fill-mode: forwards   
-			animation-direction: normal   
-			animation-timing-function: linear   
-			animation-name: marqee04  
+			animation-name: marqee02
 
 	.MainPicture 
 		grid-column: 1/13 

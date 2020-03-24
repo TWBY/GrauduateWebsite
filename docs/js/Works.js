@@ -152,3 +152,7 @@ new Vue({
         },
     }
 });
+
+
+var el = document.getElementById('webContent');
+el.remove();

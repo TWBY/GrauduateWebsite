@@ -64,7 +64,10 @@ new Vue({
             isShowMonster: false,
 
             selectIndex: 0,
-            PhoneIndex: 0
+            PhoneIndex: 0,
+
+            IsFront: true,
+            IsEnd: false,
         }
     },
     mounted() {
@@ -92,7 +95,7 @@ new Vue({
         },
         ChangePhoneMonsterInfo(delta) {
             let Index = this.PhoneIndex + delta;
-            console.log("Index" + Index);
+            // console.log("Index" + Index);
             this.PhoneIndex = Index;
             this.ChangeMonsterInfo(Index);
 
@@ -107,7 +110,7 @@ new Vue({
             activeBar.style.transform = 'translateX(' + transRange + 'px)';
 
             let navLink = document.querySelectorAll('.nav-link');
-            console.log(navLink[index])
+            // console.log(navLink[index])
             for (let i = 0; i < navLink.length; i++) {
                 if (i == index) {
                     navLink[i].style.color = "white"
@@ -126,6 +129,20 @@ new Vue({
             myChart.options.legend.display = false;
         },
         ChangeMonsterInfo(Index) {
+            //箭頭顯示判斷
+            if (Index != 0 && Index != 4) {
+                this.IsFront = false;
+                this.IsEnd = false;
+            } else {
+                if (Index == 0) {
+                    this.IsFront = true;
+                }
+                if (Index == 4) {
+                    this.IsEnd = true;
+                }
+            }
+
+
             // 確保不重複點擊
             if (this.selectIndex != Index) {
 

@@ -4,7 +4,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="https://unpkg.com/fullpage.js/dist/fullpage.min.css")
         link(rel="stylesheet", href="../css/Works.css")
-        title Document
+        title 展出作品
     body
         include Component/LoadingPage.pug
         #app
@@ -47,7 +47,7 @@ html(lang="en")
                                         .word {{ Button.Category }}
 
             //- web
-            .Content(:class='{ elementShow:isContentActive }' @click.prevent="CloseContent()")
+            .Content#webContent(:class='{ elementShow:isContentActive }' @click.prevent="CloseContent()")
                 .TeamInfo.TeamCategory {{ Content.Category }}
                 .TeamInfo.TeamName {{ Content.Title }}
                 .TeamInfo.TeamTag {{  Content.Tag }}
