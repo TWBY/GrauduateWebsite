@@ -1,3 +1,10 @@
+if (screen && screen.width > 1200) {
+    document.write('<script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.min.js"><\/script>');
+}
+
+console.log("screen.width = " + screen.width);
+console.log("screen = " + screen);
+
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
@@ -152,7 +159,3 @@ new Vue({
         },
     }
 });
-
-
-var el = document.getElementById('webContent');
-el.remove();
