@@ -118,7 +118,7 @@
         <div class="ChangeArea">
           <full-page :options="FullPageOptions">
             <div class="section s1">
-              <div class="EachArea"><img class="logo" v-bind:src="Content.Logo" alt="" srcset=""/>
+              <div class="EachArea"><img class="logo" v-bind:src="Content.Logo" alt="" srcset="" onerror="this.src='../../docs/asset/img/whiteBackGround.png'"/>
                 <div class="intro" v-html="Content.Intro"> </div>
               </div>
             </div>

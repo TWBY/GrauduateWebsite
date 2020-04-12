@@ -559,10 +559,10 @@ html, body {
   grid-row: 4 / 5;
   grid-column: 7 / 11; }
   .BarArea .navbar .nav-item {
-    width: calc(100%/2);
+    width: calc(100%/1);
     height: 100%; }
   .BarArea .navbarOuter .activeBar {
-    width: calc(100%/2);
+    width: calc(100%/1);
     height: 100%; }
 
 .Cover {

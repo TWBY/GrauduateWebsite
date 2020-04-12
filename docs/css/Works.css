@@ -1038,7 +1038,8 @@ html, body {
     text-align: center; }
   .phoneContent .TeamTag {
     font-size: 15px;
-    text-align: center; }
+    text-align: center;
+    display: none; }
   .phoneContent .CloseButton {
     position: fixed;
     right: 0;

@@ -61,7 +61,7 @@ html(lang="en")
                     full-page(:options='FullPageOptions')
                         .section.s1
                             .EachArea
-                                img.logo(v-bind:src="Content.Logo", alt="", srcset="")
+                                img.logo(v-bind:src="Content.Logo", alt="", srcset="", onerror="this.src='../../docs/asset/img/whiteBackGround.png'" )
                                 .intro(v-html='Content.Intro') 
                         .section.s2
                             .EachArea
@@ -91,7 +91,6 @@ html(lang="en")
 
         script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js")
-        //- script(src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.min.js")    
         script(src="../../docs/js/Common/Loading.js")      
         script(src="../../docs/js/Works.js")
         
