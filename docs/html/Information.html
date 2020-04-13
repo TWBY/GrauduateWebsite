@@ -70,16 +70,6 @@
         <div class="ChTitle">展覽資訊</div>
         <div class="EnTitle">Information</div>
       </div>
-      <div class="BarArea">
-        <div class="navbarOuter bar">
-          <div class="activeBar"></div>
-        </div>
-        <div class="navbar bar">
-          <div class="nav-item" @click.prevent="ChangeActiveBarPoa(0); ChangePeopleInfo(0)">
-            <div class="nav-link initial">校內展</div>
-          </div>
-        </div>
-      </div>
       <div class="BasicInfo" :class="{ elementToFadeInAndOut:isTextActive }">
         <div class="BasicInfoInner">
           <div class="Info time">活動時間 &nbsp;|&nbsp; {{ MapInfo.time }}</div>
