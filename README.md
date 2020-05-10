@@ -1,5 +1,6 @@
-## 畢業審查
-以元智資傳畢業門檻為基準，根據使用使用者點選已修習課程後，於左側資訊欄顯示已完成學分
-
+## 狂想進化論
+2020 元智大學資訊傳播學系畢業展覽宣傳影片，涵蓋了展場資訊以及各組內容介紹。
+## 開發日誌
+https://www.notion.so/Web-28be0342e8e5469a933ba8fc3a2dbb8c
 ## 網站連結
-https://twby.github.io/Graduation/
+http://keepevolving.cc/
